@@ -66,14 +66,45 @@
 #define MIN_LUM 0
 #define MAX_LUM 255
 
-uint8_t hours, minutes, seconds, max_luminosity, min_luminosity, last_luminosity, counter;
+#define TEMP_ALARM 123
+#define LUM_ALARM 321
+
+uint8_t hours, minutes, seconds, max_luminosity, min_luminosity, last_luminosity, counter,tala_counter;
 unsigned char last_temperature, max_temperature, min_temperature;
 uint16_t data_address;
+uint8_t magic_word,NREG,NR,WI,RI,PMON,TALA,ALAT,ALAL,ALAF,CLKH,CLKM,checksum;
 
-void S1(void){
-    if(IO_RB4_GetValue()==LOW && IO_RA6_GetValue()==HIGH){
-        IO_RA6_SetLow();
+void PWMOutputEnable (uint8_t PWM){
+    PPSLOCK = 0x55; 
+    PPSLOCK = 0xAA; 
+    PPSLOCKbits.PPSLOCKED = 0x00; // unlock PPS
+
+    // Set D5 as the output of PWM6
+    RA6PPS = PWM;
+
+    PPSLOCK = 0x55; 
+    PPSLOCK = 0xAA; 
+    PPSLOCKbits.PPSLOCKED = 0x01; // lock PPS
+}
+
+void PWMOutputDisable (void){
+    PPSLOCK = 0x55; 
+    PPSLOCK = 0xAA; 
+    PPSLOCKbits.PPSLOCKED = 0x00; // unlock PPS
+    // Set D5 as GPIO pin
+    RA6PPS = 0x00;
+    PPSLOCK = 0x55; 
+    PPSLOCK = 0xAA; 
+    PPSLOCKbits.PPSLOCKED = 0x01; // lock PPS
+}
+
+void activateAlarm(uint8_t alarm,uint8_t tala){
+    if (alarm == TEMP_ALARM){
+        IO_RA5_SetHigh();
+    }else{
+        IO_RA4_SetHigh();
     }
+    PWMOutputEnable(tala);
 }
 
 void timerInterrupt(){
@@ -81,26 +112,29 @@ void timerInterrupt(){
    adc_result_t value;
    
     if(counter == 5){
-    
+        
         if(last_temperature > max_temperature){
             
             DATAEE_WriteByte(HIGH_TEMP_REG, last_temperature);
-            //alarme
+            tala_counter=0;
+            activateAlarm(TEMP_ALARM,TALA);
             
         }else if(last_temperature < min_temperature){
         
-            DATAEE_WriteByte(LOW_TEMP_REG, last_temperature); 
-            //alarme
+            DATAEE_WriteByte(LOW_TEMP_REG, last_temperature);
+            tala_counter=0;            
+            activateAlarm(TEMP_ALARM,TALA);
         }
         if(last_luminosity > max_luminosity){
             
             DATAEE_WriteByte(HIGH_LUX_REG, last_luminosity);
-            //alarme
+            tala_counter=0;
+            activateAlarm(LUM_ALARM,TALA);
             
         }else if(last_luminosity < min_luminosity){
-        
+            tala_counter=0;
             DATAEE_WriteByte(LOW_LUX_REG, last_luminosity);
-            //alarme
+            activateAlarm(LUM_ALARM,TALA);
         } 
         value = ADCC_GetSingleConversion(channel_ANA0);
         unsigned char temperature = readTC74();
@@ -110,10 +144,16 @@ void timerInterrupt(){
     }
  
     if(counter == 5){
-    
         counter == 1;
-    }else{      
+    }else{
         counter ++;
+    }
+   
+    if(tala_counter == 3){
+        PWMOutputDisable();
+        tala_counter == 0;
+    }else{
+        tala_counter ++;
     }
 
     if(IO_RA7_GetValue()==LOW){
@@ -243,9 +283,7 @@ void main(void)
     initializeREG();
 
     storeEPROMBuild(0x55,0x50,0x45,0x40,0x35,OPER_MAX_TEMP);
-    
-    uint8_t magic_word,NREG,NR,WI,RI,PMON,TALA,ALAT,ALAL,ALAF,CLKH,CLKM,checksum;
-    
+        
     LCDcmd(0x80);
     LCDstr("insert hours");
     __delay_ms(1000);
