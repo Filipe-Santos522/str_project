@@ -46,6 +46,7 @@
 #include "LCD/lcd.h"
 #include "stdio.h"
 #include "EPROMlib.h"
+#include "alarm.h"
 
 /*
                          Main application
@@ -66,108 +67,10 @@
 #define MIN_LUM 0
 #define MAX_LUM 255
 
-#define TEMP_ALARM 123
-#define LUM_ALARM 321
-
 uint8_t hours, minutes, seconds, max_luminosity, min_luminosity, last_luminosity, counter,tala_counter;
 unsigned char last_temperature, max_temperature, min_temperature;
 uint16_t data_address;
-uint8_t magic_word,NREG,NR,WI,RI,PMON,TALA,ALAT,ALAL,ALAF,CLKH,CLKM,checksum;
-
-void PWMOutputEnable (uint8_t PWM){
-    PPSLOCK = 0x55; 
-    PPSLOCK = 0xAA; 
-    PPSLOCKbits.PPSLOCKED = 0x00; // unlock PPS
-
-    // Set D5 as the output of PWM6
-    RA6PPS = PWM;
-
-    PPSLOCK = 0x55; 
-    PPSLOCK = 0xAA; 
-    PPSLOCKbits.PPSLOCKED = 0x01; // lock PPS
-}
-
-void PWMOutputDisable (void){
-    PPSLOCK = 0x55; 
-    PPSLOCK = 0xAA; 
-    PPSLOCKbits.PPSLOCKED = 0x00; // unlock PPS
-    // Set D5 as GPIO pin
-    RA6PPS = 0x00;
-    PPSLOCK = 0x55; 
-    PPSLOCK = 0xAA; 
-    PPSLOCKbits.PPSLOCKED = 0x01; // lock PPS
-}
-
-void activateAlarm(uint8_t alarm,uint8_t tala){
-    if (alarm == TEMP_ALARM){
-        IO_RA5_SetHigh();
-    }else{
-        IO_RA4_SetHigh();
-    }
-    PWMOutputEnable(tala);
-}
-
-void timerInterrupt(){
-    
-   adc_result_t value;
-   
-    if(counter == 5){
-        
-        if(last_temperature > max_temperature){
-            
-            DATAEE_WriteByte(HIGH_TEMP_REG, last_temperature);
-            tala_counter=0;
-            activateAlarm(TEMP_ALARM,TALA);
-            
-        }else if(last_temperature < min_temperature){
-        
-            DATAEE_WriteByte(LOW_TEMP_REG, last_temperature);
-            tala_counter=0;            
-            activateAlarm(TEMP_ALARM,TALA);
-        }
-        if(last_luminosity > max_luminosity){
-            
-            DATAEE_WriteByte(HIGH_LUX_REG, last_luminosity);
-            tala_counter=0;
-            activateAlarm(LUM_ALARM,TALA);
-            
-        }else if(last_luminosity < min_luminosity){
-            tala_counter=0;
-            DATAEE_WriteByte(LOW_LUX_REG, last_luminosity);
-            activateAlarm(LUM_ALARM,TALA);
-        } 
-        value = ADCC_GetSingleConversion(channel_ANA0);
-        unsigned char temperature = readTC74();
-        if(temperature!= last_temperature || value!= last_luminosity){
-            writeRingBuffer(temperature,  value);
-        }
-    }
- 
-    if(counter == 5){
-        counter == 1;
-    }else{
-        counter ++;
-    }
-   
-    if(tala_counter == 3){
-        PWMOutputDisable();
-        tala_counter == 0;
-    }else{
-        tala_counter ++;
-    }
-
-    if(IO_RA7_GetValue()==LOW){
-        IO_RA7_SetHigh();
-    }else{
-        IO_RA7_SetLow();
-    }
-    
-    if(value > LUM_LVL_23 || value < LUM_LVL_01){
-        IO_RA4_SetHigh();
-    }else{
-        IO_RA4_SetLow();
-    }
-}
+uint8_t magic_word,NREG,NR,WI,RI,PMON,TALA,ALAT,ALAL,ALAF,CLKH,CLKM,checksum,pwm_control;
 
 unsigned char readTC74 (void)
 {
@@ -234,6 +137,77 @@ void writeRingBuffer(unsigned char temperature, uint8_t luminosity){
     } 
 }
 
+
+void timerInterrupt(){
+    
+   adc_result_t value;
+   
+    if(counter == 5){
+        
+        if(last_temperature > max_temperature){
+            DATAEE_WriteByte(HIGH_TEMP_REG, last_temperature);
+            tala_counter=0;
+            activateAlarm(TEMP_ALARM);
+            pwm_control=0;
+        }else if(last_temperature < min_temperature){
+            DATAEE_WriteByte(LOW_TEMP_REG, last_temperature);
+            tala_counter=0;            
+            pwm_control=0;
+            activateAlarm(TEMP_ALARM);
+        }
+        if(last_luminosity > max_luminosity){
+            DATAEE_WriteByte(HIGH_LUX_REG, last_luminosity);
+            tala_counter=0;
+            pwm_control=0;
+            activateAlarm(LUM_ALARM);
+            
+        }else if(last_luminosity < min_luminosity){
+            tala_counter=0;
+            DATAEE_WriteByte(LOW_LUX_REG, last_luminosity);
+            pwm_control=0;
+            activateAlarm(LUM_ALARM);
+        } 
+
+        value = ADCC_GetSingleConversion(channel_ANA0);
+        unsigned char temperature = readTC74();
+        if(temperature!= last_temperature || value!= last_luminosity){
+            writeRingBuffer(temperature,  value);
+        }
+    }
+ 
+    if(counter == 5){
+        counter = 1;
+    }else{
+        counter ++;
+    }
+   
+    if(tala_counter == TALA){
+        deactivatePWM();
+        tala_counter = 0;
+    }else{
+        if(pwm_control==0){
+            PWM6_LoadDutyValue(HIGH_DUTY_VALUE);
+            pwm_control=1;
+        }else{
+            PWM6_LoadDutyValue(LOW_DUTY_VALUE);
+            pwm_control=0;
+        }
+        tala_counter ++;
+    }
+
+    if(IO_RA7_GetValue()==LOW){
+        IO_RA7_SetHigh();
+    }else{
+        IO_RA7_SetLow();
+    }
+    
+    if(value > LUM_LVL_23 || value < LUM_LVL_01){
+        IO_RA4_SetHigh();
+    }else{
+        IO_RA4_SetLow();
+    }
+}
+
 void main(void)
 {
     unsigned char c;
@@ -267,9 +241,7 @@ void main(void)
     max_temperature=MAX_TEMP;
     min_temperature=MIN_TEMP;
     data_address=START_RING_BUFFER_ADDR;
-    
-    IO_RA6_SetHigh();
-     
+         
     OpenI2C();
     //I2C_SCL = 1;
     //I2C_SDA = 1;
@@ -278,7 +250,7 @@ void main(void)
     LCDinit();
     
 
-
+    PWM6_Initialize();
     initializeEPROM();
     initializeREG();
 
@@ -330,8 +302,6 @@ void main(void)
     TMR1_SetInterruptHandler(timerInterrupt);
     while (1)
     {   
-        S1();
-
         parseEPROMInitialization(&magic_word,&NREG,&NR,&WI,&RI,&PMON,&TALA,&ALAT,&ALAL,&ALAF,&CLKH,&CLKM,&checksum);
 
         c = readTC74();

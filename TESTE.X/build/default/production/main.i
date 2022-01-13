@@ -20808,9 +20808,9 @@ extern __bank0 __bit __timeout;
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 242 "./mcc_generated_files/pin_manager.h"
+# 222 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 254 "./mcc_generated_files/pin_manager.h"
+# 234 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -21131,6 +21131,13 @@ _Bool ADCC_HasErrorCrossedLowerThreshold(void);
 uint8_t ADCC_GetConversionStageStatus(void);
 # 57 "./mcc_generated_files/mcc.h" 2
 
+# 1 "./mcc_generated_files/pwm6.h" 1
+# 102 "./mcc_generated_files/pwm6.h"
+ void PWM6_Initialize(void);
+# 129 "./mcc_generated_files/pwm6.h"
+ void PWM6_LoadDutyValue(uint16_t dutyValue);
+# 58 "./mcc_generated_files/mcc.h" 2
+
 # 1 "./mcc_generated_files/tmr1.h" 1
 # 101 "./mcc_generated_files/tmr1.h"
 void TMR1_Initialize(void);
@@ -21158,7 +21165,7 @@ void TMR1_CallBack(void);
 extern void (*TMR1_InterruptHandler)(void);
 # 439 "./mcc_generated_files/tmr1.h"
 void TMR1_DefaultInterruptHandler(void);
-# 58 "./mcc_generated_files/mcc.h" 2
+# 59 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/memory.h" 1
 # 99 "./mcc_generated_files/memory.h"
@@ -21173,12 +21180,232 @@ void FLASH_EraseBlock(uint16_t startAddr);
 void DATAEE_WriteByte(uint16_t bAdd, uint8_t bData);
 # 248 "./mcc_generated_files/memory.h"
 uint8_t DATAEE_ReadByte(uint16_t bAdd);
-# 59 "./mcc_generated_files/mcc.h" 2
-# 74 "./mcc_generated_files/mcc.h"
+# 60 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/tmr2.h" 1
+# 79 "./mcc_generated_files/tmr2.h"
+typedef enum
+{
+# 89 "./mcc_generated_files/tmr2.h"
+   TMR2_ROP_STARTS_TMRON,
+
+
+
+
+   TMR2_ROP_STARTS_TMRON_ERSHIGH,
+
+
+
+
+   TMR2_ROP_STARTS_TMRON_ERSLOW,
+
+
+
+
+   TMR2_ROP_RESETS_ERSBOTHEDGE,
+
+
+
+
+   TMR2_ROP_RESETS_ERSRISINGEDGE,
+
+
+
+
+   TMR2_ROP_RESETS_ERSFALLINGEDGE,
+
+
+
+
+   TMR2_ROP_RESETS_ERSLOW,
+
+
+
+
+   TMR2_ROP_RESETS_ERSHIGH,
+# 135 "./mcc_generated_files/tmr2.h"
+   TMR2_OS_STARTS_TMRON,
+
+
+
+
+   TMR2_OS_STARTS_ERSRISINGEDGE ,
+
+
+
+
+   TMR2_OS_STARTS_ERSFALLINGEDGE ,
+
+
+
+
+   TMR2_OS_STARTS_ERSBOTHEDGE,
+
+
+
+
+
+   TMR2_OS_STARTS_ERSFIRSTRISINGEDGE,
+
+
+
+
+
+   TMR2_OS_STARTS_ERSFIRSTFALLINGEDGE,
+
+
+
+
+
+   TMR2_OS_STARTS_ERSRISINGEDGEDETECT,
+
+
+
+
+   TMR2_OS_STARTS_ERSFALLINGEDGEDETECT,
+
+
+
+
+   TMR2_OS_STARTS_TMRON_ERSHIGH = 0x16,
+
+
+
+
+   TMR2_OS_STARTS_TMRON_ERSLOW = 0x17,
+# 192 "./mcc_generated_files/tmr2.h"
+   TMR2_MS_STARTS_TMRON_ERSRISINGEDGEDETECT = 0x11,
+
+
+
+
+   TMR2_MS_STARTS_TMRON_ERSFALLINGEDGEDETECT = 0x12,
+
+
+
+
+
+   TMR2_MS_STARTS_TMRON_ERSBOTHEDGE = 0x13
+
+} TMR2_HLT_MODE;
+# 220 "./mcc_generated_files/tmr2.h"
+typedef enum
+{
+
+
+    TMR2_T2INPPS,
+
+
+
+    TMR2_RESERVED,
+
+
+
+    TMR2_T4POSTSCALED,
+
+
+
+    TMR2_T6POSTSCALED,
+
+
+    TMR2_CCP1_OUT,
+
+
+
+    TMR2_CCP2_OUT,
+
+
+
+    TMR2_CCP3_OUT,
+
+
+
+    TMR2_CCP4_OUT,
+
+
+
+    TMR2_CCP5_OUT,
+
+
+
+    TMR2_PWM6_OUT,
+
+
+
+    TMR2_PWM7_OUT,
+
+
+
+    TMR2_C1_OUT_SYNC,
+
+
+
+    TMR2_C2_OUT_SYNC,
+
+
+
+    TMR2_ZCD_OUTPUT,
+
+
+
+    TMR2_CLC1_OUT,
+
+
+
+    TMR2_CLC2_OUT,
+
+
+
+    TMR2_CLC3_OUT,
+
+
+
+    TMR2_CLC4_OUT
+
+
+} TMR2_HLT_EXT_RESET_SOURCE;
+# 336 "./mcc_generated_files/tmr2.h"
+void TMR2_Initialize(void);
+# 372 "./mcc_generated_files/tmr2.h"
+void TMR2_ModeSet(TMR2_HLT_MODE mode);
+# 407 "./mcc_generated_files/tmr2.h"
+void TMR2_ExtResetSourceSet(TMR2_HLT_EXT_RESET_SOURCE reset);
+# 436 "./mcc_generated_files/tmr2.h"
+void TMR2_Start(void);
+# 465 "./mcc_generated_files/tmr2.h"
+void TMR2_StartTimer(void);
+# 497 "./mcc_generated_files/tmr2.h"
+void TMR2_Stop(void);
+# 529 "./mcc_generated_files/tmr2.h"
+void TMR2_StopTimer(void);
+# 564 "./mcc_generated_files/tmr2.h"
+uint8_t TMR2_Counter8BitGet(void);
+# 599 "./mcc_generated_files/tmr2.h"
+uint8_t TMR2_ReadTimer(void);
+# 638 "./mcc_generated_files/tmr2.h"
+void TMR2_Counter8BitSet(uint8_t timerVal);
+# 677 "./mcc_generated_files/tmr2.h"
+void TMR2_WriteTimer(uint8_t timerVal);
+# 729 "./mcc_generated_files/tmr2.h"
+void TMR2_Period8BitSet(uint8_t periodVal);
+# 781 "./mcc_generated_files/tmr2.h"
+void TMR2_LoadPeriodRegister(uint8_t periodVal);
+# 799 "./mcc_generated_files/tmr2.h"
+void TMR2_ISR(void);
+# 817 "./mcc_generated_files/tmr2.h"
+ void TMR2_CallBack(void);
+# 834 "./mcc_generated_files/tmr2.h"
+ void TMR2_SetInterruptHandler(void (* InterruptHandler)(void));
+# 852 "./mcc_generated_files/tmr2.h"
+extern void (*TMR2_InterruptHandler)(void);
+# 870 "./mcc_generated_files/tmr2.h"
+void TMR2_DefaultInterruptHandler(void);
+# 61 "./mcc_generated_files/mcc.h" 2
+# 76 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 87 "./mcc_generated_files/mcc.h"
+# 89 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 100 "./mcc_generated_files/mcc.h"
+# 102 "./mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
 # 44 "main.c" 2
 
@@ -21223,26 +21450,20 @@ void storeEPROMBuild(uint8_t hours,uint8_t minutes,uint8_t seconds,uint8_t tempe
 void parseEPROMReading(uint8_t* hours,uint8_t* minutes,uint8_t* seconds,uint8_t* temperature,uint8_t* luminosity,uint8_t operation);
 uint8_t parseEPROMInitialization(uint8_t* magic_word,uint8_t* NREG,uint8_t* NR,uint8_t* WI,uint8_t* RI,uint8_t* PMON,uint8_t* TALA,uint8_t* ALAT,uint8_t* ALAL,uint8_t* ALAF,uint8_t* CLKH,uint8_t* CLKM,uint8_t* checksum);
 # 48 "main.c" 2
-# 61 "main.c"
-void S1(void){
-    if(PORTBbits.RB4==0 && PORTAbits.RA6==1){
-        do { LATAbits.LATA6 = 0; } while(0);
-    }
-}
 
-void timerInterrupt(void){
-    if(PORTAbits.RA7==0){
-        do { LATAbits.LATA7 = 1; } while(0);
-    }else{
-        do { LATAbits.LATA7 = 0; } while(0);
-    }
-    adc_result_t value = ADCC_GetSingleConversion(channel_ANA0);
-    if(value > 0x2FD || value < 0xFF){
-        do { LATAbits.LATA4 = 1; } while(0);
-    }else{
-        do { LATAbits.LATA4 = 0; } while(0);
-    }
-}
+# 1 "./alarm.h" 1
+# 12 "./alarm.h"
+void PWMOutputEnable();
+void PWMOutputDisable();
+void activateAlarm(uint8_t alarm);
+void deactivateAlarm();
+void deactivatePWM();
+# 49 "main.c" 2
+# 70 "main.c"
+uint8_t hours, minutes, seconds, max_luminosity, min_luminosity, last_luminosity, counter,tala_counter;
+unsigned char last_temperature, max_temperature, min_temperature;
+uint16_t data_address;
+uint8_t magic_word,NREG,NR,WI,RI,PMON,TALA,ALAT,ALAL,ALAF,CLKH,CLKM,checksum,pwm_control;
 
 unsigned char readTC74 (void)
 {
@@ -21273,20 +21494,117 @@ do{
  return value;
 }
 
-uint8_t readRingBuffer(uint16_t dataAddr){
-    return 0x55;
+
+
+void initializeREG(){
+
+    DATAEE_WriteByte(0x7053,(uint8_t) 255);
+    DATAEE_WriteByte(0x7054,(uint8_t) 0);
+    DATAEE_WriteByte(0x7055 + 2,(uint8_t) 255);
+    DATAEE_WriteByte(0x7056 + 3,(uint8_t) 0);
+
 }
 
-uint8_t writeRingBuffer(uint16_t dataAddr,uint8_t data){
-    return 0x55;
+
+
+
+void writeRingBuffer(unsigned char temperature, uint8_t luminosity){
+
+    DATAEE_WriteByte(data_address, hours);
+    DATAEE_WriteByte(data_address + 1, minutes);
+    DATAEE_WriteByte(data_address + 2, seconds);
+    DATAEE_WriteByte(data_address + 3, temperature);
+    DATAEE_WriteByte(data_address + 4, luminosity);
+
+    last_temperature = temperature;
+    last_luminosity = luminosity;
+
+
+    if(data_address == (0x7000 + 20)){
+
+        data_address = 0x7000;
+
+    }else{
+
+        data_address = data_address + 5;
+    }
+}
+
+
+void timerInterrupt(){
+
+   adc_result_t value;
+
+    if(counter == 5){
+
+        if(last_temperature > max_temperature){
+            DATAEE_WriteByte(0x7053, last_temperature);
+            tala_counter=0;
+            activateAlarm(46);
+            pwm_control=0;
+        }else if(last_temperature < min_temperature){
+            DATAEE_WriteByte(0x7054, last_temperature);
+            tala_counter=0;
+            pwm_control=0;
+            activateAlarm(46);
+        }
+        if(last_luminosity > max_luminosity){
+            DATAEE_WriteByte(0x7055, last_luminosity);
+            tala_counter=0;
+            pwm_control=0;
+            activateAlarm(64);
+
+        }else if(last_luminosity < min_luminosity){
+            tala_counter=0;
+            DATAEE_WriteByte(0x7056, last_luminosity);
+            pwm_control=0;
+            activateAlarm(64);
+        }
+
+        value = ADCC_GetSingleConversion(channel_ANA0);
+        unsigned char temperature = readTC74();
+        if(temperature!= last_temperature || value!= last_luminosity){
+            writeRingBuffer(temperature, value);
+        }
+    }
+
+    if(counter == 5){
+        counter = 1;
+    }else{
+        counter ++;
+    }
+
+    if(tala_counter == TALA){
+        deactivatePWM();
+        tala_counter = 0;
+    }else{
+        if(pwm_control==0){
+            PWM6_LoadDutyValue(0xA);
+            pwm_control=1;
+        }else{
+            PWM6_LoadDutyValue(0x3);
+            pwm_control=0;
+        }
+        tala_counter ++;
+    }
+
+    if(PORTAbits.RA7==0){
+        do { LATAbits.LATA7 = 1; } while(0);
+    }else{
+        do { LATAbits.LATA7 = 0; } while(0);
+    }
+
+    if(value > 0x2FD || value < 0xFF){
+        do { LATAbits.LATA4 = 1; } while(0);
+    }else{
+        do { LATAbits.LATA4 = 0; } while(0);
+    }
 }
 
 void main(void)
 {
     unsigned char c;
     char buf[17];
-    uint16_t writeRingBufferAddr = 0xFF;
-    uint16_t readRingBufferAddr = 0xFF;
 
     SYSTEM_Initialize();
 
@@ -21304,31 +21622,94 @@ void main(void)
 
 
 
+    hours=0;
+    minutes=0;
+    seconds=0;
+    max_luminosity=255;
+    min_luminosity=0;
+    last_luminosity=255;
+    counter=1;
 
-    TMR1_SetInterruptHandler(timerInterrupt);
-
-    do { LATAbits.LATA6 = 1; } while(0);
+    last_temperature=255;
+    max_temperature=255;
+    min_temperature=0;
+    data_address=0x7000;
 
     OpenI2C();
 
 
 
 
+    LCDinit();
 
 
+    PWM6_Initialize();
     initializeEPROM();
+    initializeREG();
 
     storeEPROMBuild(0x55,0x50,0x45,0x40,0x35,101);
 
-    uint8_t hours,minutes,seconds,temperature,luminosity;
-    uint8_t magic_word,NREG,NR,WI,RI,PMON,TALA,ALAT,ALAL,ALAF,CLKH,CLKM,checksum;
-    uint8_t correct_EPROM;
+    LCDcmd(0x80);
+    LCDstr("insert hours");
+    _delay((unsigned long)((1000)*(1000000/4000.0)));
+    while(PORTCbits.RC5==1){
+        if(PORTBbits.RB4==0){
+            hours++;
+            _delay((unsigned long)((250)*(1000000/4000.0)));
+        }
+        while (LCDbusy());
+        LCDcmd(0x80);
+        sprintf(buf, "%02d:%02d:%02d     ", hours, minutes, seconds);
+        LCDstr(buf);
+    }
+    LCDcmd(0x80);
+    LCDstr("insert minutes");
+    _delay((unsigned long)((1000)*(1000000/4000.0)));
+
+    while(PORTCbits.RC5==1){
+        if(PORTBbits.RB4==0){
+            minutes++;
+        }
+        while (LCDbusy());
+        LCDcmd(0x80);
+        sprintf(buf, "%02d:%02d:%02d      ", hours, minutes, seconds);
+        LCDstr(buf);
+        _delay((unsigned long)((250)*(1000000/4000.0)));
+    }
+    LCDcmd(0x80);
+    LCDstr("insert seconds");
+    _delay((unsigned long)((1000)*(1000000/4000.0)));
+
+    while(PORTCbits.RC5==1){
+        if(PORTBbits.RB4==0){
+            seconds++;
+        }
+        while (LCDbusy());
+        LCDcmd(0x80);
+        sprintf(buf, "%02d:%02d:%02d      ", hours, minutes, seconds);
+        LCDstr(buf);
+        _delay((unsigned long)((250)*(1000000/4000.0)));
+    }
+
+
+    TMR1_SetInterruptHandler(timerInterrupt);
     while (1)
     {
-        S1();
-        parseEPROMReading(&hours,&minutes,&seconds,&temperature,&luminosity,101);
-        correct_EPROM = parseEPROMInitialization(&magic_word,&NREG,&NR,&WI,&RI,&PMON,&TALA,&ALAT,&ALAL,&ALAF,&CLKH,&CLKM,&checksum);
-# 177 "main.c"
+        parseEPROMInitialization(&magic_word,&NREG,&NR,&WI,&RI,&PMON,&TALA,&ALAT,&ALAL,&ALAF,&CLKH,&CLKM,&checksum);
+
+        c = readTC74();
+        LCDcmd(0x80);
+        while (LCDbusy());
+        sprintf(buf, "%02d:%02d:%02d", hours, minutes, seconds);
+        LCDstr(buf);
+        LCDpos(0,11);
+        while (LCDbusy());
+        LCDstr("STR");
+
+        LCDcmd(0xc0);
+        sprintf(buf, "%02d C", c);
+        while (LCDbusy());
+        LCDstr(buf);
         _delay((unsigned long)((2000)*(1000000/4000.0)));
     }
 }

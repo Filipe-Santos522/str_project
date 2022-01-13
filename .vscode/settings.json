@@ -21,6 +21,8 @@
     "peacock.remoteColor": "#007fff",
     "files.associations": {
         "stdio.h": "c",
-        "i2c.h": "c"
+        "i2c.h": "c",
+        "epromlib.h": "c",
+        "memory.h": "c"
     }
 }
