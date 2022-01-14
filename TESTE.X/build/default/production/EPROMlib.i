@@ -21002,6 +21002,7 @@ uint16_t operADDR(uint8_t operation){
 
 void initializeEPROM(){
     DATAEE_WriteByte(0x7099,(uint8_t) 0xAA);
+<<<<<<< Updated upstream
     DATAEE_WriteByte(0x7099 + 8, 0xA);
     DATAEE_WriteByte(0x7099 + 10, 0x0);
     DATAEE_WriteByte(0x7099 + 18, 0x0);
@@ -21014,6 +21015,20 @@ void initializeEPROM(){
     DATAEE_WriteByte(0x7099 + 50, 0xC);
     DATAEE_WriteByte(0x7099 + 58, 0x0);
     DATAEE_WriteByte(0x7099 + 60, 0XE3);
+=======
+    DATAEE_WriteByte(0x7099 + 8,(uint8_t) 0xA);
+    DATAEE_WriteByte(0x7099 + 10,(uint8_t) 0x0);
+    DATAEE_WriteByte(0x7099 + 18,(uint8_t) 0x0);
+    DATAEE_WriteByte(0x7099 + 20,(uint8_t) 0x0);
+    DATAEE_WriteByte(0x7099 + 28,(uint8_t) 0x5);
+    DATAEE_WriteByte(0x7099 + 30,(uint8_t) 0x3);
+    DATAEE_WriteByte(0x7099 + 38,(uint8_t) 0x19);
+    DATAEE_WriteByte(0x7099 + 40,(uint8_t) 0x2);
+    DATAEE_WriteByte(0x7099 + 48,(uint8_t) 0x0);
+    DATAEE_WriteByte(0x7099 + 50,(uint8_t) 0xC);
+    DATAEE_WriteByte(0x7099 + 58,(uint8_t) 0x0);
+    DATAEE_WriteByte(0x7099 + 60,(uint8_t) 0xE3);
+>>>>>>> Stashed changes
 }
 
 void storeEPROMBuild(uint8_t hours,uint8_t minutes,uint8_t seconds,uint8_t temperature,uint8_t luminosity,uint8_t operation){

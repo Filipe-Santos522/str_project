@@ -21230,7 +21230,32 @@ void S1(void){
     }
 }
 
+<<<<<<< Updated upstream
 void timerInterrupt(void){
+=======
+void timerInterrupt(){
+    uint16_t dataAddr=0x0020;
+    uint8_t h=DATAEE_ReadByte(dataAddr);
+    uint8_t m=DATAEE_ReadByte(dataAddr + 1);
+    uint8_t s=DATAEE_ReadByte(dataAddr + 2);
+    if(s<59){
+        s++;
+    }else if(m<59){
+        m++;
+        s=0;
+    }else if(h<23){
+        h++;
+        m=0;
+        s=0;
+    }else{
+        h=0;
+        m=0;
+        s=0;
+    }
+    DATAEE_WriteByte(dataAddr, h);
+    DATAEE_WriteByte(dataAddr+1, m);
+    DATAEE_WriteByte(dataAddr+2, s);
+>>>>>>> Stashed changes
     if(PORTAbits.RA7==0){
         do { LATAbits.LATA7 = 1; } while(0);
     }else{
@@ -21298,6 +21323,7 @@ void main(void)
 
 
     (INTCONbits.PEIE = 1);
+<<<<<<< Updated upstream
 
 
 
@@ -21307,6 +21333,9 @@ void main(void)
 
     TMR1_SetInterruptHandler(timerInterrupt);
 
+=======
+# 165 "main.c"
+>>>>>>> Stashed changes
     do { LATAbits.LATA6 = 1; } while(0);
 
     OpenI2C();
@@ -21322,13 +21351,89 @@ void main(void)
 
     uint8_t hours,minutes,seconds,temperature,luminosity;
     uint8_t magic_word,NREG,NR,WI,RI,PMON,TALA,ALAT,ALAL,ALAF,CLKH,CLKM,checksum;
+<<<<<<< Updated upstream
 
+=======
+    uint8_t h=0;
+    uint8_t m=0;
+    uint8_t s=0;
+
+    LCDcmd(0x80);
+    LCDstr("insert hours");
+    _delay((unsigned long)((1000)*(1000000/4000.0)));
+    while(PORTCbits.RC5==1){
+        if(PORTBbits.RB4==0){
+            h++;
+            _delay((unsigned long)((250)*(1000000/4000.0)));
+        }
+        while (LCDbusy());
+        LCDcmd(0x80);
+        sprintf(buf, "%02d:%02d:%02d     ", h, m, s);
+        LCDstr(buf);
+    }
+    LCDcmd(0x80);
+    LCDstr("insert minutes");
+    _delay((unsigned long)((1000)*(1000000/4000.0)));
+
+    while(PORTCbits.RC5==1){
+        if(PORTBbits.RB4==0){
+            m++;
+        }
+        while (LCDbusy());
+        LCDcmd(0x80);
+        sprintf(buf, "%02d:%02d:%02d      ", h, m, s);
+        LCDstr(buf);
+        _delay((unsigned long)((250)*(1000000/4000.0)));
+    }
+    LCDcmd(0x80);
+    LCDstr("insert seconds");
+    _delay((unsigned long)((1000)*(1000000/4000.0)));
+
+    while(PORTCbits.RC5==1){
+        if(PORTBbits.RB4==0){
+            s++;
+        }
+        while (LCDbusy());
+        LCDcmd(0x80);
+        sprintf(buf, "%02d:%02d:%02d      ", h, m, s);
+        LCDstr(buf);
+        _delay((unsigned long)((250)*(1000000/4000.0)));
+    }
+    uint16_t dataAddr=0x0020;
+    DATAEE_WriteByte(dataAddr, h);
+    DATAEE_WriteByte(dataAddr+1, m);
+    DATAEE_WriteByte(dataAddr+2, s);
+    TMR1_SetInterruptHandler(timerInterrupt);
+>>>>>>> Stashed changes
     while (1)
     {
         S1();
         parseEPROMReading(&hours,&minutes,&seconds,&temperature,&luminosity,101);
         parseEPROMInitialization(&magic_word,&NREG,&NR,&WI,&RI,&PMON,&TALA,&ALAT,&ALAL,&ALAF,&CLKH,&CLKM,&checksum);
+<<<<<<< Updated upstream
 # 177 "main.c"
+=======
+<<<<<<<< Updated upstream:TESTE.X/build/default/production/main.i
+        h=DATAEE_ReadByte(dataAddr);
+        m=DATAEE_ReadByte(dataAddr + 1);
+        s=DATAEE_ReadByte(dataAddr + 2);
+        c = readTC74();
+        LCDcmd(0x80);
+        while (LCDbusy());
+        sprintf(buf, "%02d:%02d:%02d", h, m, s);
+        LCDstr(buf);
+        LCDpos(0,11);
+        while (LCDbusy());
+        LCDstr("STR");
+
+        LCDcmd(0xc0);
+        sprintf(buf, "%02d C", c);
+        while (LCDbusy());
+        LCDstr(buf);
+========
+# 177 "main.c"
+>>>>>>>> Stashed changes:TESTE.X/build/default/debug/main.i
+>>>>>>> Stashed changes
         _delay((unsigned long)((2000)*(1000000/4000.0)));
     }
 }

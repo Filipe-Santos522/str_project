@@ -1,3 +1,16 @@
+<<<<<<< Updated upstream
+=======
+<<<<<<<< Updated upstream:TESTE.X/dist/default/production/TESTE.X.production.mum
+
+Memory Summary:
+    Program space        used  1485h (  5253) of  2000h words   ( 64.1%)
+    Data space           used    F2h (   242) of   400h bytes   ( 23.6%)
+    EEPROM space         used     0h (     0) of   100h bytes   (  0.0%)
+    Configuration bits   used     5h (     5) of     5h words   (100.0%)
+    ID Location space    used     0h (     0) of     4h bytes   (  0.0%)
+
+========
+>>>>>>> Stashed changes
 
 Memory Summary:
     Program space        used   464h (  1124) of  2000h words   ( 13.7%)
@@ -6,3 +19,7 @@ Memory Summary:
     Configuration bits   used     5h (     5) of     5h words   (100.0%)
     ID Location space    used     0h (     0) of     4h bytes   (  0.0%)
 
+<<<<<<< Updated upstream
+=======
+>>>>>>>> Stashed changes:TESTE.X/dist/default/debug/TESTE.X.debug.mum
+>>>>>>> Stashed changes

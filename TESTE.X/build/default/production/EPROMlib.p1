@@ -1731,6 +1731,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;EPROMlib.c: 35:     DATAEE_WriteByte(0x7099,(uint8_t) 0xAA);
 [e ( _DATAEE_WriteByte (2 , -> -> 28825 `i `us -> -> 170 `i `uc ]
 "36
+<<<<<<< Updated upstream
 [; ;EPROMlib.c: 36:     DATAEE_WriteByte(0x7099 + 8, 0xA);
 [e ( _DATAEE_WriteByte (2 , -> + -> 28825 `i -> 8 `i `us -> -> 10 `i `uc ]
 "37
@@ -1765,6 +1766,42 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _DATAEE_WriteByte (2 , -> + -> 28825 `i -> 58 `i `us -> -> 0 `i `uc ]
 "47
 [; ;EPROMlib.c: 47:     DATAEE_WriteByte(0x7099 + 60, 0XE3);
+=======
+[; ;EPROMlib.c: 36:     DATAEE_WriteByte(0x7099 + 8,(uint8_t) 0xA);
+[e ( _DATAEE_WriteByte (2 , -> + -> 28825 `i -> 8 `i `us -> -> 10 `i `uc ]
+"37
+[; ;EPROMlib.c: 37:     DATAEE_WriteByte(0x7099 + 10,(uint8_t) 0x0);
+[e ( _DATAEE_WriteByte (2 , -> + -> 28825 `i -> 10 `i `us -> -> 0 `i `uc ]
+"38
+[; ;EPROMlib.c: 38:     DATAEE_WriteByte(0x7099 + 18,(uint8_t) 0x0);
+[e ( _DATAEE_WriteByte (2 , -> + -> 28825 `i -> 18 `i `us -> -> 0 `i `uc ]
+"39
+[; ;EPROMlib.c: 39:     DATAEE_WriteByte(0x7099 + 20,(uint8_t) 0x0);
+[e ( _DATAEE_WriteByte (2 , -> + -> 28825 `i -> 20 `i `us -> -> 0 `i `uc ]
+"40
+[; ;EPROMlib.c: 40:     DATAEE_WriteByte(0x7099 + 28,(uint8_t) 0x5);
+[e ( _DATAEE_WriteByte (2 , -> + -> 28825 `i -> 28 `i `us -> -> 5 `i `uc ]
+"41
+[; ;EPROMlib.c: 41:     DATAEE_WriteByte(0x7099 + 30,(uint8_t) 0x3);
+[e ( _DATAEE_WriteByte (2 , -> + -> 28825 `i -> 30 `i `us -> -> 3 `i `uc ]
+"42
+[; ;EPROMlib.c: 42:     DATAEE_WriteByte(0x7099 + 38,(uint8_t) 0x19);
+[e ( _DATAEE_WriteByte (2 , -> + -> 28825 `i -> 38 `i `us -> -> 25 `i `uc ]
+"43
+[; ;EPROMlib.c: 43:     DATAEE_WriteByte(0x7099 + 40,(uint8_t) 0x2);
+[e ( _DATAEE_WriteByte (2 , -> + -> 28825 `i -> 40 `i `us -> -> 2 `i `uc ]
+"44
+[; ;EPROMlib.c: 44:     DATAEE_WriteByte(0x7099 + 48,(uint8_t) 0x0);
+[e ( _DATAEE_WriteByte (2 , -> + -> 28825 `i -> 48 `i `us -> -> 0 `i `uc ]
+"45
+[; ;EPROMlib.c: 45:     DATAEE_WriteByte(0x7099 + 50,(uint8_t) 0xC);
+[e ( _DATAEE_WriteByte (2 , -> + -> 28825 `i -> 50 `i `us -> -> 12 `i `uc ]
+"46
+[; ;EPROMlib.c: 46:     DATAEE_WriteByte(0x7099 + 58,(uint8_t) 0x0);
+[e ( _DATAEE_WriteByte (2 , -> + -> 28825 `i -> 58 `i `us -> -> 0 `i `uc ]
+"47
+[; ;EPROMlib.c: 47:     DATAEE_WriteByte(0x7099 + 60,(uint8_t) 0xE3);
+>>>>>>> Stashed changes
 [e ( _DATAEE_WriteByte (2 , -> + -> 28825 `i -> 60 `i `us -> -> 227 `i `uc ]
 "48
 [; ;EPROMlib.c: 48: }

@@ -1,6 +1,31 @@
+<<<<<<< Updated upstream
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
   <executable name="dist/default/production\TESTE.X.production.hex">
+=======
+<<<<<<<< Updated upstream:TESTE.X/dist/default/production/memoryfile.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/production\TESTE.X.production.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>8192</length>
+      <used>5253</used>
+      <free>2939</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>1024</length>
+      <used>242</used>
+      <free>782</free>
+    </memory>
+  </executable>
+</project>
+========
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/debug\TESTE.X.debug.hex">
+>>>>>>> Stashed changes
     <memory name="program">
       <units>words</units>
       <length>8192</length>
@@ -15,3 +40,7 @@
     </memory>
   </executable>
 </project>
+<<<<<<< Updated upstream
+=======
+>>>>>>>> Stashed changes:TESTE.X/dist/default/debug/memoryfile.xml
+>>>>>>> Stashed changes

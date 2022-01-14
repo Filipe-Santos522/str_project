@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 %CMF
 # %PSECTS Section
 # For each object file, details of its psects are enumerated here.
@@ -1015,3 +1016,1949 @@ reset_vec 0 0 0 2 2
 # Each line that follows contains the byte-data of the psect in hexadecimal as a
 # space-separated list. These lines are limited to 16 bytes of data.
 %NOTES
+=======
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\TESTE.X.production.o
+cinit CODE 0 1A 1A 13 2
+text1 CODE 0 170D 170D 4F 2
+text2 CODE 0 1615 1615 23 2
+text3 CODE 0 165C 165C 35 2
+text4 CODE 0 31D 31D 19E 2
+text5 CODE 0 646 646 164 2
+text6 CODE 0 7AA 7AA 56 2
+text7 CODE 0 1522 1522 1B 2
+text8 CODE 0 804 804 29 2
+text9 CODE 0 175C 175C 51 2
+text10 CODE 0 3 3 1 2
+text11 CODE 0 1559 1559 1C 2
+text12 CODE 0 CBE CBE ED 2
+text13 CODE 0 DAB DAB 105 2
+text14 CODE 0 A7F A7F AF 2
+text15 CODE 0 15F3 15F3 22 2
+text16 CODE 0 14EE 14EE 19 2
+text17 CODE 0 15B2 15B2 20 2
+text18 CODE 0 EB0 EB0 150 2
+text19 CODE 0 887 887 5A 2
+text20 CODE 0 1691 1691 37 2
+text21 CODE 0 B2E B2E B9 2
+text22 CODE 0 147F 147F F 2
+text23 CODE 0 9F1 9F1 8E 2
+text24 CODE 0 1638 1638 24 2
+text25 CODE 0 14C4 14C4 13 2
+text26 CODE 0 15D2 15D2 21 2
+text27 CODE 0 142D 142D 9 2
+text28 CODE 0 1413 1413 8 2
+text29 CODE 0 16C8 16C8 45 2
+text30 CODE 0 1424 1424 9 2
+text31 CODE 0 1436 1436 A 2
+text32 CODE 0 14D7 14D7 17 2
+text33 CODE 0 1440 1440 B 2
+text34 CODE 0 1464 1464 D 2
+text35 CODE 0 1507 1507 1B 2
+text36 CODE 0 141B 141B 9 2
+text37 CODE 0 153D 153D 1C 2
+text38 CODE 0 140B 140B 8 2
+text39 CODE 0 8E1 8E1 83 2
+text40 CODE 0 BE7 BE7 D7 2
+text41 CODE 0 17AD 17AD 53 2
+text42 CODE 0 14B1 14B1 13 2
+text43 CODE 0 4BB 4BB 18B 2
+text44 CODE 0 82D 82D 5A 2
+text45 CODE 0 1593 1593 1F 2
+text47 CODE 0 1471 1471 E 2
+text48 CODE 0 148E 148E 11 2
+text49 CODE 0 1457 1457 D 2
+text50 CODE 0 2 2 1 2
+text51 CODE 0 964 964 8D 2
+text52 CODE 0 1575 1575 1E 2
+text53 CODE 0 144B 144B C 2
+text54 CODE 0 149F 149F 12 2
+nvBANK2 BANK2 1 15F 15F 4 1
+maintext CODE 0 2D 2D 2F0 2
+cstackCOMMON COMMON 1 70 70 A 1
+cstackBANK0 BANK0 1 20 20 50 1
+cstackBANK1 BANK1 1 A0 A0 4D 1
+stringtext1 STRCODE 0 1800 1800 20 2
+stringtext2 STRCODE 0 1820 1820 15 2
+stringtext3 STRCODE 0 1835 1835 14 2
+stringtext4 STRCODE 0 1849 1849 F 2
+stringtext5 STRCODE 0 1858 1858 F 2
+stringtext6 STRCODE 0 1867 1867 F 2
+stringtext7 STRCODE 0 1876 1876 D 2
+stringtext8 STRCODE 0 1883 1883 7 2
+stringtext9 STRCODE 0 188A 188A 4 2
+intentry CODE 0 4 4 14 2
+bssBANK1 BANK1 1 ED ED 2 1
+bssBANK2 BANK2 1 120 120 3F 1
+clrtext CODE 0 1405 1405 6 2
+bssCOMMON COMMON 1 7A 7A 4 1
+config CONFIG 4 8007 8007 5 2
+$C:\Users\filip\AppData\Local\Temp\xcAs164c.o
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 18 18 2 2
+config CONFIG 4 8007 8007 5 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM EF-EF 1
+RAM 163-16F 1
+RAM 1A0-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-36F 1
+RAM 3A0-3EF 1
+RAM 420-46F 1
+RAM 4A0-4EF 1
+RAM 520-56F 1
+RAM 5A0-5EF 1
+RAM 620-64F 1
+BANK1 EF-EF 1
+BANK2 163-16F 1
+BANK3 1A0-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-36F 1
+BANK7 3A0-3EF 1
+BANK8 420-46F 1
+BANK9 4A0-4EF 1
+CONST 800-803 2
+CONST 1000-1404 2
+CONST 188E-1FFF 2
+ENTRY 800-803 2
+ENTRY 1000-1404 2
+ENTRY 188E-1FFF 2
+IDLOC 8000-8003 2
+SFR10 500-51F 1
+SFR11 580-59F 1
+SFR12 600-61F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+STACK 20E3-23EF 1
+CODE 800-803 2
+CODE 1000-1404 2
+CODE 188E-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-39F 1
+SFR8 400-41F 1
+SFR9 480-49F 1
+BANK10 520-56F 1
+BANK11 5A0-5EF 1
+BANK12 620-64F 1
+BIGRAM 2000-23EF 1
+EEDATA F000-F0FF 2
+STRCODE 800-803 2
+STRCODE 1000-1404 2
+STRCODE 188E-1FFF 2
+STRING 800-803 2
+STRING 1000-1404 2
+STRING 188E-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\TESTE.X.production.o
+1A cinit CODE >13837:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+1A cinit CODE >13840:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+1A cinit CODE >13885:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+1B cinit CODE >13886:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+1C cinit CODE >13887:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+1D cinit CODE >13888:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+1E cinit CODE >13892:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+1F cinit CODE >13893:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+20 cinit CODE >13894:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+21 cinit CODE >13898:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+22 cinit CODE >13899:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+23 cinit CODE >13900:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+24 cinit CODE >13901:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+25 cinit CODE >13902:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+26 cinit CODE >13903:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+29 cinit CODE >13909:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+29 cinit CODE >13911:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+2A cinit CODE >13912:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+2B cinit CODE >13913:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+4 intentry CODE >52:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/interrupt_manager.c
+6 intentry CODE >55:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/interrupt_manager.c
+A intentry CODE >57:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/interrupt_manager.c
+13 intentry CODE >59:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/interrupt_manager.c
+16 intentry CODE >70:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/interrupt_manager.c
+149F text54 CODE >132:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14A0 text54 CODE >135:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14A3 text54 CODE >138:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14A4 text54 CODE >141:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14A5 text54 CODE >144:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14A6 text54 CODE >147:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14A7 text54 CODE >150:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14A7 text54 CODE >152:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14AC text54 CODE >156:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14B0 text54 CODE >157:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+144B text53 CODE >202:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+144B text53 CODE >204:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+144E text53 CODE >205:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1450 text53 CODE >206:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1451 text53 CODE >207:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1452 text53 CODE >208:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1453 text53 CODE >209:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1454 text53 CODE >211:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1456 text53 CODE >212:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1575 text52 CODE >180:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1575 text52 CODE >182:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1579 text52 CODE >184:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+157C text52 CODE >185:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+157E text52 CODE >186:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1580 text52 CODE >187:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1581 text52 CODE >188:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1582 text52 CODE >189:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1583 text52 CODE >190:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1585 text52 CODE >191:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1587 text52 CODE >192:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1588 text52 CODE >194:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1588 text52 CODE >196:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+158C text52 CODE >198:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+158D text52 CODE >199:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+158E text52 CODE >199:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1590 text52 CODE >199:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1592 text52 CODE >200:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+964 text51 CODE >67:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+964 text51 CODE >68:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+964 text51 CODE >69:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+96E text51 CODE >70:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+978 text51 CODE >71:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+982 text51 CODE >72:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+984 text51 CODE >72:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+988 text51 CODE >73:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+98C text51 CODE >74:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+98F text51 CODE >74:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+993 text51 CODE >75:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+997 text51 CODE >76:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+998 text51 CODE >77:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+99B text51 CODE >77:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+99F text51 CODE >78:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+9A3 text51 CODE >79:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+9A5 text51 CODE >82:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+9A6 text51 CODE >83:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+9A7 text51 CODE >84:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+9A8 text51 CODE >86:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+9B3 text51 CODE >87:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+9BE text51 CODE >88:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+9C9 text51 CODE >89:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+9CE text51 CODE >90:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+9D0 text51 CODE >92:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+9D1 text51 CODE >94:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+9D9 text51 CODE >95:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+9DC text51 CODE >95:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+9DE text51 CODE >95:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+9E5 text51 CODE >95:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+9E7 text51 CODE >95:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+9EB text51 CODE >96:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+9EE text51 CODE >98:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+9F0 text51 CODE >100:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+2 text50 CODE >189:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+2 text50 CODE >192:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+1457 text49 CODE >176:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+1457 text49 CODE >179:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+145E text49 CODE >181:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+1463 text49 CODE >183:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+148E text48 CODE >127:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+148E text48 CODE >129:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+1493 text48 CODE >132:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+1494 text48 CODE >135:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+1496 text48 CODE >136:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+1498 text48 CODE >139:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+1499 text48 CODE >140:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+149A text48 CODE >144:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+149C text48 CODE >145:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+149E text48 CODE >147:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+1471 text47 CODE >164:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+1471 text47 CODE >168:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+1473 text47 CODE >169:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+147B text47 CODE >173:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+147E text47 CODE >174:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+1593 text45 CODE >44:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+1593 text45 CODE >46:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+15A9 text45 CODE >47:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+15AB text45 CODE >48:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+15B0 text45 CODE >49:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+15B1 text45 CODE >50:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+82D text44 CODE >59:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+82F text44 CODE >61:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+832 text44 CODE >62:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+837 text44 CODE >66:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+84C text44 CODE >68:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+84E text44 CODE >69:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+853 text44 CODE >71:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+85A text44 CODE >80:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+870 text44 CODE >82:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+875 text44 CODE >83:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+884 text44 CODE >84:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+886 text44 CODE >90:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+4BB text43 CODE >25:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+4BD text43 CODE >30:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+4CC text43 CODE >31:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+4E1 text43 CODE >32:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+4F4 text43 CODE >33:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+508 text43 CODE >34:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+51C text43 CODE >35:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+51D text43 CODE >36:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+532 text43 CODE >37:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+545 text43 CODE >38:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+55B text43 CODE >39:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+562 text43 CODE >40:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+576 text43 CODE >41:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+589 text43 CODE >42:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+59D text43 CODE >43:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+5B1 text43 CODE >44:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+5B2 text43 CODE >45:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+5C7 text43 CODE >46:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+5DA text43 CODE >47:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+5F0 text43 CODE >48:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+5F7 text43 CODE >49:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+60B text43 CODE >50:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+61E text43 CODE >51:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+632 text43 CODE >52:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+638 text43 CODE >53:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+645 text43 CODE >54:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+14B1 text42 CODE >119:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+14B1 text42 CODE >121:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+14C0 text42 CODE >122:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+14C3 text42 CODE >123:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+17AD text41 CODE >17:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+17AF text41 CODE >19:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+17BE text41 CODE >20:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+17D3 text41 CODE >21:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+17E6 text41 CODE >22:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+17F9 text41 CODE >23:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+17FF text41 CODE >24:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+BE7 text40 CODE >56:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+BE9 text40 CODE >61:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+BEE text40 CODE >62:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+BF3 text40 CODE >62:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+BFA text40 CODE >64:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+C09 text40 CODE >65:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+C1E text40 CODE >66:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+C31 text40 CODE >67:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+C46 text40 CODE >68:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+C5B text40 CODE >69:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+C5C text40 CODE >70:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+C72 text40 CODE >71:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+C87 text40 CODE >72:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+C9C text40 CODE >73:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+C9D text40 CODE >74:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+CB3 text40 CODE >75:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+CB9 text40 CODE >76:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+CBD text40 CODE >77:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+8E1 text39 CODE >79:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+8E1 text39 CODE >81:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+8EA text39 CODE >82:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+8EE text39 CODE >83:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+8FA text39 CODE >84:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+902 text39 CODE >85:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+906 text39 CODE >86:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+912 text39 CODE >87:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+916 text39 CODE >88:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+91A text39 CODE >89:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+926 text39 CODE >90:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+92A text39 CODE >91:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+92E text39 CODE >92:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+93A text39 CODE >93:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+942 text39 CODE >95:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+948 text39 CODE >96:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+94E text39 CODE >97:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+954 text39 CODE >98:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+95A text39 CODE >99:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+963 text39 CODE >100:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+140B text38 CODE >102:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+140D text38 CODE >104:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+1412 text38 CODE >105:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+153D text37 CODE >125:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+153F text37 CODE >131:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+1541 text37 CODE >131:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+154E text37 CODE >132:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+1554 text37 CODE >133:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+1558 text37 CODE >134:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+141B text36 CODE >107:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+141D text36 CODE >109:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+1423 text36 CODE >110:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+1507 text35 CODE >112:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+1507 text35 CODE >116:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+1512 text35 CODE >116:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+1521 text35 CODE >117:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\LCD/lcd.c
+1464 text34 CODE >26:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+1464 text34 CODE >28:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+1467 text34 CODE >29:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+1469 text34 CODE >30:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+146A text34 CODE >31:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+146C text34 CODE >32:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+146D text34 CODE >34:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+146F text34 CODE >35:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+1470 text34 CODE >36:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\I2C/i2c.c
+1440 text33 CODE >61:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+1440 text33 CODE >62:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+1449 text33 CODE >63:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+144A text33 CODE >65:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+14D7 text32 CODE >63:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14D7 text32 CODE >67:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14D9 text32 CODE >69:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14DA text32 CODE >71:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14DB text32 CODE >73:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14DC text32 CODE >75:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14DD text32 CODE >77:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14DE text32 CODE >79:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14DF text32 CODE >81:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14E1 text32 CODE >83:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14E2 text32 CODE >85:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14E3 text32 CODE >87:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14E4 text32 CODE >89:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14E5 text32 CODE >91:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14E6 text32 CODE >93:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14E7 text32 CODE >95:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14E8 text32 CODE >97:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14E9 text32 CODE >99:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14EA text32 CODE >101:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14EC text32 CODE >103:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+14ED text32 CODE >106:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/adcc.c
+1436 text31 CODE >167:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/i2c1_master.c
+1436 text31 CODE >169:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/i2c1_master.c
+1439 text31 CODE >170:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/i2c1_master.c
+143B text31 CODE >171:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/i2c1_master.c
+143C text31 CODE >172:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/i2c1_master.c
+143E text31 CODE >173:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/i2c1_master.c
+143F text31 CODE >174:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/i2c1_master.c
+1424 text30 CODE >60:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/mcc.c
+1424 text30 CODE >63:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/mcc.c
+1427 text30 CODE >65:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/mcc.c
+1428 text30 CODE >67:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/mcc.c
+1429 text30 CODE >69:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/mcc.c
+142B text30 CODE >71:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/mcc.c
+142C text30 CODE >72:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/mcc.c
+16C8 text29 CODE >55:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16C8 text29 CODE >60:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16CA text29 CODE >61:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16CB text29 CODE >62:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16CC text29 CODE >63:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16CD text29 CODE >64:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16CE text29 CODE >69:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16D0 text29 CODE >70:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16D2 text29 CODE >71:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16D4 text29 CODE >72:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16D6 text29 CODE >73:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16D8 text29 CODE >78:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16DB text29 CODE >79:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16DD text29 CODE >80:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16DF text29 CODE >81:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16E1 text29 CODE >82:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16E3 text29 CODE >87:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16E4 text29 CODE >88:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16E5 text29 CODE >89:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16E6 text29 CODE >90:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16E7 text29 CODE >91:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16E8 text29 CODE >96:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16E9 text29 CODE >97:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16EA text29 CODE >98:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16EB text29 CODE >99:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16EC text29 CODE >100:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16ED text29 CODE >105:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16EF text29 CODE >106:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16F1 text29 CODE >107:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16F3 text29 CODE >108:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16F5 text29 CODE >109:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16F7 text29 CODE >114:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16F9 text29 CODE >115:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16FB text29 CODE >116:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16FD text29 CODE >117:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+16FF text29 CODE >118:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+1701 text29 CODE >127:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+1704 text29 CODE >128:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+1707 text29 CODE >129:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+1709 text29 CODE >130:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+170C text29 CODE >131:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/pin_manager.c
+1413 text28 CODE >74:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/mcc.c
+1413 text28 CODE >77:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/mcc.c
+1415 text28 CODE >79:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/mcc.c
+1416 text28 CODE >81:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/mcc.c
+1417 text28 CODE >83:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/mcc.c
+1418 text28 CODE >85:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/mcc.c
+1419 text28 CODE >87:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/mcc.c
+141A text28 CODE >88:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/mcc.c
+142D text27 CODE >185:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+142D text27 CODE >186:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+1435 text27 CODE >187:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+15D2 text26 CODE >64:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+15D2 text26 CODE >69:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+15D4 text26 CODE >72:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+15D5 text26 CODE >75:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+15D7 text26 CODE >78:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+15D9 text26 CODE >81:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+15DB text26 CODE >84:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+15DD text26 CODE >87:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+15E5 text26 CODE >90:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+15E7 text26 CODE >93:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+15EF text26 CODE >96:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+15F2 text26 CODE >97:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/tmr1.c
+14C4 text25 CODE >50:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/mcc.c
+14C4 text25 CODE >52:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/mcc.c
+14C7 text25 CODE >53:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/mcc.c
+14CA text25 CODE >54:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/mcc.c
+14CD text25 CODE >55:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/mcc.c
+14D0 text25 CODE >56:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/mcc.c
+14D3 text25 CODE >57:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/mcc.c
+14D6 text25 CODE >58:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/mcc.c
+1638 text24 CODE >180:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1638 text24 CODE >182:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+163D text24 CODE >184:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1640 text24 CODE >185:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1644 text24 CODE >186:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1648 text24 CODE >187:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1649 text24 CODE >188:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+164A text24 CODE >189:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+164B text24 CODE >190:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+164D text24 CODE >191:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+164F text24 CODE >192:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1650 text24 CODE >194:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1650 text24 CODE >196:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1654 text24 CODE >198:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1655 text24 CODE >199:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1657 text24 CODE >199:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1659 text24 CODE >199:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+165B text24 CODE >200:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+9F1 text23 CODE >34:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+9F1 text23 CODE >35:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+9FD text23 CODE >36:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+A09 text23 CODE >37:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+A12 text23 CODE >38:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+A1B text23 CODE >39:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+A24 text23 CODE >40:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+A30 text23 CODE >41:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+A3C text23 CODE >42:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+A48 text23 CODE >43:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+A54 text23 CODE >44:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+A5D text23 CODE >45:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+A69 text23 CODE >46:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+A72 text23 CODE >47:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+A7E text23 CODE >48:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+147F text22 CODE >202:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+147F text22 CODE >204:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1483 text22 CODE >205:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1487 text22 CODE >206:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1488 text22 CODE >207:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+1489 text22 CODE >208:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+148A text22 CODE >209:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+148B text22 CODE >211:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+148D text22 CODE >212:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\mcc_generated_files/memory.c
+B2E text21 CODE >72:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+B30 text21 CODE >73:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+B3E text21 CODE >74:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+B4C text21 CODE >75:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+B5A text21 CODE >76:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+B68 text21 CODE >77:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+B76 text21 CODE >78:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+B84 text21 CODE >79:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+B92 text21 CODE >80:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+BA0 text21 CODE >81:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+BAE text21 CODE >82:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+BBC text21 CODE >83:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+BCA text21 CODE >84:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+BD8 text21 CODE >85:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+BE6 text21 CODE >86:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+1691 text20 CODE >7:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+1693 text20 CODE >9:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+1694 text20 CODE >10:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+1694 text20 CODE >11:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+1698 text20 CODE >12:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+1699 text20 CODE >14:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+1699 text20 CODE >15:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+169D text20 CODE >16:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+169E text20 CODE >18:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+169E text20 CODE >19:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+16A2 text20 CODE >20:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+16A3 text20 CODE >22:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+16A3 text20 CODE >23:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+16A7 text20 CODE >24:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+16A8 text20 CODE >26:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+16A8 text20 CODE >27:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+16AC text20 CODE >28:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+16AD text20 CODE >30:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+16B2 text20 CODE >30:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+16B7 text20 CODE >30:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+16BA text20 CODE >30:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+16BD text20 CODE >30:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+16C0 text20 CODE >30:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+16C3 text20 CODE >31:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+16C7 text20 CODE >32:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+887 text19 CODE >61:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+889 text19 CODE >64:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+892 text19 CODE >65:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+8A0 text19 CODE >66:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+8B0 text19 CODE >67:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+8C0 text19 CODE >68:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+8D0 text19 CODE >69:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+8E0 text19 CODE >70:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+EB0 text18 CODE >102:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+EB0 text18 CODE >105:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+EB0 text18 CODE >106:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+EBF text18 CODE >107:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+ED4 text18 CODE >109:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+EE7 text18 CODE >110:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+EFA text18 CODE >111:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+F0F text18 CODE >112:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+F22 text18 CODE >113:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+F38 text18 CODE >114:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+F4E text18 CODE >115:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+F54 text18 CODE >116:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+F59 text18 CODE >118:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+F68 text18 CODE >119:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+F7D text18 CODE >120:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+F90 text18 CODE >121:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+FA3 text18 CODE >122:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+FB8 text18 CODE >123:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+FCB text18 CODE >124:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+FE1 text18 CODE >125:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+FF7 text18 CODE >126:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+FFD text18 CODE >128:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+FFF text18 CODE >129:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+15B2 text17 CODE >15:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+15B2 text17 CODE >43:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+15B5 text17 CODE >45:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+15B9 text17 CODE >46:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+15BD text17 CODE >47:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+15C2 text17 CODE >48:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+15C7 text17 CODE >49:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+15CD text17 CODE >52:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+15D1 text17 CODE >53:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+14EE text16 CODE >5:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isdigit.c
+14EE text16 CODE >7:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isdigit.c
+14F8 text16 CODE >7:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isdigit.c
+14FA text16 CODE >7:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isdigit.c
+1506 text16 CODE >8:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isdigit.c
+15F3 text15 CODE >5:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isspace.c
+15F3 text15 CODE >7:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isspace.c
+1606 text15 CODE >7:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isspace.c
+1608 text15 CODE >7:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isspace.c
+1614 text15 CODE >8:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isspace.c
+A7F text14 CODE >4:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+A7F text14 CODE >6:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+A84 text14 CODE >7:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+A9D text14 CODE >7:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+AA3 text14 CODE >7:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+AA5 text14 CODE >7:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+AB8 text14 CODE >9:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+ABC text14 CODE >10:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+AC0 text14 CODE >11:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+ACA text14 CODE >11:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+ACF text14 CODE >11:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+AD2 text14 CODE >11:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+AD5 text14 CODE >14:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+AEC text14 CODE >14:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+AF5 text14 CODE >13:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+AFD text14 CODE >13:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+B03 text14 CODE >13:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+B05 text14 CODE >13:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+B17 text14 CODE >15:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+B22 text14 CODE >15:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+B2D text14 CODE >16:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+DAB text13 CODE >7:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DAB text13 CODE >15:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DAD text13 CODE >16:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DB7 text13 CODE >17:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DC1 text13 CODE >17:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DC4 text13 CODE >17:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DC7 text13 CODE >17:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DCA text13 CODE >17:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DCD text13 CODE >17:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DD0 text13 CODE >17:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DD3 text13 CODE >17:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DD6 text13 CODE >18:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DD9 text13 CODE >20:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DE4 text13 CODE >21:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DEE text13 CODE >21:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DF1 text13 CODE >21:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DF4 text13 CODE >21:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DF7 text13 CODE >21:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DFA text13 CODE >21:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DFD text13 CODE >21:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E00 text13 CODE >21:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E03 text13 CODE >22:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E08 text13 CODE >24:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E13 text13 CODE >25:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E1B text13 CODE >25:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E1F text13 CODE >26:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E21 text13 CODE >27:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E22 text13 CODE >28:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E2A text13 CODE >29:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E2E text13 CODE >27:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E32 text13 CODE >32:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E3A text13 CODE >33:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E3C text13 CODE >33:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E40 text13 CODE >33:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E44 text13 CODE >33:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E48 text13 CODE >33:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E4C text13 CODE >33:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E50 text13 CODE >33:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E54 text13 CODE >33:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E58 text13 CODE >33:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E5C text13 CODE >34:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E6C text13 CODE >35:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E6D text13 CODE >37:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E75 text13 CODE >38:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E7B text13 CODE >40:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E80 text13 CODE >41:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E89 text13 CODE >41:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E8C text13 CODE >41:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E8F text13 CODE >41:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E92 text13 CODE >41:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E95 text13 CODE >41:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E98 text13 CODE >41:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E9B text13 CODE >41:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E9E text13 CODE >42:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+EAF text13 CODE >43:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+CBE text12 CODE >7:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+CBE text12 CODE >14:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+CC0 text12 CODE >15:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+CCA text12 CODE >16:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+CD4 text12 CODE >16:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+CD7 text12 CODE >16:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+CDA text12 CODE >16:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+CDD text12 CODE >16:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+CE0 text12 CODE >16:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+CE3 text12 CODE >16:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+CE6 text12 CODE >16:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+CE9 text12 CODE >17:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+CEC text12 CODE >19:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+CF7 text12 CODE >20:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D01 text12 CODE >20:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D04 text12 CODE >20:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D07 text12 CODE >20:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D0A text12 CODE >20:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D0D text12 CODE >20:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D10 text12 CODE >20:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D13 text12 CODE >20:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D16 text12 CODE >21:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D1F text12 CODE >21:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D23 text12 CODE >22:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D25 text12 CODE >23:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D26 text12 CODE >24:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D2E text12 CODE >25:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D32 text12 CODE >23:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D36 text12 CODE >28:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D38 text12 CODE >28:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D3C text12 CODE >28:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D40 text12 CODE >28:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D44 text12 CODE >28:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D48 text12 CODE >28:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D4C text12 CODE >28:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D50 text12 CODE >28:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D54 text12 CODE >28:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D58 text12 CODE >29:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D68 text12 CODE >30:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D70 text12 CODE >31:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D76 text12 CODE >33:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D7B text12 CODE >34:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D84 text12 CODE >34:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D87 text12 CODE >34:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D8A text12 CODE >34:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D8D text12 CODE >34:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D90 text12 CODE >34:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D93 text12 CODE >34:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D96 text12 CODE >34:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+D99 text12 CODE >35:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+DAA text12 CODE >36:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+1559 text11 CODE >1:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+1559 text11 CODE >3:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+155F text11 CODE >3:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+1563 text11 CODE >3:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+156D text11 CODE >3:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+1574 text11 CODE >4:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+3 text10 CODE >7:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\putch.c
+3 text10 CODE >9:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\putch.c
+175C text9 CODE >8:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+175C text9 CODE >12:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+1767 text9 CODE >13:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+176B text9 CODE >14:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+176C text9 CODE >15:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+178B text9 CODE >15:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+178F text9 CODE >15:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+1793 text9 CODE >18:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+17A4 text9 CODE >20:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+17AA text9 CODE >20:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+17AC text9 CODE >24:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+804 text8 CODE >8:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+806 text8 CODE >13:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+808 text8 CODE >14:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+809 text8 CODE >15:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+817 text8 CODE >16:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+81C text8 CODE >14:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+82C text8 CODE >19:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+1522 text7 CODE >5:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+1524 text7 CODE >7:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+1528 text7 CODE >8:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+1529 text7 CODE >9:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+152D text7 CODE >8:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+1536 text7 CODE >11:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+153C text7 CODE >12:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+7AA text6 CODE >72:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7AC text6 CODE >77:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7B0 text6 CODE >78:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7B8 text6 CODE >82:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7C4 text6 CODE >83:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7C6 text6 CODE >84:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7C7 text6 CODE >85:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7D3 text6 CODE >86:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7D8 text6 CODE >84:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7DE text6 CODE >84:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7E2 text6 CODE >84:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7E6 text6 CODE >90:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7EA text6 CODE >91:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7F3 text6 CODE >94:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7FF text6 CODE >95:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+646 text5 CODE >287:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+648 text5 CODE >293:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+658 text5 CODE >294:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+66B text5 CODE >295:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+671 text5 CODE >296:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+67A text5 CODE >296:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+67D text5 CODE >296:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+680 text5 CODE >296:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+683 text5 CODE >296:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+686 text5 CODE >296:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+689 text5 CODE >296:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+68C text5 CODE >296:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+68F text5 CODE >297:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+68F text5 CODE >300:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+693 text5 CODE >301:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+697 text5 CODE >302:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+697 text5 CODE >303:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+69D text5 CODE >303:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6A1 text5 CODE >303:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6B0 text5 CODE >304:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6B8 text5 CODE >305:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6C2 text5 CODE >306:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6C6 text5 CODE >307:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6C6 text5 CODE >310:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6CA text5 CODE >311:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6CC text5 CODE >312:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6CD text5 CODE >313:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6D2 text5 CODE >314:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+701 text5 CODE >315:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+705 text5 CODE >316:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+709 text5 CODE >317:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+736 text5 CODE >312:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+736 text5 CODE >318:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+73C text5 CODE >312:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+740 text5 CODE >312:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+74D text5 CODE >312:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+756 text5 CODE >312:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+75A text5 CODE >312:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+764 text5 CODE >312:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+768 text5 CODE >312:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+770 text5 CODE >321:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+77B text5 CODE >322:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+77F text5 CODE >323:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+797 text5 CODE >327:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7A9 text5 CODE >328:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+31D text4 CODE >692:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+31F text4 CODE >702:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+330 text4 CODE >703:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+336 text4 CODE >703:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+338 text4 CODE >705:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+33D text4 CODE >706:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+341 text4 CODE >710:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+344 text4 CODE >711:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+345 text4 CODE >713:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+345 text4 CODE >714:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+346 text4 CODE >715:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+34C text4 CODE >715:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+34E text4 CODE >716:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+34F text4 CODE >717:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+34F text4 CODE >718:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+351 text4 CODE >721:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+351 text4 CODE >722:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+353 text4 CODE >725:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+353 text4 CODE >726:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+355 text4 CODE >729:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+355 text4 CODE >730:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+357 text4 CODE >734:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+35B text4 CODE >735:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+35C text4 CODE >736:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+36C text4 CODE >736:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+371 text4 CODE >736:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+374 text4 CODE >736:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+377 text4 CODE >736:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+37A text4 CODE >736:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+37D text4 CODE >736:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+380 text4 CODE >711:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+386 text4 CODE >738:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+38A text4 CODE >739:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+38E text4 CODE >745:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+39F text4 CODE >746:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3A5 text4 CODE >746:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3A7 text4 CODE >747:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3B4 text4 CODE >748:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3B8 text4 CODE >749:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3B9 text4 CODE >750:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3BC text4 CODE >750:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3BF text4 CODE >753:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3D1 text4 CODE >754:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3D2 text4 CODE >755:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3D8 text4 CODE >755:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3DA text4 CODE >754:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3EA text4 CODE >754:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3F0 text4 CODE >754:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3F2 text4 CODE >754:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+404 text4 CODE >847:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+427 text4 CODE >849:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+42D text4 CODE >849:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+42F text4 CODE >850:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+448 text4 CODE >852:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+462 text4 CODE >1372:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+473 text4 CODE >1373:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+479 text4 CODE >1373:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+47B text4 CODE >1374:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+486 text4 CODE >1375:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+48C text4 CODE >1379:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+492 text4 CODE >1379:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+494 text4 CODE >1380:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+497 text4 CODE >1384:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+4B0 text4 CODE >1385:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+4B7 text4 CODE >1385:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+4BA text4 CODE >1387:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+165C text3 CODE >1390:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+165E text3 CODE >1395:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1662 text3 CODE >1396:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1665 text3 CODE >1397:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1666 text3 CODE >1398:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+167E text3 CODE >1397:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1688 text3 CODE >1400:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1690 text3 CODE >1404:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1615 text2 CODE >9:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+1617 text2 CODE >15:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+161B text2 CODE >16:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+161F text2 CODE >17:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+1621 text2 CODE >18:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+1623 text2 CODE >19:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+162F text2 CODE >20:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+1637 text2 CODE >23:D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+170D text1 CODE >50:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+170F text1 CODE >53:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+1718 text1 CODE >54:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+1723 text1 CODE >55:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+1731 text1 CODE >56:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+173F text1 CODE >57:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+174D text1 CODE >58:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+175B text1 CODE >59:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\EPROMlib.c
+2D maintext CODE >139:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+2D maintext CODE >143:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+2D maintext CODE >144:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+32 maintext CODE >146:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+35 maintext CODE >152:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+36 maintext CODE >155:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+37 maintext CODE >165:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+39 maintext CODE >167:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+3C maintext CODE >172:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+3F maintext CODE >174:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+3F maintext CODE >175:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+3F maintext CODE >176:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+4D maintext CODE >178:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+4E maintext CODE >179:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+56 maintext CODE >180:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+57 maintext CODE >182:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+5A maintext CODE >184:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+7C maintext CODE >188:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+7E maintext CODE >189:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+7F maintext CODE >190:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+80 maintext CODE >192:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+84 maintext CODE >193:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+8C maintext CODE >194:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+99 maintext CODE >195:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+9A maintext CODE >196:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+9E maintext CODE >197:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+A3 maintext CODE >198:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+AC maintext CODE >200:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+B6 maintext CODE >201:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+BA maintext CODE >202:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+D8 maintext CODE >203:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+E0 maintext CODE >195:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+E5 maintext CODE >205:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+E9 maintext CODE >206:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+F1 maintext CODE >207:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+FE maintext CODE >209:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+FF maintext CODE >210:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+103 maintext CODE >211:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+108 maintext CODE >213:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+112 maintext CODE >214:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+116 maintext CODE >215:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+134 maintext CODE >216:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+13C maintext CODE >217:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+145 maintext CODE >209:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+14A maintext CODE >219:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+14E maintext CODE >220:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+156 maintext CODE >221:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+163 maintext CODE >223:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+164 maintext CODE >224:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+168 maintext CODE >225:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+16D maintext CODE >227:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+177 maintext CODE >228:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+17B maintext CODE >229:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+199 maintext CODE >230:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+1A1 maintext CODE >231:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+1AA maintext CODE >223:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+1AF maintext CODE >233:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+1B4 maintext CODE >234:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+1C4 maintext CODE >235:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+1D7 maintext CODE >236:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+1EA maintext CODE >237:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+1F2 maintext CODE >240:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+1F5 maintext CODE >241:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+217 maintext CODE >242:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+263 maintext CODE >243:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+272 maintext CODE >244:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+282 maintext CODE >245:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+292 maintext CODE >246:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+299 maintext CODE >247:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+29D maintext CODE >248:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+2A7 maintext CODE >249:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+2C5 maintext CODE >250:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+2CD maintext CODE >251:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+2D7 maintext CODE >252:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+2E1 maintext CODE >253:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+2E8 maintext CODE >255:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+2EC maintext CODE >256:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+2FC maintext CODE >257:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+306 maintext CODE >258:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+30D maintext CODE >259:D:\AULAS\5ºano 1 semestre\STR\labs\Nova pasta\TESTE.X\main.c
+1405 clrtext CODE >13874:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+1405 clrtext CODE >13875:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+1406 clrtext CODE >13876:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+1406 clrtext CODE >13877:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+1407 clrtext CODE >13878:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+1408 clrtext CODE >13879:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+1409 clrtext CODE >13880:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+140A clrtext CODE >13881:C:\Users\filip\AppData\Local\Temp\xcAs164c.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_I2C1_Initialize 286C 0 CODE 0 text31 dist/default/production\TESTE.X.production.o
+__Hspace_0 188E 0 ABS 0 - -
+__Hspace_1 163 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 10013 0 ABS 0 - -
+_parseEPROMReading 110E 0 CODE 0 text19 dist/default/production\TESTE.X.production.o
+storeEPROMBuild@operation 2B 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+timerInterrupt@value 75 0 COMMON 1 cstackCOMMON dist/default/production\TESTE.X.production.o
+_SSP1STATbits 18F 0 ABS 0 - dist/default/production\TESTE.X.production.o
+main@seconds D8 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__end_of_LCDcmd 2826 0 CODE 0 text38 dist/default/production\TESTE.X.production.o
+__end_of_LCDpos 2AB2 0 CODE 0 text37 dist/default/production\TESTE.X.production.o
+__end_of_LCDstr 2A44 0 CODE 0 text35 dist/default/production\TESTE.X.production.o
+_T1CONbits 20E 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_PMD_Initialize 2826 0 CODE 0 text28 dist/default/production\TESTE.X.production.o
+_S1 2880 0 CODE 0 text33 dist/default/production\TESTE.X.production.o
+?_abs 33 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+?_pad 30 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+i1DATAEE_ReadByte@bAdd 70 0 COMMON 1 cstackCOMMON dist/default/production\TESTE.X.production.o
+main@c D5 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+main@h E8 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+main@m E9 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+main@s EA 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+?_vfprintf A0 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+_LATA 16 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_LATB 17 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_LATC 18 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_LATD 19 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_LATE 1A 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_PMD0 796 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_PMD1 797 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_PMD2 798 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_PMD3 799 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_PMD4 79A 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_PMD5 79B 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_WPUA F39 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_WPUB F44 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_WPUC F4F 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_WPUD F5A 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_WPUE F65 0 ABS 0 - dist/default/production\TESTE.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\filip\AppData\Local\Temp\xcAs164c.o
+_atoi 14FE 0 CODE 0 text14 dist/default/production\TESTE.X.production.o
+_dbuf 13F 0 BANK2 1 bssBANK2 dist/default/production\TESTE.X.production.o
+_dtoa C8C 0 CODE 0 text5 dist/default/production\TESTE.X.production.o
+_main 5A 0 CODE 0 maintext dist/default/production\TESTE.X.production.o
+_nout 13D 0 BANK2 1 bssBANK2 dist/default/production\TESTE.X.production.o
+_prec 7A 0 COMMON 1 bssCOMMON dist/default/production\TESTE.X.production.o
+abs@a 33 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\TESTE.X.production.o
+pad@i 34 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+pad@p 31 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+pad@w 36 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+start 30 0 CODE 0 init C:\Users\filip\AppData\Local\Temp\xcAs164c.o
+___aomod@counter 31 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__size_of___aodiv 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__size_of___aomod 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+parseEPROMReading@luminosity 2A 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__size_of_atoi 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__size_of_dtoa 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__Hstringtext10 0 0 ABS 0 stringtext10 -
+LCDsend2x4@hc 26 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+LCDsend2x4@lc 27 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+pad@fp 38 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+?___wmul 20 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+storeEPROMBuild@temperature 29 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__size_of_LCDbusy 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__size_of_LCDchar 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__size_of_LCDinit 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__size_of_LCDrecv 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__size_of_LCDsend 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+?_ADCC_GetSingleConversion 70 0 COMMON 1 cstackCOMMON dist/default/production\TESTE.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+_I2C1_DO_IDLE 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_I2C1_DO_RCEN 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__end_ofi1_DATAEE_WriteByte 2B26 0 CODE 0 text52 dist/default/production\TESTE.X.production.o
+_I2C1_CallbackReturnReset 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__size_of_TMR1_Initialize 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__size_of_TMR1_WriteTimer 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__end_of_vfpfcnvrt 976 0 CODE 0 text4 dist/default/production\TESTE.X.production.o
+i1DATAEE_WriteByte@bData 72 0 COMMON 1 cstackCOMMON dist/default/production\TESTE.X.production.o
+__end_of_parseEPROMInitialization 17CE 0 CODE 0 text21 dist/default/production\TESTE.X.production.o
+__size_of_operADDR 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__size_of_vfpfcnvrt 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__size_of_storeEPROMBuild 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\filip\AppData\Local\Temp\xcAs164c.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\filip\AppData\Local\Temp\xcAs164c.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\filip\AppData\Local\Temp\xcAs164c.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\filip\AppData\Local\Temp\xcAs164c.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\filip\AppData\Local\Temp\xcAs164c.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\filip\AppData\Local\Temp\xcAs164c.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+wtemp0 7E 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+_wr2RegCompleteHandler 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__end_of_PMD_Initialize 2836 0 CODE 0 text28 dist/default/production\TESTE.X.production.o
+__size_of_TMR1_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+_vfpfcnvrt 63A 0 CODE 0 text4 dist/default/production\TESTE.X.production.o
+dtoa@fp 48 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__end_of_TMR1_DefaultInterruptHandler 6 0 CODE 0 text50 dist/default/production\TESTE.X.production.o
+___wmul@multiplicand 22 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+_ADACCH 91 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADACCL 90 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADCON0 93 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADCON1 94 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADCON2 95 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADCON3 96 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADERRH 117 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADERRL 116 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADLTHH 10F 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADLTHL 10E 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADRESH 8D 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADRESL 8C 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADSTAT 97 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADUTHH 111 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADUTHL 110 0 ABS 0 - dist/default/production\TESTE.X.production.o
+i1_DATAEE_WriteByte 2AEA 0 CODE 0 text52 dist/default/production\TESTE.X.production.o
+_rdBlkRegCompleteHandler 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ANSELA F38 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ANSELB F43 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ANSELC F4E 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ANSELD F59 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ANSELE F64 0 ABS 0 - dist/default/production\TESTE.X.production.o
+DATAEE_WriteByte@GIEBitValue 23 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__size_of_ADCC_GetSingleConversion 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__size_of_I2C1_Initialize 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__end_of_INTERRUPT_InterruptManager 30 0 CODE 0 intentry dist/default/production\TESTE.X.production.o
+__size_of_ReadI2C 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+readTC74@value 23 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__size_of_TMR1_SetInterruptHandler 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__end_of___wmul 2BA4 0 CODE 0 text17 dist/default/production\TESTE.X.production.o
+__end_of_initializeEPROM 14FE 0 CODE 0 text23 dist/default/production\TESTE.X.production.o
+LCDsend2x4@mode 22 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+ADCC_GetSingleConversion@channel 72 0 COMMON 1 cstackCOMMON dist/default/production\TESTE.X.production.o
+main@buf C4 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+_I2C1_DO_SEND_RESTART 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__size_of_sprintf 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_operADDR 2D22 0 CODE 0 text20 dist/default/production\TESTE.X.production.o
+_atoi$2982 2E 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+_atoi$2983 32 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+_atoi$2984 30 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__LnvBANK2 0 0 ABS 0 nvBANK2 -
+_I2C1_DO_SEND_RESTART_WRITE 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__end_of___aodiv 1D60 0 CODE 0 text13 dist/default/production\TESTE.X.production.o
+__end_of___aomod 1B56 0 CODE 0 text12 dist/default/production\TESTE.X.production.o
+__size_of_isdigit 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+main@minutes D7 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+__size_of_isspace 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__end_of_DATAEE_ReadByte 291C 0 CODE 0 text22 dist/default/production\TESTE.X.production.o
+___aodiv@quotient 33 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+_INLVLA F3C 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_INLVLB F47 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_INLVLC F52 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_INLVLD F5D 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_INLVLE F68 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__end_of_operADDR 2D90 0 CODE 0 text20 dist/default/production\TESTE.X.production.o
+?_strlen 20 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+___stackhi 23EF 0 ABS 0 - C:\Users\filip\AppData\Local\Temp\xcAs164c.o
+___stacklo 20E3 0 ABS 0 - C:\Users\filip\AppData\Local\Temp\xcAs164c.o
+__end_of_LCDbusy 2988 0 CODE 0 text42 dist/default/production\TESTE.X.production.o
+__end_of_LCDchar 2848 0 CODE 0 text36 dist/default/production\TESTE.X.production.o
+__end_of_LCDinit 12C8 0 CODE 0 text39 dist/default/production\TESTE.X.production.o
+__end_of_LCDrecv C8C 0 CODE 0 text43 dist/default/production\TESTE.X.production.o
+__end_of_LCDsend 3000 0 CODE 0 text41 dist/default/production\TESTE.X.production.o
+___aomod@dividend 28 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+_LCDcmd 2816 0 CODE 0 text38 dist/default/production\TESTE.X.production.o
+_LCDpos 2A7A 0 CODE 0 text37 dist/default/production\TESTE.X.production.o
+_LCDstr 2A0E 0 CODE 0 text35 dist/default/production\TESTE.X.production.o
+__size_of_fputc 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__size_of_fputs 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__size_of_putch 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_I2C1_DO_SEND_RESTART_READ 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_PIN_MANAGER_Initialize 2D90 0 CODE 0 text29 dist/default/production\TESTE.X.production.o
+__Lstringtext10 0 0 ABS 0 stringtext10 -
+___aomod@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+start_initialization 34 0 CODE 0 cinit dist/default/production\TESTE.X.production.o
+_ODCONA F3A 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ODCONB F45 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ODCONC F50 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ODCOND F5B 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ODCONE F66 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_OSCFRQ 893 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_TRISCbits 13 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_initializeEPROM 13E2 0 CODE 0 text23 dist/default/production\TESTE.X.production.o
+_I2C1_DO_SEND_ADR_WRITE 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADFLTRH 115 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADFLTRL 114 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADPREVH 8F 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADPREVL 8E 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADSTPTH 113 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADSTPTL 112 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_RC3PPS F23 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_RC4PPS F24 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_DATAEE_WriteByte 2C70 0 CODE 0 text24 dist/default/production\TESTE.X.production.o
+__end_of_S1 2896 0 CODE 0 text33 dist/default/production\TESTE.X.production.o
+__end_of_SYSTEM_Initialize 29AE 0 CODE 0 text25 dist/default/production\TESTE.X.production.o
+__size_ofi1_DATAEE_ReadByte 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+clear_ram0 280A 0 CODE 0 clrtext dist/default/production\TESTE.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+_T1GATE 210 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_T1GCON 20F 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__end_of_ADCC_GetSingleConversion 2962 0 CODE 0 text54 dist/default/production\TESTE.X.production.o
+_DATAEE_ReadByte 28FE 0 CODE 0 text22 dist/default/production\TESTE.X.production.o
+_LCDsend2x4 17CE 0 CODE 0 text40 dist/default/production\TESTE.X.production.o
+__end_of_TMR1_SetInterruptHandler 286C 0 CODE 0 text27 dist/default/production\TESTE.X.production.o
+_I2C1_Status 120 0 BANK2 1 bssBANK2 dist/default/production\TESTE.X.production.o
+fputc@fp 22 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+fputs@fp 28 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+LCDsend2x4@c 25 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__size_of_LCDcmd 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__size_of_LCDpos 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__size_of_LCDstr 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__end_of_ADCC_Initialize 29DC 0 CODE 0 text32 dist/default/production\TESTE.X.production.o
+__end_of_ReadI2C 2B64 0 CODE 0 text45 dist/default/production\TESTE.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\filip\AppData\Local\Temp\xcAs164c.o
+_rd2RegCompleteHandler 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+vfpfcnvrt@done 69 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 ABS 0 bank7 -
+__Hbank8 0 0 ABS 0 bank8 -
+__Hbank9 0 0 ABS 0 bank9 -
+__Hcinit 5A 0 CODE 0 cinit -
+__end_of_strlen 2A7A 0 CODE 0 text7 dist/default/production\TESTE.X.production.o
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hstack 0 0 STACK 2 stack -
+__size_of_OpenI2C 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_NVMADRH 81B 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_NVMADRL 81A 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_NVMCON2 81F 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_NVMDATH 81D 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_NVMDATL 81C 0 ABS 0 - dist/default/production\TESTE.X.production.o
+LCDcmd@c 28 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+parseEPROMReading@seconds 28 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+_timerInterrupt 12C8 0 CODE 0 text51 dist/default/production\TESTE.X.production.o
+__Hbank10 0 0 ABS 0 bank10 -
+__Hbank11 0 0 ABS 0 bank11 -
+__Hbank12 0 0 ABS 0 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbigram 0 0 ABS 0 bigram -
+LCDpos@c 29 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+LCDpos@l 2B 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+LCDpos@p 2C 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+LCDstr@c 2E 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+LCDstr@p 29 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__end_of_sprintf 2C70 0 CODE 0 text2 dist/default/production\TESTE.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10018 0 CONFIG 4 config -
+storeEPROMBuild@seconds 28 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Lbank8 0 0 ABS 0 bank8 -
+__Lbank9 0 0 ABS 0 bank9 -
+__end_of_isdigit 2A0E 0 CODE 0 text16 dist/default/production\TESTE.X.production.o
+__Lcinit 34 0 CODE 0 cinit -
+_T1GCONbits 20F 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__end_of_isspace 2C2A 0 CODE 0 text15 dist/default/production\TESTE.X.production.o
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+__size_of_S1 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_PORTAbits C 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_PORTBbits D 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_PORTCbits E 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_wr1RegCompleteHandler 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_INTCONbits B 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 30 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 30 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+__pstringtext1 3000 0 STRCODE 0 stringtext1 dist/default/production\TESTE.X.production.o
+__pstringtext2 3040 0 STRCODE 0 stringtext2 dist/default/production\TESTE.X.production.o
+__pstringtext3 306A 0 STRCODE 0 stringtext3 dist/default/production\TESTE.X.production.o
+__pstringtext4 3092 0 STRCODE 0 stringtext4 dist/default/production\TESTE.X.production.o
+__pstringtext5 30B0 0 STRCODE 0 stringtext5 dist/default/production\TESTE.X.production.o
+__pstringtext6 30CE 0 STRCODE 0 stringtext6 dist/default/production\TESTE.X.production.o
+__pstringtext7 30EC 0 STRCODE 0 stringtext7 dist/default/production\TESTE.X.production.o
+__pstringtext8 3106 0 STRCODE 0 stringtext8 dist/default/production\TESTE.X.production.o
+__pstringtext9 3114 0 STRCODE 0 stringtext9 dist/default/production\TESTE.X.production.o
+__pnvBANK2 15F 0 BANK2 1 nvBANK2 dist/default/production\TESTE.X.production.o
+___aodiv@counter 31 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+_SSP1CON1 190 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_SSP1CON2 191 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_SSP1STAT 18F 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__pstringtext10 0 0 STRCODE 0 stringtext10 dist/default/production\TESTE.X.production.o
+___wmul 2B64 0 CODE 0 text17 dist/default/production\TESTE.X.production.o
+___aomod@sign 32 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+int$flags 7E 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+isspace@c 20 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__size_of_INTERRUPT_InterruptManager 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__S0 188E 0 ABS 0 - -
+__S1 163 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_abs 2AB2 0 CODE 0 text11 dist/default/production\TESTE.X.production.o
+_pad F54 0 CODE 0 text6 dist/default/production\TESTE.X.production.o
+__size_of_TMR1_ISR 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+storeEPROMBuild@dataAddr 2E 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+?_operADDR 20 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+_ADCC_Initialize 29AE 0 CODE 0 text32 dist/default/production\TESTE.X.production.o
+__end_of_LCDsend2x4 197C 0 CODE 0 text40 dist/default/production\TESTE.X.production.o
+_I2C1_CallbackReturnStop 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__size_of_initializeEPROM 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__end_of_DATAEE_WriteByte 2CB8 0 CODE 0 text24 dist/default/production\TESTE.X.production.o
+___aodiv@sign 32 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+sprintf@fmt A6 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+_I2C1_DO_RESET 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__end_of_timerInterrupt 13E2 0 CODE 0 text51 dist/default/production\TESTE.X.production.o
+_TMR1_CallBack 28AE 0 CODE 0 text49 dist/default/production\TESTE.X.production.o
+_SYSTEM_Initialize 2988 0 CODE 0 text25 dist/default/production\TESTE.X.production.o
+_dtoa$2947 46 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+_vfpfcnvrt$2962 6B 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+operADDR@operation 24 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__size_of_readTC74 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__end_of_abs 2AEA 0 CODE 0 text11 dist/default/production\TESTE.X.production.o
+__end_of_pad 1000 0 CODE 0 text6 dist/default/production\TESTE.X.production.o
+parseEPROMReading@operation 2B 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__size_of_DATAEE_WriteByte 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__size_ofi1_DATAEE_WriteByte 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__HnvBANK2 0 0 ABS 0 nvBANK2 -
+__Lintentry 8 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\filip\AppData\Local\Temp\xcAs164c.o
+strlen@a 23 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+strlen@s 24 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__size_of_DATAEE_ReadByte 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__size_of___wmul 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__LbssBANK2 0 0 ABS 0 bssBANK2 -
+__end_ofi1_DATAEE_ReadByte 28AE 0 CODE 0 text53 dist/default/production\TESTE.X.production.o
+__Lstringtext1 0 0 ABS 0 stringtext1 -
+__Lstringtext2 0 0 ABS 0 stringtext2 -
+__Lstringtext3 0 0 ABS 0 stringtext3 -
+__Lstringtext4 0 0 ABS 0 stringtext4 -
+__Lstringtext5 0 0 ABS 0 stringtext5 -
+__Lstringtext6 0 0 ABS 0 stringtext6 -
+__Lstringtext7 0 0 ABS 0 stringtext7 -
+__Lstringtext8 0 0 ABS 0 stringtext8 -
+__Lstringtext9 0 0 ABS 0 stringtext9 -
+vfpfcnvrt@fmt 59 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+_INTERRUPT_InterruptManager 8 0 CODE 0 intentry dist/default/production\TESTE.X.production.o
+__size_of_PMD_Initialize 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_PIE3bits 719 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_PIE4bits 71A 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__end_of_OpenI2C 28E2 0 CODE 0 text34 dist/default/production\TESTE.X.production.o
+__size_of_parseEPROMReading 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+pad@buf 30 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__size_of_WriteI2C 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_TMR1_ISR 28E2 0 CODE 0 text47 dist/default/production\TESTE.X.production.o
+__ptext10 6 0 CODE 0 text10 dist/default/production\TESTE.X.production.o
+__ptext11 2AB2 0 CODE 0 text11 dist/default/production\TESTE.X.production.o
+__ptext12 197C 0 CODE 0 text12 dist/default/production\TESTE.X.production.o
+__ptext13 1B56 0 CODE 0 text13 dist/default/production\TESTE.X.production.o
+__ptext14 14FE 0 CODE 0 text14 dist/default/production\TESTE.X.production.o
+__ptext15 2BE6 0 CODE 0 text15 dist/default/production\TESTE.X.production.o
+__ptext16 29DC 0 CODE 0 text16 dist/default/production\TESTE.X.production.o
+__ptext17 2B64 0 CODE 0 text17 dist/default/production\TESTE.X.production.o
+__ptext18 1D60 0 CODE 0 text18 dist/default/production\TESTE.X.production.o
+__ptext19 110E 0 CODE 0 text19 dist/default/production\TESTE.X.production.o
+__ptext20 2D22 0 CODE 0 text20 dist/default/production\TESTE.X.production.o
+__ptext21 165C 0 CODE 0 text21 dist/default/production\TESTE.X.production.o
+__ptext22 28FE 0 CODE 0 text22 dist/default/production\TESTE.X.production.o
+__ptext23 13E2 0 CODE 0 text23 dist/default/production\TESTE.X.production.o
+__ptext24 2C70 0 CODE 0 text24 dist/default/production\TESTE.X.production.o
+__ptext25 2988 0 CODE 0 text25 dist/default/production\TESTE.X.production.o
+__ptext26 2BA4 0 CODE 0 text26 dist/default/production\TESTE.X.production.o
+__ptext27 285A 0 CODE 0 text27 dist/default/production\TESTE.X.production.o
+__ptext28 2826 0 CODE 0 text28 dist/default/production\TESTE.X.production.o
+__ptext29 2D90 0 CODE 0 text29 dist/default/production\TESTE.X.production.o
+__ptext30 2848 0 CODE 0 text30 dist/default/production\TESTE.X.production.o
+__ptext31 286C 0 CODE 0 text31 dist/default/production\TESTE.X.production.o
+__ptext32 29AE 0 CODE 0 text32 dist/default/production\TESTE.X.production.o
+__ptext33 2880 0 CODE 0 text33 dist/default/production\TESTE.X.production.o
+__ptext34 28C8 0 CODE 0 text34 dist/default/production\TESTE.X.production.o
+__ptext35 2A0E 0 CODE 0 text35 dist/default/production\TESTE.X.production.o
+__ptext36 2836 0 CODE 0 text36 dist/default/production\TESTE.X.production.o
+__ptext37 2A7A 0 CODE 0 text37 dist/default/production\TESTE.X.production.o
+__ptext38 2816 0 CODE 0 text38 dist/default/production\TESTE.X.production.o
+__ptext39 11C2 0 CODE 0 text39 dist/default/production\TESTE.X.production.o
+__ptext40 17CE 0 CODE 0 text40 dist/default/production\TESTE.X.production.o
+__ptext41 2F5A 0 CODE 0 text41 dist/default/production\TESTE.X.production.o
+__ptext42 2962 0 CODE 0 text42 dist/default/production\TESTE.X.production.o
+__ptext43 976 0 CODE 0 text43 dist/default/production\TESTE.X.production.o
+__ptext44 105A 0 CODE 0 text44 dist/default/production\TESTE.X.production.o
+__ptext45 2B26 0 CODE 0 text45 dist/default/production\TESTE.X.production.o
+__ptext47 28E2 0 CODE 0 text47 dist/default/production\TESTE.X.production.o
+__ptext48 291C 0 CODE 0 text48 dist/default/production\TESTE.X.production.o
+__ptext49 28AE 0 CODE 0 text49 dist/default/production\TESTE.X.production.o
+__ptext50 4 0 CODE 0 text50 dist/default/production\TESTE.X.production.o
+__ptext51 12C8 0 CODE 0 text51 dist/default/production\TESTE.X.production.o
+__ptext52 2AEA 0 CODE 0 text52 dist/default/production\TESTE.X.production.o
+__ptext53 2896 0 CODE 0 text53 dist/default/production\TESTE.X.production.o
+__ptext54 293E 0 CODE 0 text54 dist/default/production\TESTE.X.production.o
+_I2C1_DO_RX_ACK 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__end_of_PIN_MANAGER_Initialize 2E1A 0 CODE 0 text29 dist/default/production\TESTE.X.production.o
+___aodiv 1B56 0 CODE 0 text13 dist/default/production\TESTE.X.production.o
+___aomod 197C 0 CODE 0 text12 dist/default/production\TESTE.X.production.o
+parseEPROMInitialization@ALAF 2A 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+parseEPROMInitialization@ALAL 29 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+parseEPROMInitialization@ALAT 28 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+parseEPROMInitialization@CLKH 2B 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+parseEPROMInitialization@CLKM 2C 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+parseEPROMInitialization@NREG 22 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+parseEPROMInitialization@PMON 26 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+parseEPROMInitialization@TALA 27 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__Lbank10 0 0 ABS 0 bank10 -
+__Lbank11 0 0 ABS 0 bank11 -
+__Lbank12 0 0 ABS 0 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__pmaintext 5A 0 CODE 0 maintext dist/default/production\TESTE.X.production.o
+__Lbigram 0 0 ABS 0 bigram -
+_I2C1_DO_RX_NACK_STOP 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+?_atoi 26 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+?_dtoa 3B 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__end_of_TMR1_ISR 28FE 0 CODE 0 text47 dist/default/production\TESTE.X.production.o
+_LCDbusy 2962 0 CODE 0 text42 dist/default/production\TESTE.X.production.o
+_LCDchar 2836 0 CODE 0 text36 dist/default/production\TESTE.X.production.o
+_LCDinit 11C2 0 CODE 0 text39 dist/default/production\TESTE.X.production.o
+_LCDrecv 976 0 CODE 0 text43 dist/default/production\TESTE.X.production.o
+_LCDsend 2F5A 0 CODE 0 text41 dist/default/production\TESTE.X.production.o
+___wmul@multiplier 20 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+_LATAbits 16 0 ABS 0 - dist/default/production\TESTE.X.production.o
+main@luminosity DA 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+parseEPROMReading@minutes 27 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+main@ALAF E4 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+main@ALAL E3 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+main@ALAT E2 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+main@CLKH E5 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+main@CLKM E6 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+main@NREG DC 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+main@PMON E0 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+main@TALA E1 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+main@hours D6 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+_strlen 2A44 0 CODE 0 text7 dist/default/production\TESTE.X.production.o
+_readTC74 1D60 0 CODE 0 text18 dist/default/production\TESTE.X.production.o
+WriteI2C@data_out 21 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+i1DATAEE_WriteByte@bAdd 70 0 COMMON 1 cstackCOMMON dist/default/production\TESTE.X.production.o
+storeEPROMBuild@minutes 27 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__size_of_vfprintf 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+parseEPROMInitialization@magic_word 2F 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+storeEPROMBuild@luminosity 2A 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+_SSP1CLKPPS EC5 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_OSCCON1 88D 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_OSCCON3 88F 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_OSCTUNE 892 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_SSP1DATPPS EC6 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADCON0bits 93 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADCON1bits 94 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADCON2bits 95 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADCON3bits 96 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__end_of_readTC74 2000 0 CODE 0 text18 dist/default/production\TESTE.X.production.o
+timerInterrupt@h 77 0 COMMON 1 cstackCOMMON dist/default/production\TESTE.X.production.o
+timerInterrupt@m 78 0 COMMON 1 cstackCOMMON dist/default/production\TESTE.X.production.o
+timerInterrupt@s 79 0 COMMON 1 cstackCOMMON dist/default/production\TESTE.X.production.o
+main@readRingBufferAddr C2 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+_I2C1_DO_RX_NACK_RESTART 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+?_vfpfcnvrt 59 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__size_of_ADCC_Initialize 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+main@NR DD 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+main@RI DF 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+main@WI DE 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+__pbssCOMMON 7A 0 COMMON 1 bssCOMMON dist/default/production\TESTE.X.production.o
+_parseEPROMInitialization 165C 0 CODE 0 text21 dist/default/production\TESTE.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+_I2C1_DO_SEND_STOP 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_rd1RegCompleteHandler 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_PIR3bits 70F 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_PIR4bits 710 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__Lend_init 30 0 CODE 0 end_init -
+parseEPROMReading@hours 2D 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+___aodiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+___aodiv@dividend 28 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 52 0 CODE 0 cinit dist/default/production\TESTE.X.production.o
+_WriteI2C 105A 0 CODE 0 text44 dist/default/production\TESTE.X.production.o
+__size_of_TMR1_CallBack 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__Hintentry 30 0 CODE 0 intentry -
+fputc@c 20 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+fputs@c 2C 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+fputs@i 2D 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+fputs@s 2F 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+LCDchar@c 28 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+?___aodiv 20 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+?___aomod 20 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+vfprintf@fmt A0 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec -
+TMR1_SetInterruptHandler@InterruptHandler 20 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__HbssBANK2 0 0 ABS 0 bssBANK2 -
+__end_of_WriteI2C 110E 0 CODE 0 text44 dist/default/production\TESTE.X.production.o
+_ReadI2C 2B26 0 CODE 0 text45 dist/default/production\TESTE.X.production.o
+_I2C1_DO_RX 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_I2C1_DO_TX 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__size_of_strlen 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+i1_DATAEE_ReadByte 2896 0 CODE 0 text53 dist/default/production\TESTE.X.production.o
+?_LCDbusy 27 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+vfpfcnvrt@ap 5A 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+vfpfcnvrt@fp 6D 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+vfpfcnvrt@ll 61 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__ptext1 2E1A 0 CODE 0 text1 dist/default/production\TESTE.X.production.o
+__ptext2 2C2A 0 CODE 0 text2 dist/default/production\TESTE.X.production.o
+__ptext3 2CB8 0 CODE 0 text3 dist/default/production\TESTE.X.production.o
+__ptext4 63A 0 CODE 0 text4 dist/default/production\TESTE.X.production.o
+__ptext5 C8C 0 CODE 0 text5 dist/default/production\TESTE.X.production.o
+__ptext6 F54 0 CODE 0 text6 dist/default/production\TESTE.X.production.o
+__ptext7 2A44 0 CODE 0 text7 dist/default/production\TESTE.X.production.o
+__ptext8 1008 0 CODE 0 text8 dist/default/production\TESTE.X.production.o
+__ptext9 2EB8 0 CODE 0 text9 dist/default/production\TESTE.X.production.o
+vfprintf@ap A2 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+vfprintf@fp A3 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+vfprintf@cfmt A4 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+DATAEE_WriteByte@bAdd 20 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+parseEPROMInitialization@checksum 2D 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+_sprintf 2C2A 0 CODE 0 text2 dist/default/production\TESTE.X.production.o
+_vfprintf 2CB8 0 CODE 0 text3 dist/default/production\TESTE.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+LCDrecv@mode 26 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+storeEPROMBuild@hours 2D 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+sprintf@ap AF 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+TMR1_WriteTimer@timerVal 70 0 COMMON 1 cstackCOMMON dist/default/production\TESTE.X.production.o
+_isdigit 29DC 0 CODE 0 text16 dist/default/production\TESTE.X.production.o
+__end_of_TMR1_Initialize 2BE6 0 CODE 0 text26 dist/default/production\TESTE.X.production.o
+__end_of_TMR1_WriteTimer 293E 0 CODE 0 text48 dist/default/production\TESTE.X.production.o
+_isspace 2BE6 0 CODE 0 text15 dist/default/production\TESTE.X.production.o
+__end_of_TMR1_CallBack 28C8 0 CODE 0 text49 dist/default/production\TESTE.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+operADDR@dataAddr 25 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__Hstringtext1 0 0 ABS 0 stringtext1 -
+__Hstringtext2 0 0 ABS 0 stringtext2 -
+__Hstringtext3 0 0 ABS 0 stringtext3 -
+__Hstringtext4 0 0 ABS 0 stringtext4 -
+__Hstringtext5 0 0 ABS 0 stringtext5 -
+__Hstringtext6 0 0 ABS 0 stringtext6 -
+__Hstringtext7 0 0 ABS 0 stringtext7 -
+__Hstringtext8 0 0 ABS 0 stringtext8 -
+__Hstringtext9 0 0 ABS 0 stringtext9 -
+__end_of_storeEPROMBuild 2EB8 0 CODE 0 text1 dist/default/production\TESTE.X.production.o
+__end_of_vfprintf 2D22 0 CODE 0 text3 dist/default/production\TESTE.X.production.o
+__size_of_LCDsend2x4 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__end_of_parseEPROMReading 11C2 0 CODE 0 text19 dist/default/production\TESTE.X.production.o
+_SLRCONA F3B 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_SLRCONB F46 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_SLRCONC F51 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_SLRCOND F5C 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_SLRCONE F67 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__end_of__initialization 52 0 CODE 0 cinit dist/default/production\TESTE.X.production.o
+DATAEE_ReadByte@bAdd 20 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+i1DATAEE_WriteByte@GIEBitValue 73 0 COMMON 1 cstackCOMMON dist/default/production\TESTE.X.production.o
+parseEPROMReading@dataAddr 2E 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+_ADSTATbits 97 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_NVMCON1bits 81E 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+_SSP1CON1bits 190 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_SSP1CON2bits 191 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_isspace$3000 24 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+_timer1ReloadVal 161 0 BANK2 1 nvBANK2 dist/default/production\TESTE.X.production.o
+main@dataAddr EB 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+_TMR1_DefaultInterruptHandler 4 0 CODE 0 text50 dist/default/production\TESTE.X.production.o
+main@temperature D9 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+__end_of_i2c1_fsmStateTable 3040 0 STRCODE 0 stringtext1 dist/default/production\TESTE.X.production.o
+LCDrecv@hc 24 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+LCDrecv@lc 25 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\TESTE.X.production.o
+DATAEE_WriteByte@bData 22 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+LCDsend@c 23 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+_I2C1_DO_SEND_ADR_READ 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__end_of_I2C1_Initialize 2880 0 CODE 0 text31 dist/default/production\TESTE.X.production.o
+_SSP1ADD 18D 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_SSP1BUF 18C 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__Hend_init 34 0 CODE 0 end_init -
+sprintf@f B1 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+sprintf@s B0 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+__end_of_atoi 165C 0 CODE 0 text14 dist/default/production\TESTE.X.production.o
+__end_of_dtoa F54 0 CODE 0 text5 dist/default/production\TESTE.X.production.o
+__end_of_main 63A 0 CODE 0 maintext dist/default/production\TESTE.X.production.o
+isdigit@c 20 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+main@checksum E7 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+_ADACQ 9D 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADACT 99 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADCAP 9B 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADCLK 98 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADCNT 10C 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADPCH 9E 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADPRE 9C 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADREF 9A 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_ADRPT 10D 0 ABS 0 - dist/default/production\TESTE.X.production.o
+main@magic_word DB 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+__end_of_fputc 2F5A 0 CODE 0 text9 dist/default/production\TESTE.X.production.o
+__end_of_fputs 105A 0 CODE 0 text8 dist/default/production\TESTE.X.production.o
+?_sprintf A6 0 BANK1 1 cstackBANK1 dist/default/production\TESTE.X.production.o
+_OSCEN 891 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_T1CLK 211 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_T1CON 20E 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_TMR1H 20D 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_TMR1L 20C 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_TRISA 11 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_TRISB 12 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_TRISC 13 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_TRISD 14 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_TRISE 15 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__end_of_putch 8 0 CODE 0 text10 dist/default/production\TESTE.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+atoi@neg 2C 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+_TMR1_Initialize 2BA4 0 CODE 0 text26 dist/default/production\TESTE.X.production.o
+_TMR1_WriteTimer 291C 0 CODE 0 text48 dist/default/production\TESTE.X.production.o
+_I2C1_DO_ADDRESS_NACK 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+_flags 7C 0 COMMON 1 bssCOMMON dist/default/production\TESTE.X.production.o
+_fputc 2EB8 0 CODE 0 text9 dist/default/production\TESTE.X.production.o
+_fputs 1008 0 CODE 0 text8 dist/default/production\TESTE.X.production.o
+_putch 6 0 CODE 0 text10 dist/default/production\TESTE.X.production.o
+_width ED 0 BANK1 1 bssBANK1 dist/default/production\TESTE.X.production.o
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+?_isdigit 20 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\TESTE.X.production.o
+?_isspace 20 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+_storeEPROMBuild 2E1A 0 CODE 0 text1 dist/default/production\TESTE.X.production.o
+__size_of_abs 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__size_of_pad 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__size_of_parseEPROMInitialization 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__end_of_OSCILLATOR_Initialize 285A 0 CODE 0 text30 dist/default/production\TESTE.X.production.o
+atoi@n 33 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+atoi@s 26 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+__initialization 34 0 CODE 0 cinit dist/default/production\TESTE.X.production.o
+_ADCC_GetSingleConversion 293E 0 CODE 0 text54 dist/default/production\TESTE.X.production.o
+__pbssBANK1 ED 0 BANK1 1 bssBANK1 dist/default/production\TESTE.X.production.o
+__pbssBANK2 120 0 BANK2 1 bssBANK2 dist/default/production\TESTE.X.production.o
+_i2c1_fsmStateTable 3000 0 STRCODE 0 stringtext1 dist/default/production\TESTE.X.production.o
+_OpenI2C 28C8 0 CODE 0 text34 dist/default/production\TESTE.X.production.o
+_I2C1_DO_TX_EMPTY 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+__size_of_timerInterrupt 0 0 ABS 0 - dist/default/production\TESTE.X.production.o
+___wmul@product 24 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+dtoa@d 3B 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+dtoa@i 57 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+dtoa@n 4F 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+dtoa@p 49 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+dtoa@s 4D 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+dtoa@w 4B 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+_TMR1_SetInterruptHandler 285A 0 CODE 0 text27 dist/default/production\TESTE.X.production.o
+parseEPROMInitialization@NR 23 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+parseEPROMInitialization@RI 25 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+parseEPROMInitialization@WI 24 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+parseEPROMReading@temperature 29 0 BANK0 1 cstackBANK0 dist/default/production\TESTE.X.production.o
+_TMR1_InterruptHandler 15F 0 BANK2 1 nvBANK2 dist/default/production\TESTE.X.production.o
+_OSCILLATOR_Initialize 2848 0 CODE 0 text30 dist/default/production\TESTE.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text1 0 170D 2E1A 4F 2
+text2 0 1615 2C2A 23 2
+text3 0 165C 2CB8 35 2
+text7 0 1522 2A44 1B 2
+text8 0 804 1008 29 2
+text9 0 175C 2EB8 51 2
+text10 0 3 6 1 2
+text11 0 1559 2AB2 1C 2
+text12 0 CBE 197C ED 2
+text13 0 DAB 1B56 105 2
+text14 0 A7F 14FE AF 2
+text15 0 15F3 2BE6 22 2
+text16 0 14EE 29DC 19 2
+text17 0 15B2 2B64 20 2
+text18 0 EB0 1D60 150 2
+text19 0 887 110E 5A 2
+text20 0 1691 2D22 37 2
+text21 0 B2E 165C B9 2
+text22 0 147F 28FE F 2
+text23 0 9F1 13E2 8E 2
+text24 0 1638 2C70 24 2
+text25 0 14C4 2988 13 2
+text26 0 15D2 2BA4 21 2
+text27 0 142D 285A 9 2
+text28 0 1413 2826 8 2
+text29 0 16C8 2D90 45 2
+text30 0 1424 2848 9 2
+text31 0 1436 286C A 2
+text32 0 14D7 29AE 17 2
+text33 0 1440 2880 B 2
+text34 0 1464 28C8 D 2
+text35 0 1507 2A0E 1B 2
+text36 0 141B 2836 9 2
+text37 0 153D 2A7A 1C 2
+text38 0 140B 2816 8 2
+text39 0 8E1 11C2 83 2
+text40 0 BE7 17CE D7 2
+text41 0 17AD 2F5A 53 2
+text42 0 14B1 2962 13 2
+text44 0 82D 105A 5A 2
+text45 0 1593 2B26 1F 2
+text47 0 1471 28E2 E 2
+text48 0 148E 291C 11 2
+text49 0 1457 28AE D 2
+text51 0 964 12C8 8D 2
+text52 0 1575 2AEA 1E 2
+text53 0 144B 2896 C 2
+text54 0 149F 293E 12 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 50 1
+cstackBANK1 1 A0 A0 4F 1
+stringtext1 0 1800 3000 8E 2
+intentry 0 4 8 7FC 2
+reset_vec 0 0 0 3 2
+bssBANK2 1 120 120 43 1
+clrtext 0 1405 280A 6 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
+>>>>>>> Stashed changes
