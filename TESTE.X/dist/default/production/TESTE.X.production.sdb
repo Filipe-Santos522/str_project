@@ -1456,7 +1456,7 @@ channel_FVR_buf1 63
 [d edition pro ]
 [d chip 16F18875 ]
 [d frameptr 6 ]
-"67 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\mcc_generated_files/examples/i2c1_master_example.c
+"67 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/examples/i2c1_master_example.c
 [e E355 . `uc
 I2C1_NOERR 0
 I2C1_BUSY 1
@@ -1470,7 +1470,7 @@ I2C1_RESTART_WRITE 3
 I2C1_CONTINUE 4
 I2C1_RESET_LINK 5
 ]
-"108 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\mcc_generated_files/adcc.c
+"108 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/adcc.c
 [e E12206 . `uc
 channel_ANA0 0
 channel_VSS 60
@@ -1478,7 +1478,7 @@ channel_Temp 61
 channel_DAC1 62
 channel_FVR_buf1 63
 ]
-"146 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\mcc_generated_files/i2c1_master.c
+"146 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/i2c1_master.c
 [e E12595 . `uc
 I2C1_IDLE 0
 I2C1_SEND_ADR_READ 1
@@ -1519,7 +1519,7 @@ I2C1_DATA_NACK 3
 I2C1_TIMEOUT 4
 I2C1_NULL 5
 ]
-"73 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\main.c
+"167 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\main.c
 [e E12611 . `uc
 channel_ANA0 0
 channel_VSS 60
@@ -1527,51 +1527,97 @@ channel_Temp 61
 channel_DAC1 62
 channel_FVR_buf1 63
 ]
-"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+"1 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"7 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+"7 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+"4 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+"72 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+[v _pad pad `(i  1 s 2 pad ]
+"259
+[v _ctoa ctoa `(i  1 s 2 ctoa ]
+"287
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+"692
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+"1390
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"5 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isdigit.c
+[v _isdigit isdigit `(i  1 e 2 0 ]
+"5 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isspace.c
+[v _isspace isspace `(i  1 e 2 0 ]
+"8 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"9 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"7 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+"10 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
-"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
+"5 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"15 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\pic\__eeprom.c
+"6 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\pic\__eeprom.c
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"7 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\EPROMlib.c
+"7 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\EPROMlib.c
 [v _operADDR operADDR `(us  1 e 2 0 ]
 "34
 [v _initializeEPROM initializeEPROM `(v  1 e 1 0 ]
 "50
 [v _storeEPROMBuild storeEPROMBuild `(v  1 e 1 0 ]
-"61
-[v _parseEPROMReading parseEPROMReading `(v  1 e 1 0 ]
 "71
-[v _parseEPROMInitialization parseEPROMInitialization `(v  1 e 1 0 ]
-"26 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\I2C/i2c.c
+[v _parseEPROMInitialization parseEPROMInitialization `(uc  1 e 1 0 ]
+"26 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\I2C/i2c.c
 [v _OpenI2C OpenI2C `(v  1 e 1 0 ]
 "44
 [v _ReadI2C ReadI2C `(uc  1 e 1 0 ]
 "59
 [v _WriteI2C WriteI2C `(c  1 e 1 0 ]
-"17 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\LCD/lcd.c
+[v i1_WriteI2C WriteI2C `(c  1 e 1 0 ]
+"17 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\LCD/lcd.c
 [v _LCDsend LCDsend `(v  1 e 1 0 ]
 "25
 [v _LCDrecv LCDrecv `(uc  1 e 1 0 ]
 "56
 [v _LCDsend2x4 LCDsend2x4 `(v  1 e 1 0 ]
+[v i1_LCDsend2x4 LCDsend2x4 `(v  1 e 1 0 ]
+"79
+[v _LCDinit LCDinit `(v  1 e 1 0 ]
 "102
 [v _LCDcmd LCDcmd `(v  1 e 1 0 ]
 "107
 [v _LCDchar LCDchar `(v  1 e 1 0 ]
-"61 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\main.c
-[v _S1 S1 `(v  1 e 1 0 ]
-"67
+"112
+[v _LCDstr LCDstr `(v  1 e 1 0 ]
+"119
+[v _LCDbusy LCDbusy `(i  1 e 2 0 ]
+"80 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\main.c
+[v _readTC74 readTC74 `(uc  1 e 1 0 ]
+"109
+[v _writeRingBuffer writeRingBuffer `(v  1 e 1 0 ]
+"136
+[v _printLCD printLCD `(v  1 e 1 0 ]
+"150
 [v _timerInterrupt timerInterrupt `(v  1 e 1 0 ]
-"118
+"245
+[v _initializeREG initializeREG `(v  1 e 1 0 ]
+"259
 [v _main main `(v  1 e 1 0 ]
-"63 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\mcc_generated_files/adcc.c
+"63 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/adcc.c
 [v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
 "132
 [v _ADCC_GetSingleConversion ADCC_GetSingleConversion `(us  1 e 2 0 ]
-"142 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\mcc_generated_files/examples/i2c1_master_example.c
+"142 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/examples/i2c1_master_example.c
 [v _rd1RegCompleteHandler rd1RegCompleteHandler `(E360  1 s 1 rd1RegCompleteHandler ]
 "149
 [v _rd2RegCompleteHandler rd2RegCompleteHandler `(E360  1 s 1 rd2RegCompleteHandler ]
@@ -1581,7 +1627,7 @@ channel_FVR_buf1 63
 [v _wr2RegCompleteHandler wr2RegCompleteHandler `(E360  1 s 1 wr2RegCompleteHandler ]
 "170
 [v _rdBlkRegCompleteHandler rdBlkRegCompleteHandler `(E360  1 s 1 rdBlkRegCompleteHandler ]
-"167 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\mcc_generated_files/i2c1_master.c
+"167 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/i2c1_master.c
 [v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
 "176
 [v _I2C1_Open I2C1_Open `(E355  1 e 1 0 ]
@@ -1677,15 +1723,15 @@ channel_FVR_buf1 63
 [v _I2C1_MasterSetIrq I2C1_MasterSetIrq `T(v  1 s 1 I2C1_MasterSetIrq ]
 "650
 [v _I2C1_MasterWaitForEvent I2C1_MasterWaitForEvent `T(v  1 s 1 I2C1_MasterWaitForEvent ]
-"52 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\mcc_generated_files/interrupt_manager.c
+"52 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
-"50 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\mcc_generated_files/mcc.c
+"50 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "60
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 "74
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
-"58 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\mcc_generated_files/memory.c
+"58 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/memory.c
 [v _FLASH_ReadWord FLASH_ReadWord `(us  1 e 2 0 ]
 "94
 [v _FLASH_WriteBlock FLASH_WriteBlock `(c  1 e 1 0 ]
@@ -1693,11 +1739,12 @@ channel_FVR_buf1 63
 [v _FLASH_EraseBlock FLASH_EraseBlock `(v  1 e 1 0 ]
 "180
 [v _DATAEE_WriteByte DATAEE_WriteByte `(v  1 e 1 0 ]
+[v i1_DATAEE_WriteByte DATAEE_WriteByte `(v  1 e 1 0 ]
 "202
 [v _DATAEE_ReadByte DATAEE_ReadByte `(uc  1 e 1 0 ]
-"55 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\mcc_generated_files/pin_manager.c
+"55 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"64 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\mcc_generated_files/tmr1.c
+"64 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/tmr1.c
 [v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
 "127
 [v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
@@ -1714,10 +1761,10 @@ channel_FVR_buf1 63
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-"365 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16F1xxxx_DFP/1.7.146/xc8\pic\include\proc\pic16f18875.h
+"365 D:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16F1xxxx_DFP/1.7.146/xc8\pic\include\proc\pic16f18875.h
 [u S820 . 1 `S815 1 . 1 0 ]
 [v _INTCONbits INTCONbits `VES820  1 e 1 @11 ]
-[s S2022 . 1 `uc 1 RA0 1 0 :1:0 
+[s S2172 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -1727,9 +1774,9 @@ channel_FVR_buf1 63
 `uc 1 RA7 1 0 :1:7 
 ]
 "402
-[u S2031 . 1 `S2022 1 . 1 0 ]
-[v _PORTAbits PORTAbits `VES2031  1 e 1 @12 ]
-[s S2001 . 1 `uc 1 RB0 1 0 :1:0 
+[u S2181 . 1 `S2172 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES2181  1 e 1 @12 ]
+[s S2151 . 1 `uc 1 RB0 1 0 :1:0 
 `uc 1 RB1 1 0 :1:1 
 `uc 1 RB2 1 0 :1:2 
 `uc 1 RB3 1 0 :1:3 
@@ -1739,8 +1786,20 @@ channel_FVR_buf1 63
 `uc 1 RB7 1 0 :1:7 
 ]
 "464
-[u S2010 . 1 `S2001 1 . 1 0 ]
-[v _PORTBbits PORTBbits `VES2010  1 e 1 @13 ]
+[u S2160 . 1 `S2151 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES2160  1 e 1 @13 ]
+[s S2277 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"526
+[u S2286 . 1 `S2277 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES2286  1 e 1 @14 ]
 "671
 [v _TRISA TRISA `VEuc  1 e 1 @17 ]
 "733
@@ -1765,7 +1824,7 @@ channel_FVR_buf1 63
 [v _TRISE TRISE `VEuc  1 e 1 @21 ]
 "951
 [v _LATA LATA `VEuc  1 e 1 @22 ]
-[s S2043 . 1 `uc 1 LATA0 1 0 :1:0 
+[s S2193 . 1 `uc 1 LATA0 1 0 :1:0 
 `uc 1 LATA1 1 0 :1:1 
 `uc 1 LATA2 1 0 :1:2 
 `uc 1 LATA3 1 0 :1:3 
@@ -1775,8 +1834,8 @@ channel_FVR_buf1 63
 `uc 1 LATA7 1 0 :1:7 
 ]
 "968
-[u S2052 . 1 `S2043 1 . 1 0 ]
-[v _LATAbits LATAbits `VES2052  1 e 1 @22 ]
+[u S2202 . 1 `S2193 1 . 1 0 ]
+[v _LATAbits LATAbits `VES2202  1 e 1 @22 ]
 "1013
 [v _LATB LATB `VEuc  1 e 1 @23 ]
 "1075
@@ -2287,7 +2346,46 @@ channel_FVR_buf1 63
 [v _SLRCONE SLRCONE `VEuc  1 e 1 @3943 ]
 "36122
 [v _INLVLE INLVLE `VEuc  1 e 1 @3944 ]
-"146 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\mcc_generated_files/i2c1_master.c
+"55 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+[v _flags flags `i  1 s 2 flags ]
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"66
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"69
+[v _nout nout `i  1 s 2 nout ]
+"69 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\main.c
+[v _hours hours `uc  1 e 1 0 ]
+[v _minutes minutes `uc  1 e 1 0 ]
+[v _seconds seconds `uc  1 e 1 0 ]
+[v _max_luminosity max_luminosity `uc  1 e 1 0 ]
+[v _min_luminosity min_luminosity `uc  1 e 1 0 ]
+[v _last_luminosity last_luminosity `uc  1 e 1 0 ]
+[v _counter counter `uc  1 e 1 0 ]
+[v _t_threshold t_threshold `uc  1 e 1 0 ]
+[v _l_threshold l_threshold `uc  1 e 1 0 ]
+"70
+[v _last_temperature last_temperature `uc  1 e 1 0 ]
+[v _max_temperature max_temperature `uc  1 e 1 0 ]
+[v _min_temperature min_temperature `uc  1 e 1 0 ]
+"71
+[v _data_address data_address `us  1 e 2 0 ]
+"72
+[v _mode mode `uc  1 e 1 0 ]
+[v _alarm1 alarm1 `uc  1 e 1 0 ]
+[v _alarm2 alarm2 `uc  1 e 1 0 ]
+[v _modification modification `uc  1 e 1 0 ]
+"73
+[v _variable1 variable1 `uc  1 e 1 0 ]
+"74
+[v _variable2 variable2 `uc  1 e 1 0 ]
+"75
+[v _minimode minimode `uc  1 e 1 0 ]
+"76
+[v _character character `uc  1 e 1 0 ]
+"77
+[v _alarmc alarmc `uc  1 e 1 0 ]
+"146 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/i2c1_master.c
 [v _i2c1_fsmStateTable i2c1_fsmStateTable `DC[16]*.37(E12595  1 e 32 0 ]
 [s S1485 . 29 `[6]*.37(E360 1 callbackTable 12 0 `[6]*.1v 1 callbackPayload 6 12 `us 1 time_out 2 18 `us 1 time_out_value 2 20 `uc 1 address 1 22 `*.1uc 1 data_ptr 1 23 `ui 1 data_length 2 24 `E12595 1 state 1 26 `E355 1 error 1 27 `uc 1 addressNackCheck 1 28 :1:0 
 `uc 1 busy 1 28 :1:1 
@@ -2296,38 +2394,30 @@ channel_FVR_buf1 63
 ]
 "165
 [v _I2C1_Status I2C1_Status `S1485  1 e 29 0 ]
-"57 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\mcc_generated_files/tmr1.c
+"57 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/tmr1.c
 [v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
 "58
 [v _TMR1_InterruptHandler TMR1_InterruptHandler `*.37(v  1 e 2 0 ]
-"118 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\main.c
+"259 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"123
-[v main@readRingBufferAddr readRingBufferAddr `us  1 a 2 28 ]
-"158
-[v main@checksum checksum `uc  1 a 1 47 ]
-[v main@CLKM CLKM `uc  1 a 1 46 ]
-[v main@CLKH CLKH `uc  1 a 1 45 ]
-[v main@ALAF ALAF `uc  1 a 1 44 ]
-[v main@ALAL ALAL `uc  1 a 1 43 ]
-[v main@ALAT ALAT `uc  1 a 1 42 ]
-[v main@TALA TALA `uc  1 a 1 41 ]
-[v main@PMON PMON `uc  1 a 1 40 ]
-[v main@RI RI `uc  1 a 1 39 ]
-[v main@WI WI `uc  1 a 1 38 ]
-[v main@NR NR `uc  1 a 1 37 ]
-[v main@NREG NREG `uc  1 a 1 36 ]
-[v main@magic_word magic_word `uc  1 a 1 35 ]
-"157
-[v main@luminosity luminosity `uc  1 a 1 34 ]
-[v main@temperature temperature `uc  1 a 1 33 ]
-[v main@seconds seconds `uc  1 a 1 32 ]
-[v main@minutes minutes `uc  1 a 1 31 ]
-[v main@hours hours `uc  1 a 1 30 ]
-"179
+"289
+[v main@checksum checksum `uc  1 a 1 40 ]
+[v main@CLKM CLKM `uc  1 a 1 39 ]
+[v main@CLKH CLKH `uc  1 a 1 38 ]
+[v main@ALAF ALAF `uc  1 a 1 37 ]
+[v main@ALAL ALAL `uc  1 a 1 36 ]
+[v main@ALAT ALAT `uc  1 a 1 35 ]
+[v main@TALA TALA `uc  1 a 1 34 ]
+[v main@PMON PMON `uc  1 a 1 33 ]
+[v main@RI RI `uc  1 a 1 32 ]
+[v main@WI WI `uc  1 a 1 31 ]
+[v main@NR NR `uc  1 a 1 30 ]
+[v main@NREG NREG `uc  1 a 1 29 ]
+[v main@magic_word magic_word `uc  1 a 1 28 ]
+"433
 } 0
-"50 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\EPROMlib.c
+"50 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\EPROMlib.c
 [v _storeEPROMBuild storeEPROMBuild `(v  1 e 1 0 ]
 {
 [v storeEPROMBuild@hours hours `uc  1 a 1 wreg ]
@@ -2344,23 +2434,6 @@ channel_FVR_buf1 63
 [v storeEPROMBuild@hours hours `uc  1 a 1 13 ]
 "59
 } 0
-"61
-[v _parseEPROMReading parseEPROMReading `(v  1 e 1 0 ]
-{
-[v parseEPROMReading@hours hours `*.4uc  1 a 1 wreg ]
-"62
-[v parseEPROMReading@dataAddr dataAddr `us  1 a 2 14 ]
-"61
-[v parseEPROMReading@hours hours `*.4uc  1 a 1 wreg ]
-[v parseEPROMReading@minutes minutes `*.4uc  1 p 1 7 ]
-[v parseEPROMReading@seconds seconds `*.4uc  1 p 1 8 ]
-[v parseEPROMReading@temperature temperature `*.4uc  1 p 1 9 ]
-[v parseEPROMReading@luminosity luminosity `*.4uc  1 p 1 10 ]
-[v parseEPROMReading@operation operation `uc  1 p 1 11 ]
-"63
-[v parseEPROMReading@hours hours `*.4uc  1 a 1 13 ]
-"69
-} 0
 "7
 [v _operADDR operADDR `(us  1 e 2 0 ]
 {
@@ -2373,37 +2446,42 @@ channel_FVR_buf1 63
 "32
 } 0
 "71
-[v _parseEPROMInitialization parseEPROMInitialization `(v  1 e 1 0 ]
+[v _parseEPROMInitialization parseEPROMInitialization `(uc  1 e 1 0 ]
 {
-[v parseEPROMInitialization@magic_word magic_word `*.4uc  1 a 1 wreg ]
-[v parseEPROMInitialization@magic_word magic_word `*.4uc  1 a 1 wreg ]
-[v parseEPROMInitialization@NREG NREG `*.4uc  1 p 1 2 ]
-[v parseEPROMInitialization@NR NR `*.4uc  1 p 1 3 ]
-[v parseEPROMInitialization@WI WI `*.4uc  1 p 1 4 ]
-[v parseEPROMInitialization@RI RI `*.4uc  1 p 1 5 ]
-[v parseEPROMInitialization@PMON PMON `*.4uc  1 p 1 6 ]
-[v parseEPROMInitialization@TALA TALA `*.4uc  1 p 1 7 ]
-[v parseEPROMInitialization@ALAT ALAT `*.4uc  1 p 1 8 ]
-[v parseEPROMInitialization@ALAL ALAL `*.4uc  1 p 1 9 ]
-[v parseEPROMInitialization@ALAF ALAF `*.4uc  1 p 1 10 ]
-[v parseEPROMInitialization@CLKH CLKH `*.4uc  1 p 1 11 ]
-[v parseEPROMInitialization@CLKM CLKM `*.4uc  1 p 1 12 ]
-[v parseEPROMInitialization@checksum checksum `*.4uc  1 p 1 13 ]
-[v parseEPROMInitialization@magic_word magic_word `*.4uc  1 a 1 15 ]
-"85
+[v parseEPROMInitialization@magic_word magic_word `*.5uc  1 a 1 wreg ]
+[v parseEPROMInitialization@magic_word magic_word `*.5uc  1 a 1 wreg ]
+[v parseEPROMInitialization@NREG NREG `*.5uc  1 p 1 2 ]
+[v parseEPROMInitialization@NR NR `*.5uc  1 p 1 3 ]
+[v parseEPROMInitialization@WI WI `*.5uc  1 p 1 4 ]
+[v parseEPROMInitialization@RI RI `*.5uc  1 p 1 5 ]
+[v parseEPROMInitialization@PMON PMON `*.5uc  1 p 1 6 ]
+[v parseEPROMInitialization@TALA TALA `*.5uc  1 p 1 7 ]
+[v parseEPROMInitialization@ALAT ALAT `*.5uc  1 p 1 8 ]
+[v parseEPROMInitialization@ALAL ALAL `*.5uc  1 p 1 9 ]
+[v parseEPROMInitialization@ALAF ALAF `*.5uc  1 p 1 10 ]
+[v parseEPROMInitialization@CLKH CLKH `*.5uc  1 p 1 11 ]
+[v parseEPROMInitialization@CLKM CLKM `*.5uc  1 p 1 12 ]
+[v parseEPROMInitialization@checksum checksum `*.5uc  1 p 1 13 ]
+[v parseEPROMInitialization@magic_word magic_word `*.5uc  1 a 1 15 ]
+"90
 } 0
-"202 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\mcc_generated_files/memory.c
+"202 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/memory.c
 [v _DATAEE_ReadByte DATAEE_ReadByte `(uc  1 e 1 0 ]
 {
 [v DATAEE_ReadByte@bAdd bAdd `us  1 p 2 0 ]
 "214
 } 0
-"34 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\EPROMlib.c
+"245 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\main.c
+[v _initializeREG initializeREG `(v  1 e 1 0 ]
+{
+"252
+} 0
+"34 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\EPROMlib.c
 [v _initializeEPROM initializeEPROM `(v  1 e 1 0 ]
 {
 "48
 } 0
-"180 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\mcc_generated_files/memory.c
+"180 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/memory.c
 [v _DATAEE_WriteByte DATAEE_WriteByte `(v  1 e 1 0 ]
 {
 "182
@@ -2413,12 +2491,12 @@ channel_FVR_buf1 63
 [v DATAEE_WriteByte@bData bData `uc  1 p 1 2 ]
 "200
 } 0
-"50 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\mcc_generated_files/mcc.c
+"50 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "58
 } 0
-"64 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\mcc_generated_files/tmr1.c
+"64 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/tmr1.c
 [v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
 {
 "97
@@ -2429,47 +2507,79 @@ channel_FVR_buf1 63
 [v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
 "187
 } 0
-"74 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\mcc_generated_files/mcc.c
+"74 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/mcc.c
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 {
 "88
 } 0
-"55 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\mcc_generated_files/pin_manager.c
+"55 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "131
 } 0
-"60 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\mcc_generated_files/mcc.c
+"60 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "72
 } 0
-"167 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\mcc_generated_files/i2c1_master.c
+"167 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/i2c1_master.c
 [v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
 {
 "174
 } 0
-"63 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\mcc_generated_files/adcc.c
+"63 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/adcc.c
 [v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
 {
 "106
 } 0
-"61 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\main.c
-[v _S1 S1 `(v  1 e 1 0 ]
-{
-"65
-} 0
-"26 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\I2C/i2c.c
+"26 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\I2C/i2c.c
 [v _OpenI2C OpenI2C `(v  1 e 1 0 ]
 {
 "36
 } 0
-"52 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\mcc_generated_files/interrupt_manager.c
+"79 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\LCD/lcd.c
+[v _LCDinit LCDinit `(v  1 e 1 0 ]
+{
+"100
+} 0
+"56
+[v _LCDsend2x4 LCDsend2x4 `(v  1 e 1 0 ]
+{
+[v LCDsend2x4@c c `uc  1 a 1 wreg ]
+"59
+[v LCDsend2x4@lc lc `uc  1 a 1 7 ]
+"58
+[v LCDsend2x4@hc hc `uc  1 a 1 6 ]
+"56
+[v LCDsend2x4@c c `uc  1 a 1 wreg ]
+[v LCDsend2x4@mode mode `uc  1 p 1 2 ]
+"61
+[v LCDsend2x4@c c `uc  1 a 1 5 ]
+"77
+} 0
+"17
+[v _LCDsend LCDsend `(v  1 e 1 0 ]
+{
+[v LCDsend@c c `uc  1 a 1 wreg ]
+[v LCDsend@c c `uc  1 a 1 wreg ]
+[v LCDsend@c c `uc  1 a 1 3 ]
+"24
+} 0
+"59 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\I2C/i2c.c
+[v _WriteI2C WriteI2C `(c  1 e 1 0 ]
+{
+[v WriteI2C@data_out data_out `uc  1 a 1 wreg ]
+[v WriteI2C@data_out data_out `uc  1 a 1 wreg ]
+"61
+[v WriteI2C@data_out data_out `uc  1 a 1 1 ]
+"90
+} 0
+"52 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
 {
 "70
 } 0
-"164 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\mcc_generated_files/tmr1.c
+"164 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/tmr1.c
 [v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
 {
 "174
@@ -2490,14 +2600,336 @@ channel_FVR_buf1 63
 {
 "192
 } 0
-"67 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\main.c
+"150 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\main.c
 [v _timerInterrupt timerInterrupt `(v  1 e 1 0 ]
 {
-"73
-[v timerInterrupt@value value `us  1 a 2 3 ]
-"79
+"167
+[v timerInterrupt@lum lum `us  1 a 2 64 ]
+"168
+[v timerInterrupt@value value `uc  1 a 1 63 ]
+"179
+[v timerInterrupt@temperature temperature `uc  1 a 1 62 ]
+"239
 } 0
-"132 C:\Users\Asus\Documents\faculdade\5_ano\Str\str_project\TESTE.X\mcc_generated_files/adcc.c
+"109
+[v _writeRingBuffer writeRingBuffer `(v  1 e 1 0 ]
+{
+[v writeRingBuffer@temperature temperature `uc  1 a 1 wreg ]
+[v writeRingBuffer@temperature temperature `uc  1 a 1 wreg ]
+[v writeRingBuffer@luminosity luminosity `uc  1 p 1 4 ]
+"111
+[v writeRingBuffer@temperature temperature `uc  1 a 1 6 ]
+"129
+} 0
+"180 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/memory.c
+[v i1_DATAEE_WriteByte DATAEE_WriteByte `(v  1 e 1 0 ]
+{
+"182
+[v i1DATAEE_WriteByte@GIEBitValue GIEBitValue `uc  1 a 1 3 ]
+"180
+[v i1DATAEE_WriteByte@bAdd bAdd `us  1 p 2 0 ]
+[v i1DATAEE_WriteByte@bData bData `uc  1 p 1 2 ]
+"200
+} 0
+"80 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\main.c
+[v _readTC74 readTC74 `(uc  1 e 1 0 ]
+{
+"82
+[v readTC74@value value `uc  1 a 1 3 ]
+"107
+} 0
+"136
+[v _printLCD printLCD `(v  1 e 1 0 ]
+{
+"138
+[v printLCD@buf buf `[33]uc  1 a 33 29 ]
+"148
+} 0
+"9 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@s s `*.4uc  1 a 1 wreg ]
+[s S2851 _IO_FILE 5 `*.4uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+"13
+[v sprintf@f f `S2851  1 a 5 14 ]
+"12
+[v sprintf@ap ap `[1]*.4v  1 a 1 13 ]
+"9
+[v sprintf@s s `*.4uc  1 a 1 wreg ]
+[v sprintf@fmt fmt `*.25DCuc  1 p 2 0 ]
+"15
+[v sprintf@s s `*.4uc  1 a 1 12 ]
+"23
+} 0
+"1390 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+[s S2877 _IO_FILE 0 ]
+[v vfprintf@fp fp `*.4S2877  1 a 1 wreg ]
+"1393
+[v vfprintf@cfmt cfmt `*.25uc  1 a 2 74 ]
+"1390
+[v vfprintf@fp fp `*.4S2877  1 a 1 wreg ]
+[v vfprintf@fmt fmt `*.25DCuc  1 p 2 68 ]
+[v vfprintf@ap ap `*.4*.4v  1 p 1 70 ]
+"1395
+"1390
+[v vfprintf@fp fp `*.4S2877  1 a 1 73 ]
+"1404
+} 0
+"692
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+{
+[s S2877 _IO_FILE 0 ]
+[v vfpfcnvrt@fp fp `*.4S2877  1 a 1 wreg ]
+"696
+[v vfpfcnvrt@ll ll `o  1 a 8 54 ]
+"695
+[v vfpfcnvrt@done done `i  1 a 2 62 ]
+"694
+[v vfpfcnvrt@c c `uc  1 a 1 66 ]
+"692
+[v vfpfcnvrt@fp fp `*.4S2877  1 a 1 wreg ]
+[v vfpfcnvrt@fmt fmt `*.4*.25uc  1 p 1 46 ]
+[v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 47 ]
+"702
+"692
+[v vfpfcnvrt@fp fp `*.4S2877  1 a 1 67 ]
+"1387
+} 0
+"287
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+{
+[s S2877 _IO_FILE 0 ]
+[v dtoa@fp fp `*.4S2877  1 a 1 wreg ]
+"290
+[v dtoa@n n `o  1 a 8 36 ]
+"289
+[v dtoa@i i `i  1 a 2 44 ]
+[v dtoa@s s `i  1 a 2 34 ]
+[v dtoa@w w `i  1 a 2 32 ]
+[v dtoa@p p `i  1 a 2 30 ]
+"287
+[v dtoa@fp fp `*.4S2877  1 a 1 wreg ]
+[v dtoa@d d `o  1 p 8 16 ]
+"293
+"287
+[v dtoa@fp fp `*.4S2877  1 a 1 29 ]
+"328
+} 0
+"72
+[v _pad pad `(i  1 s 2 pad ]
+{
+[s S2877 _IO_FILE 0 ]
+[v pad@fp fp `*.4S2877  1 a 1 wreg ]
+"74
+[v pad@w w `i  1 a 2 9 ]
+[v pad@i i `i  1 a 2 7 ]
+"72
+[v pad@fp fp `*.4S2877  1 a 1 wreg ]
+[v pad@buf buf `*.5uc  1 p 1 4 ]
+[v pad@p p `i  1 p 2 5 ]
+"77
+"72
+[v pad@fp fp `*.4S2877  1 a 1 11 ]
+"95
+} 0
+"5 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+[v strlen@s s `*.5DCuc  1 a 1 wreg ]
+"7
+[v strlen@a a `*.5DCuc  1 a 1 3 ]
+"5
+[v strlen@s s `*.5DCuc  1 a 1 wreg ]
+"7
+[v strlen@s s `*.5DCuc  1 a 1 4 ]
+"12
+} 0
+"8 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+[v fputs@s s `*.5DCuc  1 a 1 wreg ]
+"11
+[v fputs@i i `i  1 a 2 1 ]
+"10
+[v fputs@c c `uc  1 a 1 0 ]
+"8
+[v fputs@s s `*.5DCuc  1 a 1 wreg ]
+[s S2851 _IO_FILE 5 `*.4uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputs@fp fp `*.4S2851  1 p 1 8 ]
+"13
+[v fputs@s s `*.5DCuc  1 a 1 3 ]
+"19
+} 0
+"1 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 3 ]
+"4
+} 0
+"7 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+{
+"12
+[v ___aomod@sign sign `uc  1 a 1 2 ]
+[v ___aomod@counter counter `uc  1 a 1 1 ]
+"7
+[v ___aomod@divisor divisor `o  1 p 8 0 ]
+[v ___aomod@dividend dividend `o  1 p 8 8 ]
+"36
+} 0
+"7 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+{
+"12
+[v ___aodiv@quotient quotient `o  1 a 8 3 ]
+"13
+[v ___aodiv@sign sign `uc  1 a 1 2 ]
+[v ___aodiv@counter counter `uc  1 a 1 1 ]
+"7
+[v ___aodiv@divisor divisor `o  1 p 8 0 ]
+[v ___aodiv@dividend dividend `o  1 p 8 8 ]
+"43
+} 0
+"259 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+[v _ctoa ctoa `(i  1 s 2 ctoa ]
+{
+[s S2877 _IO_FILE 0 ]
+[v ctoa@fp fp `*.4S2877  1 a 1 wreg ]
+"261
+[v ctoa@w w `i  1 a 2 2 ]
+[v ctoa@l l `i  1 a 2 0 ]
+"259
+[v ctoa@fp fp `*.4S2877  1 a 1 wreg ]
+[v ctoa@c c `uc  1 p 1 8 ]
+"264
+"259
+[v ctoa@fp fp `*.4S2877  1 a 1 4 ]
+"283
+} 0
+"8 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 0 ]
+[s S2851 _IO_FILE 5 `*.4uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputc@fp fp `*.4S2851  1 p 1 2 ]
+"24
+} 0
+"7 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+"9
+} 0
+"4 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+{
+"6
+[v atoi@n n `i  1 a 2 7 ]
+[v atoi@neg neg `i  1 a 2 0 ]
+"4
+[v atoi@s s `*.25DCuc  1 p 2 6 ]
+"16
+} 0
+"5 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isspace.c
+[v _isspace isspace `(i  1 e 2 0 ]
+{
+[v isspace@c c `i  1 p 2 0 ]
+"8
+} 0
+"5 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isdigit.c
+[v _isdigit isdigit `(i  1 e 2 0 ]
+{
+[v isdigit@c c `i  1 p 2 0 ]
+"8
+} 0
+"15 D:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"112 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\LCD/lcd.c
+[v _LCDstr LCDstr `(v  1 e 1 0 ]
+{
+[v LCDstr@p p `*.4uc  1 a 1 wreg ]
+"114
+[v LCDstr@c c `uc  1 a 1 10 ]
+"112
+[v LCDstr@p p `*.4uc  1 a 1 wreg ]
+[v LCDstr@p p `*.4uc  1 a 1 11 ]
+"117
+} 0
+"107
+[v _LCDchar LCDchar `(v  1 e 1 0 ]
+{
+[v LCDchar@c c `uc  1 a 1 wreg ]
+[v LCDchar@c c `uc  1 a 1 wreg ]
+"109
+[v LCDchar@c c `uc  1 a 1 8 ]
+"110
+} 0
+"102
+[v _LCDcmd LCDcmd `(v  1 e 1 0 ]
+{
+[v LCDcmd@c c `uc  1 a 1 wreg ]
+[v LCDcmd@c c `uc  1 a 1 wreg ]
+"104
+[v LCDcmd@c c `uc  1 a 1 8 ]
+"105
+} 0
+"56
+[v i1_LCDsend2x4 LCDsend2x4 `(v  1 e 1 0 ]
+{
+[v i1LCDsend2x4@c c `uc  1 a 1 wreg ]
+"59
+[v i1LCDsend2x4@lc lc `uc  1 a 1 7 ]
+"58
+[v i1LCDsend2x4@hc hc `uc  1 a 1 6 ]
+"56
+[v i1LCDsend2x4@c c `uc  1 a 1 wreg ]
+[v i1LCDsend2x4@mode mode `uc  1 p 1 2 ]
+"61
+[v i1LCDsend2x4@c c `uc  1 a 1 5 ]
+"77
+} 0
+"119
+[v _LCDbusy LCDbusy `(i  1 e 2 0 ]
+{
+"123
+} 0
+"25
+[v _LCDrecv LCDrecv `(uc  1 e 1 0 ]
+{
+[v LCDrecv@mode mode `uc  1 a 1 wreg ]
+"28
+[v LCDrecv@lc lc `uc  1 a 1 5 ]
+"27
+[v LCDrecv@hc hc `uc  1 a 1 4 ]
+"25
+[v LCDrecv@mode mode `uc  1 a 1 wreg ]
+[v LCDrecv@mode mode `uc  1 a 1 6 ]
+"54
+} 0
+"59 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\I2C/i2c.c
+[v i1_WriteI2C WriteI2C `(c  1 e 1 0 ]
+{
+[v i1WriteI2C@data_out data_out `uc  1 a 1 wreg ]
+[v i1WriteI2C@data_out data_out `uc  1 a 1 wreg ]
+"61
+[v i1WriteI2C@data_out data_out `uc  1 a 1 1 ]
+"90
+} 0
+"44
+[v _ReadI2C ReadI2C `(uc  1 e 1 0 ]
+{
+"50
+} 0
+"132 D:\AULAS\5ºano 1 semestre\STR\labs\str_project\TESTE.X\mcc_generated_files/adcc.c
 [v _ADCC_GetSingleConversion ADCC_GetSingleConversion `(us  1 e 2 0 ]
 {
 [v ADCC_GetSingleConversion@channel channel `E12206  1 a 1 wreg ]
