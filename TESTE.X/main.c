@@ -64,70 +64,18 @@
 #define MIN_TEMP 0
 #define MAX_TEMP 255
 #define MIN_LUM 0
-#define MAX_LUM 255
+#define MAX_LUM 3
 
-uint8_t hours, minutes, seconds, max_luminosity, min_luminosity, last_luminosity, counter;
+uint8_t hours, minutes, seconds, max_luminosity, min_luminosity, last_luminosity, counter, t_threshold, l_threshold;
 unsigned char last_temperature, max_temperature, min_temperature;
 uint16_t data_address;
+uint8_t mode, alarm1, alarm2, modification;
+uint8_t variable1=0;
+uint8_t variable2=0;
+uint8_t minimode=0;
+char character;
+char alarmc;
 
-void S1(void){
-    if(IO_RB4_GetValue()==LOW && IO_RA6_GetValue()==HIGH){
-        IO_RA6_SetLow();
-    }
-}
-
-void timerInterrupt(){
-    
-   adc_result_t value;
-   
-    if(counter == 5){
-    
-        if(last_temperature > max_temperature){
-            
-            DATAEE_WriteByte(HIGH_TEMP_REG, last_temperature);
-            //alarme
-            
-        }else if(last_temperature < min_temperature){
-        
-            DATAEE_WriteByte(LOW_TEMP_REG, last_temperature); 
-            //alarme
-        }
-        if(last_luminosity > max_luminosity){
-            
-            DATAEE_WriteByte(HIGH_LUX_REG, last_luminosity);
-            //alarme
-            
-        }else if(last_luminosity < min_luminosity){
-        
-            DATAEE_WriteByte(LOW_LUX_REG, last_luminosity);
-            //alarme
-        } 
-        value = ADCC_GetSingleConversion(channel_ANA0);
-        unsigned char temperature = readTC74();
-        if(temperature!= last_temperature || value!= last_luminosity){
-            writeRingBuffer(temperature,  value);
-        }
-    }
- 
-    if(counter == 5){
-    
-        counter == 1;
-    }else{      
-        counter ++;
-    }
-
-    if(IO_RA7_GetValue()==LOW){
-        IO_RA7_SetHigh();
-    }else{
-        IO_RA7_SetLow();
-    }
-    
-    if(value > LUM_LVL_23 || value < LUM_LVL_01){
-        IO_RA4_SetHigh();
-    }else{
-        IO_RA4_SetLow();
-    }
-}
 
 unsigned char readTC74 (void)
 {
@@ -158,20 +106,6 @@ do{
 	return value;
 }
 
-//iniciar os 4 registos com máximos e minimos
-//not sure com que valores inicializar os registos
-void initializeREG(){
-
-    DATAEE_WriteByte(HIGH_TEMP_REG,(uint8_t) MAX_TEMP);
-    DATAEE_WriteByte(LOW_TEMP_REG,(uint8_t) MIN_TEMP);
-    DATAEE_WriteByte(HIGH_LUX_REG + 2,(uint8_t) MAX_LUM);
-    DATAEE_WriteByte(LOW_LUX_REG + 3,(uint8_t) MIN_LUM);
-
-}
-
-//retorna o writeRingBufferAddr atualizado para a proxima escrita
-//ordem de escrita é: horas -> minutos -> segundos -> temperatura -> luminosidade -> horas -> (...)
-//writeRingBufferAddr = writeRingBuffer(...)
 void writeRingBuffer(unsigned char temperature, uint8_t luminosity){
 
     DATAEE_WriteByte(data_address, hours);
@@ -194,122 +128,307 @@ void writeRingBuffer(unsigned char temperature, uint8_t luminosity){
     } 
 }
 
+void S1(void){
+    if(IO_RB4_GetValue()==LOW && IO_RA6_GetValue()==HIGH){
+        IO_RA6_SetLow();
+    }
+}
+void printLCD(){
+    
+    char buf[33];
+    LCDcmd(0x80);       //first line, first column
+    while (LCDbusy());
+    sprintf(buf, "%02d:%02d:%02d  %c  %c", hours, minutes, seconds, character, alarmc);
+    LCDstr(buf);
+    while (LCDbusy());
+    LCDcmd(0xc0);       // second line, first column
+    sprintf(buf, "%02d C         %01d l", variable1, variable2);
+    while (LCDbusy());
+    LCDstr(buf);
+}
+
+void timerInterrupt(){
+    if(mode==0){
+    if(seconds<59){
+        seconds++;
+    }else if(minutes<59){
+        seconds=0;
+        minutes++;
+    }else if(hours<24){
+        seconds=0;
+        minutes=0;
+        hours++;
+    }else{
+        seconds=0;
+        minutes=0;
+        hours=0;
+    }
+    }
+    adc_result_t lum = ADCC_GetSingleConversion(channel_ANA0);
+    uint8_t value;
+    if(lum>LUM_LVL_23){
+        value=3;
+    }else if(lum<LUM_LVL_23 && lum>LUM_LVL_12){
+        value=2;
+    }else if(lum<LUM_LVL_12 && lum>LUM_LVL_01){
+        value=1;
+    }else{
+        value=0;
+    }
+    
+    unsigned char temperature = readTC74(); 
+    if(mode==0){
+        variable1=temperature;
+        variable2=value;
+    }
+
+    printLCD();
+    
+    if(counter == 5){
+    
+        if(last_temperature > max_temperature){
+            
+            DATAEE_WriteByte(HIGH_TEMP_REG, last_temperature);
+            //alarme
+            
+        }else if(last_temperature < min_temperature){
+        
+            DATAEE_WriteByte(LOW_TEMP_REG, last_temperature); 
+            //alarme
+        }
+        if(last_luminosity > max_luminosity){
+            
+            DATAEE_WriteByte(HIGH_LUX_REG, last_luminosity);
+            //alarme
+            
+        }else if(last_luminosity < min_luminosity){
+        
+            DATAEE_WriteByte(LOW_LUX_REG, last_luminosity);
+            //alarme
+        } 
+        //errado, alarme s� no threshold
+        if(temperature!= last_temperature || value!= last_luminosity){
+            writeRingBuffer(temperature,  value);
+        }
+    }
+ 
+    if(counter == 5){
+    
+        counter = 1;
+    }else{      
+        counter ++;
+    }
+
+    if(IO_RA7_GetValue()==LOW){
+        IO_RA7_SetHigh();
+    }else{
+        IO_RA7_SetLow();
+    }
+    
+    if(lum > LUM_LVL_23 || lum < LUM_LVL_01){
+        IO_RA4_SetHigh();
+    }else{
+        IO_RA4_SetLow();
+    }
+    if(mode==0){
+    if(IO_RB4_GetValue()==LOW){
+        mode=1;
+        __delay_ms(1000);
+    }
+    }
+}
+
+
+
+//iniciar os 4 registos com máximos e minimos
+//not sure com que valores inicializar os registos
+void initializeREG(){
+
+    DATAEE_WriteByte(HIGH_TEMP_REG,(uint8_t) MAX_TEMP);
+    DATAEE_WriteByte(LOW_TEMP_REG,(uint8_t) MIN_TEMP);
+    DATAEE_WriteByte(HIGH_LUX_REG + 2,(uint8_t) MAX_LUM);
+    DATAEE_WriteByte(LOW_LUX_REG + 3,(uint8_t) MIN_LUM);
+
+}
+
+//retorna o writeRingBufferAddr atualizado para a proxima escrita
+//ordem de escrita é: horas -> minutos -> segundos -> temperatura -> luminosidade -> horas -> (...)
+//writeRingBufferAddr = writeRingBuffer(...)
+
+
 void main(void)
 {
-    unsigned char c;
-    char buf[17];
-    // initialize the device
     SYSTEM_Initialize();
-
-    // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
-    // Use the following macros to:
-
     // Enable the Global Interrupts
     INTERRUPT_GlobalInterruptEnable();
-
     // Enable the Peripheral Interrupts
     INTERRUPT_PeripheralInterruptEnable();
-
-    // Disable the Global Interrupts
-    //INTERRUPT_GlobalInterruptDisable();
-
-    // Disable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptDisable();
     hours=0;
     minutes=0;
     seconds=0;
     max_luminosity=MAX_LUM;
     min_luminosity=MIN_LUM;
-    last_luminosity=255;
+    last_luminosity=4;
     counter=1;
     
     last_temperature=MAX_TEMP;
     max_temperature=MAX_TEMP;
     min_temperature=MIN_TEMP;
     data_address=START_RING_BUFFER_ADDR;
-    
-    IO_RA6_SetHigh();
-     
+    mode=0;
+    alarm1=0;
+    alarm2=0;
+    modification=1;
+    character=' ';
+    alarmc='a';
     OpenI2C();
-    //I2C_SCL = 1;
-    //I2C_SDA = 1;
-    //WPUC3 = 1;
-    //WPUC4 = 1;
     LCDinit();
-    
-
-
     initializeEPROM();
     initializeREG();
-
     storeEPROMBuild(0x55,0x50,0x45,0x40,0x35,OPER_MAX_TEMP);
-    
     uint8_t magic_word,NREG,NR,WI,RI,PMON,TALA,ALAT,ALAL,ALAF,CLKH,CLKM,checksum;
-    
-    LCDcmd(0x80);
-    LCDstr("insert hours");
-    __delay_ms(1000);
-    while(IO_RC5_GetValue()==HIGH){
-        if(IO_RB4_GetValue()==LOW){
-            hours++;
-            __delay_ms(250);
-        }
-        while (LCDbusy());
-        LCDcmd(0x80);
-        sprintf(buf, "%02d:%02d:%02d     ", hours, minutes, seconds);
-        LCDstr(buf);
-    }
-    LCDcmd(0x80);
-    LCDstr("insert minutes");
-    __delay_ms(1000);
-    
-    while(IO_RC5_GetValue()==HIGH){
-        if(IO_RB4_GetValue()==LOW){
-            minutes++;
-        }
-        while (LCDbusy());
-        LCDcmd(0x80);
-        sprintf(buf, "%02d:%02d:%02d      ", hours, minutes, seconds);
-        LCDstr(buf);
-        __delay_ms(250);
-    }
-    LCDcmd(0x80);
-    LCDstr("insert seconds");
-    __delay_ms(1000);
-    
-    while(IO_RC5_GetValue()==HIGH){
-        if(IO_RB4_GetValue()==LOW){
-            seconds++;
-        }
-        while (LCDbusy());
-        LCDcmd(0x80);
-        sprintf(buf, "%02d:%02d:%02d      ", hours, minutes, seconds);
-        LCDstr(buf);
-        __delay_ms(250);
-    }
     
     
     TMR1_SetInterruptHandler(timerInterrupt);
     while (1)
-    {   
-        S1();
-
+    {
         parseEPROMInitialization(&magic_word,&NREG,&NR,&WI,&RI,&PMON,&TALA,&ALAT,&ALAL,&ALAF,&CLKH,&CLKM,&checksum);
-
-        c = readTC74();
-        LCDcmd(0x80);       //first line, first column
-        while (LCDbusy());
-        sprintf(buf, "%02d:%02d:%02d", hours, minutes, seconds);
-        LCDstr(buf);
-        LCDpos(0,11);
-        while (LCDbusy());
-        LCDstr("STR");
         
-        LCDcmd(0xc0);       // second line, first column
-        sprintf(buf, "%02d C", c);
-        while (LCDbusy());
-        LCDstr(buf);
-        __delay_ms(2000);
+        if(mode==1){
+            if(modification==1){
+                if(minimode==0){
+                    //LCDcmd(0x80);       //first line, first column
+                    //while (LCDbusy());
+                    if(IO_RC5_GetValue()==LOW){
+                        if(hours<23){
+                            hours++;
+                        }else{
+                            hours=0;
+                        }
+                        __delay_ms(1000);
+                    }
+                }else if (minimode==1){
+                    //LCDcmd(0x83);       //first line, first column
+                    //while (LCDbusy());
+                    if(IO_RC5_GetValue()==LOW){
+                        if(minutes<59){
+                            minutes++;
+                        }else{
+                            minutes=0;
+                        }
+                        __delay_ms(1000);
+                    }
+                }else if(minimode==2){
+                    //LCDcmd(0x86);       //first line, first column
+                    //while (LCDbusy());
+                    if(IO_RC5_GetValue()==LOW){
+                        if(seconds<59){
+                            seconds++;
+                        }else{
+                            seconds=0;
+                        }
+                        __delay_ms(1000);
+                    }
+                }else if(minimode==5){
+                    //LCDcmd(0xc0);       //first line, first column
+                    //while (LCDbusy());
+                    if(IO_RC5_GetValue()==LOW){
+                        if(t_threshold<50){
+                            t_threshold++;
+                        }else{
+                            t_threshold=0;
+                        }
+                        __delay_ms(1000);
+                    }
+                }else if(minimode==6){
+                    //LCDcmd(0xcb);       //first line, first column
+                    //while (LCDbusy());
+                    if(IO_RC5_GetValue()==LOW){
+                        if(l_threshold<3){
+                            l_threshold++;
+                        }else{
+                            l_threshold=0;
+                        }
+                        __delay_ms(1000);
+                    }
+                }else if(minimode==7){
+                    //LCDcmd(0x8b);       //first line, first column
+                    //while (LCDbusy());
+                    if(IO_RC5_GetValue()==LOW){
+                        if(alarm1==1 || alarm2==1){
+                            alarm1=0;
+                            alarm2=0;
+                        }else{
+                            alarm1=1;
+                            alarm2=1;
+                        }
+                        __delay_ms(1000);
+                    }
+                }
+                
+            if(IO_RB4_GetValue()==LOW){
+                    modification=0;
+                    mode=0;
+                    __delay_ms(1000);
+            }
+                
+                
+                
+            }else{
+                if(minimode==0){
+                    //LCDcmd(0x80);       //first line, first column
+                    //while (LCDbusy());
+                }else if (minimode==1){
+                    //LCDcmd(0x83);       //first line, fourth column
+                    //while (LCDbusy());
+                }else if(minimode==2){
+                    //LCDcmd(0x86);       //first line, first column
+                    //while (LCDbusy());
+                }else if(minimode==3){
+                    //LCDcmd(0x89);       //MAX, MIN, T, L
+                    //while (LCDbusy());
+                    character= 'M';
+                    variable1=max_temperature;
+                    variable2=max_luminosity;
+                }else if(minimode==4){
+                    //LCDcmd(0x89);       //MAX, MIN, T, L
+                    //while (LCDbusy());
+                    character= 'm';
+                    variable1=min_temperature;
+                    variable2=min_luminosity;
+                }else if(minimode==5){
+                    //LCDcmd(0x89);       //MAX, MIN, T, L
+                    //while (LCDbusy());
+                    character= 'T';
+                    variable1=t_threshold;
+                    variable2=l_threshold;
+                }else if(minimode==6){
+                    //LCDcmd(0x89);       //MAX, MIN, T, L
+                    //while (LCDbusy());
+                    character= 'L';
+                    variable1=t_threshold;
+                    variable2=l_threshold;
+                }else if(minimode==7){
+                    //LCDcmd(0x8b);       //Alarm
+                    //while (LCDbusy());
+                    
+                }
+                if(IO_RB4_GetValue()==LOW){
+                    if(minimode<7){
+                        minimode++;
+                        __delay_ms(1000);
+                    }else{
+                        minimode=0;
+                        mode=0;
+                    }
+                }
+                if(IO_RC5_GetValue()==LOW && minimode!= 3 && minimode!=4){
+                    modification=1;
+                    __delay_ms(1000);
+                }
+            }
+       
+        }
     }
 }
 /**
