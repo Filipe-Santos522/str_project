@@ -1,0 +1,2378 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\ALA.X.production.o
+cinit CODE 0 1A 1A 1A 2
+text1 CODE 0 1481 1481 4F 2
+text2 CODE 0 136B 136B 37 2
+text3 CODE 0 9C4 9C4 C6 2
+text4 CODE 0 1111 1111 F 2
+text5 CODE 0 130F 130F 2B 2
+text6 CODE 0 16D0 16D0 8E 2
+text7 CODE 0 129C 129C 24 2
+text8 CODE 0 1087 1087 7 2
+text9 CODE 0 1080 1080 7 2
+text10 CODE 0 801 801 4 2
+text11 CODE 0 1054 1054 3 2
+text12 CODE 0 1102 1102 F 2
+text13 CODE 0 11BD 11BD 19 2
+text14 CODE 0 10E5 10E5 E 2
+text15 CODE 0 7DF 7DF 21 2
+text16 CODE 0 105F 105F 6 2
+text17 CODE 0 10CA 10CA D 2
+text18 CODE 0 1096 1096 8 2
+text19 CODE 0 13A2 13A2 45 2
+text20 CODE 0 10A7 10A7 9 2
+text21 CODE 0 109E 109E 9 2
+text22 CODE 0 118E 118E 17 2
+text23 CODE 0 10BD 10BD D 2
+text24 CODE 0 164D 164D 83 2
+text25 CODE 0 A8A A8A D7 2
+text26 CODE 0 14D0 14D0 53 2
+text27 CODE 0 805 805 5A 2
+text29 CODE 0 10D7 10D7 E 2
+text30 CODE 0 1141 1141 11 2
+text31 CODE 0 10B0 10B0 D 2
+text32 CODE 0 3 3 1 2
+text33 CODE 0 316 316 1EA 2
+text34 CODE 0 1079 1079 7 2
+text35 CODE 0 1072 1072 7 2
+text36 CODE 0 105B 105B 4 2
+text37 CODE 0 1051 1051 3 2
+text38 CODE 0 10F3 10F3 F 2
+text39 CODE 0 1579 1579 63 2
+text40 CODE 0 123E 123E 1E 2
+text41 CODE 0 6D2 6D2 10D 2
+text42 CODE 0 175E 175E A2 2
+text43 CODE 0 12C0 12C0 26 2
+text44 CODE 0 133A 133A 31 2
+text45 CODE 0 500 500 1D2 2
+text46 CODE 0 E94 E94 16C 2
+text47 CODE 0 1523 1523 56 2
+text48 CODE 0 1224 1224 1A 2
+text49 CODE 0 12E6 12E6 29 2
+text50 CODE 0 120A 120A 1A 2
+text51 CODE 0 B61 B61 EA 2
+text52 CODE 0 C4B C4B 101 2
+text53 CODE 0 15DC 15DC 71 2
+text54 CODE 0 1432 1432 4F 2
+text55 CODE 0 2 2 1 2
+text56 CODE 0 85F 85F AF 2
+text57 CODE 0 127B 127B 21 2
+text58 CODE 0 11A5 11A5 18 2
+text59 CODE 0 125C 125C 1F 2
+text60 CODE 0 1164 1164 14 2
+text61 CODE 0 108E 108E 8 2
+text62 CODE 0 106B 106B 7 2
+text63 CODE 0 90E 90E B6 2
+text64 CODE 0 1130 1130 11 2
+text65 CODE 0 D4C D4C 148 2
+text66 CODE 0 13E7 13E7 4B 2
+text67 CODE 0 11F0 11F0 1A 2
+text68 CODE 0 11D6 11D6 1A 2
+text69 CODE 0 1057 1057 4 2
+text70 CODE 0 104E 104E 3 2
+text71 CODE 0 1120 1120 10 2
+text72 CODE 0 1178 1178 16 2
+text73 CODE 0 1152 1152 12 2
+nvBANK2 BANK2 1 159 159 17 1
+nvBANK3 BANK3 1 1DD 1DD 1 1
+maintext CODE 0 34 34 2E2 2
+cstackCOMMON COMMON 1 70 70 E 1
+cstackBANK0 BANK0 1 20 20 4E 1
+cstackBANK1 BANK1 1 A0 A0 4E 1
+cstackBANK2 BANK2 1 13D 13D 1C 1
+stringtext1 STRCODE 0 1800 1800 20 2
+stringtext2 STRCODE 0 1820 1820 1C 2
+stringtext3 STRCODE 0 183C 183C 16 2
+intentry CODE 0 4 4 14 2
+bssBANK0 BANK0 1 6E 6E 2 1
+bssBANK1 BANK1 1 EE EE 2 1
+bssBANK2 BANK2 1 120 120 1D 1
+bssBANK3 BANK3 1 1A0 1A0 3D 1
+clrtext CODE 0 1065 1065 6 2
+config CONFIG 4 8007 8007 5 2
+$C:\Users\str\AppData\Local\Temp\xcAs9s4.o
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 18 18 2 2
+config CONFIG 4 8007 8007 5 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 1DE-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-36F 1
+RAM 3A0-3EF 1
+RAM 420-46F 1
+RAM 4A0-4EF 1
+RAM 520-56F 1
+RAM 5A0-5EF 1
+RAM 620-64F 1
+BANK3 1DE-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-36F 1
+BANK7 3A0-3EF 1
+BANK8 420-46F 1
+BANK9 4A0-4EF 1
+CONST 800-800 2
+CONST 1000-104D 2
+CONST 1852-1FFF 2
+ENTRY 800-800 2
+ENTRY 1000-104D 2
+ENTRY 1852-1FFF 2
+IDLOC 8000-8003 2
+SFR10 500-51F 1
+SFR11 580-59F 1
+SFR12 600-61F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+STACK 212E-23EF 1
+CODE 800-800 2
+CODE 1000-104D 2
+CODE 1852-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-39F 1
+SFR8 400-41F 1
+SFR9 480-49F 1
+BANK10 520-56F 1
+BANK11 5A0-5EF 1
+BANK12 620-64F 1
+BIGRAM 2000-23EF 1
+EEDATA F000-F0FF 2
+STRCODE 800-800 2
+STRCODE 1000-104D 2
+STRCODE 1852-1FFF 2
+STRING 800-800 2
+STRING 1000-104D 2
+STRING 1852-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\ALA.X.production.o
+1A cinit CODE >17168:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+1A cinit CODE >17171:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+1A cinit CODE >17294:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+1B cinit CODE >17295:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+1C cinit CODE >17296:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+1D cinit CODE >17300:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+1E cinit CODE >17301:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+1F cinit CODE >17302:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+20 cinit CODE >17306:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+21 cinit CODE >17307:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+22 cinit CODE >17308:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+23 cinit CODE >17309:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+24 cinit CODE >17310:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+25 cinit CODE >17311:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+28 cinit CODE >17315:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+29 cinit CODE >17316:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+2A cinit CODE >17317:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+2B cinit CODE >17318:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+2C cinit CODE >17319:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+2D cinit CODE >17320:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+30 cinit CODE >17326:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+30 cinit CODE >17328:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+31 cinit CODE >17329:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+32 cinit CODE >17330:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+4 intentry CODE >52:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/interrupt_manager.c
+6 intentry CODE >55:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/interrupt_manager.c
+A intentry CODE >57:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/interrupt_manager.c
+13 intentry CODE >59:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/interrupt_manager.c
+16 intentry CODE >70:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/interrupt_manager.c
+1152 text73 CODE >132:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+1153 text73 CODE >135:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+1156 text73 CODE >138:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+1157 text73 CODE >141:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+1158 text73 CODE >144:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+1159 text73 CODE >147:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+115A text73 CODE >150:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+115A text73 CODE >152:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+115F text73 CODE >156:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+1163 text73 CODE >157:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+1178 text72 CODE >74:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pwm6.c
+1178 text72 CODE >77:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pwm6.c
+1183 text72 CODE >80:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pwm6.c
+1189 text72 CODE >80:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pwm6.c
+118D text72 CODE >81:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pwm6.c
+1120 text71 CODE >8:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+1120 text71 CODE >9:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+1123 text71 CODE >10:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+1125 text71 CODE >11:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+1126 text71 CODE >14:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+1129 text71 CODE >16:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+112C text71 CODE >17:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+112E text71 CODE >18:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+112F text71 CODE >19:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+104E text70 CODE >100:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+104E text70 CODE >103:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+1050 text70 CODE >104:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+1057 text69 CODE >106:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+1057 text69 CODE >108:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+105A text69 CODE >109:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+11D6 text68 CODE >32:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+11D7 text68 CODE >33:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+11DD text68 CODE >34:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+11E0 text68 CODE >36:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+11E2 text68 CODE >38:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+11E5 text68 CODE >39:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+11E8 text68 CODE >41:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+11EF text68 CODE >42:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+11F0 text67 CODE >44:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+11F0 text67 CODE >46:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+1203 text67 CODE >47:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+1204 text67 CODE >48:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+1208 text67 CODE >49:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+1209 text67 CODE >50:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+13E7 text66 CODE >59:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+13E8 text66 CODE >61:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+13EB text66 CODE >62:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+13F0 text66 CODE >66:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+1402 text66 CODE >68:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+1403 text66 CODE >69:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+1408 text66 CODE >71:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+140F text66 CODE >80:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+1421 text66 CODE >82:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+1425 text66 CODE >83:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+1430 text66 CODE >84:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+1431 text66 CODE >90:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+D4C text65 CODE >25:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+D4D text65 CODE >30:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+D59 text65 CODE >31:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+D69 text65 CODE >32:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+D79 text65 CODE >33:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+D8A text65 CODE >34:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+D9B text65 CODE >35:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+D9C text65 CODE >36:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+DAD text65 CODE >37:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+DBD text65 CODE >38:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+DCF text65 CODE >39:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+DD5 text65 CODE >40:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+DE5 text65 CODE >41:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+DF5 text65 CODE >42:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+E06 text65 CODE >43:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+E17 text65 CODE >44:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+E18 text65 CODE >45:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+E29 text65 CODE >46:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+E39 text65 CODE >47:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+E4B text65 CODE >48:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+E51 text65 CODE >49:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+E61 text65 CODE >50:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+E71 text65 CODE >51:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+E82 text65 CODE >52:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+E87 text65 CODE >53:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+E93 text65 CODE >54:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+1130 text64 CODE >119:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+1130 text64 CODE >121:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+113E text64 CODE >122:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+1140 text64 CODE >123:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+90E text63 CODE >56:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+90F text63 CODE >61:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+914 text63 CODE >62:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+919 text63 CODE >62:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+920 text63 CODE >64:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+92C text63 CODE >65:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+93C text63 CODE >66:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+94C text63 CODE >67:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+95E text63 CODE >68:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+970 text63 CODE >69:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+971 text63 CODE >70:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+983 text63 CODE >71:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+995 text63 CODE >72:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+9A7 text63 CODE >73:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+9A8 text63 CODE >74:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+9BA text63 CODE >75:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+9BF text63 CODE >76:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+9C3 text63 CODE >77:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+106B text62 CODE >102:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+106C text62 CODE >104:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+1071 text62 CODE >105:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+108E text61 CODE >107:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+108F text61 CODE >109:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+1095 text61 CODE >110:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+1164 text60 CODE >112:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+1165 text60 CODE >116:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+1177 text60 CODE >117:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+125C text59 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+125C text59 CODE >43:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+125E text59 CODE >45:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+1262 text59 CODE >46:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+1266 text59 CODE >47:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+126B text59 CODE >48:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+1270 text59 CODE >49:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+1276 text59 CODE >52:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+127A text59 CODE >53:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+11A5 text58 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isdigit.c
+11A5 text58 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isdigit.c
+11AE text58 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isdigit.c
+11B0 text58 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isdigit.c
+11BC text58 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isdigit.c
+127B text57 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isspace.c
+127B text57 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isspace.c
+128D text57 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isspace.c
+128F text57 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isspace.c
+129B text57 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isspace.c
+85F text56 CODE >4:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+85F text56 CODE >6:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+864 text56 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+87D text56 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+883 text56 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+885 text56 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+898 text56 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+89C text56 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+8A0 text56 CODE >11:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+8AA text56 CODE >11:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+8AF text56 CODE >11:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+8B2 text56 CODE >11:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+8B5 text56 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+8CB text56 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+8D5 text56 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+8DD text56 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+8E3 text56 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+8E5 text56 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+8F7 text56 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+902 text56 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+90D text56 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+2 text55 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\putch.c
+2 text55 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\putch.c
+1432 text54 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+1432 text54 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+143C text54 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+1440 text54 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+1441 text54 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+1460 text54 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+1464 text54 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+1468 text54 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+1478 text54 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+147E text54 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+1480 text54 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+15DC text53 CODE >259:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+15DE text53 CODE >264:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+15F6 text53 CODE >267:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+15FA text53 CODE >268:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1608 text53 CODE >271:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1610 text53 CODE >272:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1612 text53 CODE >273:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1613 text53 CODE >274:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+161F text53 CODE >275:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1624 text53 CODE >273:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+162A text53 CODE >273:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+162E text53 CODE >273:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1632 text53 CODE >278:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1637 text53 CODE >279:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1645 text53 CODE >282:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+164C text53 CODE >283:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C4B text52 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+C4B text52 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+C4C text52 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+C56 text52 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+C60 text52 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+C63 text52 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+C66 text52 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+C69 text52 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+C6C text52 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+C6F text52 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+C72 text52 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+C75 text52 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+C77 text52 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+C81 text52 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+C8B text52 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+C8E text52 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+C91 text52 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+C94 text52 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+C97 text52 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+C9A text52 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+C9D text52 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+CA0 text52 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+CA4 text52 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+CAE text52 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+CB7 text52 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+CBB text52 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+CBD text52 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+CBE text52 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+CC6 text52 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+CCA text52 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+CCE text52 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+CD6 text52 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+CD8 text52 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+CDC text52 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+CE0 text52 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+CE4 text52 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+CE8 text52 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+CEC text52 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+CF0 text52 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+CF4 text52 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+CF8 text52 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+D08 text52 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+D09 text52 CODE >37:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+D11 text52 CODE >38:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+D17 text52 CODE >40:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+D1C text52 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+D25 text52 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+D28 text52 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+D2B text52 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+D2E text52 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+D31 text52 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+D34 text52 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+D37 text52 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+D3A text52 CODE >42:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+D4B text52 CODE >43:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+B61 text51 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+B61 text51 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+B62 text51 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+B6C text51 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+B76 text51 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+B79 text51 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+B7C text51 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+B7F text51 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+B82 text51 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+B85 text51 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+B88 text51 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+B8B text51 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+B8D text51 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+B97 text51 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+BA1 text51 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+BA4 text51 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+BA7 text51 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+BAA text51 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+BAD text51 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+BB0 text51 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+BB3 text51 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+BB6 text51 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+BBF text51 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+BC3 text51 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+BC5 text51 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+BC6 text51 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+BCE text51 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+BD2 text51 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+BD6 text51 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+BD8 text51 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+BDC text51 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+BE0 text51 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+BE4 text51 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+BE8 text51 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+BEC text51 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+BF0 text51 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+BF4 text51 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+BF8 text51 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+C08 text51 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+C10 text51 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+C16 text51 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+C1B text51 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+C24 text51 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+C27 text51 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+C2A text51 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+C2D text51 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+C30 text51 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+C33 text51 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+C36 text51 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+C39 text51 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+C4A text51 CODE >36:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+120A text50 CODE >1:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+120A text50 CODE >3:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+120F text50 CODE >3:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+1213 text50 CODE >3:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+121C text50 CODE >3:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+1223 text50 CODE >4:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+12E6 text49 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+12E8 text49 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+12EA text49 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+12EB text49 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+12F9 text49 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+12FE text49 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+130E text49 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+1224 text48 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+1225 text48 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+1229 text48 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+122A text48 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+122E text48 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+1237 text48 CODE >11:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+123D text48 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+1523 text47 CODE >72:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1525 text47 CODE >77:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1529 text47 CODE >78:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1531 text47 CODE >82:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+153D text47 CODE >83:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+153F text47 CODE >84:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1540 text47 CODE >85:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+154C text47 CODE >86:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1551 text47 CODE >84:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1557 text47 CODE >84:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+155B text47 CODE >84:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+155F text47 CODE >90:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1564 text47 CODE >91:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+156C text47 CODE >94:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1578 text47 CODE >95:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+E94 text46 CODE >287:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+E96 text46 CODE >293:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+EA6 text46 CODE >294:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+EB9 text46 CODE >295:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+EBF text46 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+EC8 text46 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+ECB text46 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+ECE text46 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+ED1 text46 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+ED4 text46 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+ED7 text46 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+EDA text46 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+EDD text46 CODE >297:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+EDD text46 CODE >300:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+EE2 text46 CODE >301:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+EE7 text46 CODE >302:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+EE7 text46 CODE >303:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+EEE text46 CODE >303:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+EF3 text46 CODE >303:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+F05 text46 CODE >304:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+F0D text46 CODE >305:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+F17 text46 CODE >306:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+F1B text46 CODE >307:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+F1B text46 CODE >310:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+F1F text46 CODE >311:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+F21 text46 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+F22 text46 CODE >313:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+F27 text46 CODE >314:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+F56 text46 CODE >315:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+F5A text46 CODE >316:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+F5E text46 CODE >317:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+F8B text46 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+F8B text46 CODE >318:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+F91 text46 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+F95 text46 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+FA2 text46 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+FAB text46 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+FAF text46 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+FB9 text46 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+FBD text46 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+FC6 text46 CODE >321:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+FD1 text46 CODE >322:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+FD5 text46 CODE >323:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+FED text46 CODE >327:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+FFF text46 CODE >328:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+500 text45 CODE >692:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+502 text45 CODE >702:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+513 text45 CODE >703:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+519 text45 CODE >703:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+51B text45 CODE >705:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+521 text45 CODE >706:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+526 text45 CODE >710:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+529 text45 CODE >711:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+52A text45 CODE >713:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+52A text45 CODE >714:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+52B text45 CODE >715:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+531 text45 CODE >715:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+533 text45 CODE >716:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+534 text45 CODE >717:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+534 text45 CODE >718:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+536 text45 CODE >721:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+536 text45 CODE >722:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+538 text45 CODE >725:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+538 text45 CODE >726:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+53A text45 CODE >729:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+53A text45 CODE >730:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+53C text45 CODE >734:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+540 text45 CODE >735:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+541 text45 CODE >736:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+551 text45 CODE >736:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+556 text45 CODE >736:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+559 text45 CODE >736:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+55C text45 CODE >736:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+55F text45 CODE >736:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+562 text45 CODE >736:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+565 text45 CODE >711:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+56B text45 CODE >738:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+56F text45 CODE >739:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+573 text45 CODE >745:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+584 text45 CODE >746:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+58A text45 CODE >746:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+58C text45 CODE >747:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+599 text45 CODE >748:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+59D text45 CODE >749:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+59F text45 CODE >750:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+5A3 text45 CODE >750:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+5A6 text45 CODE >753:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+5B5 text45 CODE >754:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+5B6 text45 CODE >755:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+5BC text45 CODE >755:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+5BE text45 CODE >754:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+5CE text45 CODE >754:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+5D4 text45 CODE >754:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+5D6 text45 CODE >754:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+5E8 text45 CODE >814:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+5FA text45 CODE >815:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+600 text45 CODE >815:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+602 text45 CODE >816:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+60E text45 CODE >817:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+61C text45 CODE >847:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+63E text45 CODE >849:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+644 text45 CODE >849:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+646 text45 CODE >850:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+65F text45 CODE >852:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+679 text45 CODE >1372:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+68A text45 CODE >1373:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+690 text45 CODE >1373:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+692 text45 CODE >1374:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+69D text45 CODE >1375:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6A3 text45 CODE >1379:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6A9 text45 CODE >1379:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6AB text45 CODE >1380:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6AE text45 CODE >1384:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6C7 text45 CODE >1385:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6CE text45 CODE >1385:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6D1 text45 CODE >1387:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+133A text44 CODE >1390:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+133C text44 CODE >1395:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1340 text44 CODE >1396:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1343 text44 CODE >1397:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1344 text44 CODE >1398:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1358 text44 CODE >1397:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1362 text44 CODE >1400:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+136A text44 CODE >1404:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+12C0 text43 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+12C2 text43 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+12C6 text43 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+12CA text43 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+12CC text43 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+12CE text43 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+12DD text43 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+12E5 text43 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+175E text42 CODE >143:C:\Users\str\Desktop\teste\ALA.X\main.c
+175E text42 CODE >146:C:\Users\str\Desktop\teste\ALA.X\main.c
+1762 text42 CODE >147:C:\Users\str\Desktop\teste\ALA.X\main.c
+176B text42 CODE >148:C:\Users\str\Desktop\teste\ALA.X\main.c
+17BC text42 CODE >149:C:\Users\str\Desktop\teste\ALA.X\main.c
+17C0 text42 CODE >150:C:\Users\str\Desktop\teste\ALA.X\main.c
+17C9 text42 CODE >151:C:\Users\str\Desktop\teste\ALA.X\main.c
+17CD text42 CODE >152:C:\Users\str\Desktop\teste\ALA.X\main.c
+17E4 text42 CODE >153:C:\Users\str\Desktop\teste\ALA.X\main.c
+17ED text42 CODE >154:C:\Users\str\Desktop\teste\ALA.X\main.c
+17F1 text42 CODE >155:C:\Users\str\Desktop\teste\ALA.X\main.c
+17FA text42 CODE >156:C:\Users\str\Desktop\teste\ALA.X\main.c
+17FF text42 CODE >158:C:\Users\str\Desktop\teste\ALA.X\main.c
+6D2 text41 CODE >78:C:\Users\str\Desktop\teste\ALA.X\main.c
+6D2 text41 CODE >81:C:\Users\str\Desktop\teste\ALA.X\main.c
+6D2 text41 CODE >82:C:\Users\str\Desktop\teste\ALA.X\main.c
+6DE text41 CODE >83:C:\Users\str\Desktop\teste\ALA.X\main.c
+6EE text41 CODE >85:C:\Users\str\Desktop\teste\ALA.X\main.c
+6FE text41 CODE >86:C:\Users\str\Desktop\teste\ALA.X\main.c
+70E text41 CODE >87:C:\Users\str\Desktop\teste\ALA.X\main.c
+71E text41 CODE >88:C:\Users\str\Desktop\teste\ALA.X\main.c
+72E text41 CODE >89:C:\Users\str\Desktop\teste\ALA.X\main.c
+740 text41 CODE >90:C:\Users\str\Desktop\teste\ALA.X\main.c
+751 text41 CODE >91:C:\Users\str\Desktop\teste\ALA.X\main.c
+756 text41 CODE >92:C:\Users\str\Desktop\teste\ALA.X\main.c
+75A text41 CODE >94:C:\Users\str\Desktop\teste\ALA.X\main.c
+765 text41 CODE >95:C:\Users\str\Desktop\teste\ALA.X\main.c
+775 text41 CODE >96:C:\Users\str\Desktop\teste\ALA.X\main.c
+785 text41 CODE >97:C:\Users\str\Desktop\teste\ALA.X\main.c
+795 text41 CODE >98:C:\Users\str\Desktop\teste\ALA.X\main.c
+7A5 text41 CODE >99:C:\Users\str\Desktop\teste\ALA.X\main.c
+7B5 text41 CODE >100:C:\Users\str\Desktop\teste\ALA.X\main.c
+7C7 text41 CODE >101:C:\Users\str\Desktop\teste\ALA.X\main.c
+7D8 text41 CODE >102:C:\Users\str\Desktop\teste\ALA.X\main.c
+7DD text41 CODE >104:C:\Users\str\Desktop\teste\ALA.X\main.c
+7DE text41 CODE >105:C:\Users\str\Desktop\teste\ALA.X\main.c
+123E text40 CODE >180:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+123E text40 CODE >182:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+1242 text40 CODE >184:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+1245 text40 CODE >185:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+1247 text40 CODE >186:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+1249 text40 CODE >187:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+124A text40 CODE >188:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+124B text40 CODE >189:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+124C text40 CODE >190:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+124E text40 CODE >191:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+1250 text40 CODE >192:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+1251 text40 CODE >194:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+1251 text40 CODE >196:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+1255 text40 CODE >198:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+1256 text40 CODE >199:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+1257 text40 CODE >199:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+1259 text40 CODE >199:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+125B text40 CODE >200:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+1579 text39 CODE >121:C:\Users\str\Desktop\teste\ALA.X\main.c
+157A text39 CODE >123:C:\Users\str\Desktop\teste\ALA.X\main.c
+1586 text39 CODE >124:C:\Users\str\Desktop\teste\ALA.X\main.c
+1594 text39 CODE >125:C:\Users\str\Desktop\teste\ALA.X\main.c
+15A2 text39 CODE >126:C:\Users\str\Desktop\teste\ALA.X\main.c
+15B0 text39 CODE >127:C:\Users\str\Desktop\teste\ALA.X\main.c
+15BE text39 CODE >129:C:\Users\str\Desktop\teste\ALA.X\main.c
+15C3 text39 CODE >130:C:\Users\str\Desktop\teste\ALA.X\main.c
+15C7 text39 CODE >133:C:\Users\str\Desktop\teste\ALA.X\main.c
+15CA text39 CODE >133:C:\Users\str\Desktop\teste\ALA.X\main.c
+15D0 text39 CODE >135:C:\Users\str\Desktop\teste\ALA.X\main.c
+15D4 text39 CODE >137:C:\Users\str\Desktop\teste\ALA.X\main.c
+15D5 text39 CODE >139:C:\Users\str\Desktop\teste\ALA.X\main.c
+15DB text39 CODE >141:C:\Users\str\Desktop\teste\ALA.X\main.c
+10F3 text38 CODE >21:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+10F3 text38 CODE >22:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+10F6 text38 CODE >23:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+10F8 text38 CODE >24:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+10F9 text38 CODE >26:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+10FB text38 CODE >27:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+10FE text38 CODE >28:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+1100 text38 CODE >29:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+1101 text38 CODE >30:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+1051 text37 CODE >111:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+1051 text37 CODE >114:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+1053 text37 CODE >115:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+105B text36 CODE >117:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+105B text36 CODE >119:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+105E text36 CODE >120:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+1072 text35 CODE >50:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+1072 text35 CODE >51:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+1075 text35 CODE >52:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+1078 text35 CODE >53:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+1079 text34 CODE >44:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+1079 text34 CODE >45:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+107B text34 CODE >46:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+107C text34 CODE >47:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+107F text34 CODE >48:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+316 text33 CODE >160:C:\Users\str\Desktop\teste\ALA.X\main.c
+316 text33 CODE >162:C:\Users\str\Desktop\teste\ALA.X\main.c
+31F text33 CODE >164:C:\Users\str\Desktop\teste\ALA.X\main.c
+325 text33 CODE >165:C:\Users\str\Desktop\teste\ALA.X\main.c
+327 text33 CODE >165:C:\Users\str\Desktop\teste\ALA.X\main.c
+32B text33 CODE >166:C:\Users\str\Desktop\teste\ALA.X\main.c
+331 text33 CODE >167:C:\Users\str\Desktop\teste\ALA.X\main.c
+334 text33 CODE >167:C:\Users\str\Desktop\teste\ALA.X\main.c
+338 text33 CODE >168:C:\Users\str\Desktop\teste\ALA.X\main.c
+339 text33 CODE >169:C:\Users\str\Desktop\teste\ALA.X\main.c
+33F text33 CODE >170:C:\Users\str\Desktop\teste\ALA.X\main.c
+342 text33 CODE >170:C:\Users\str\Desktop\teste\ALA.X\main.c
+346 text33 CODE >171:C:\Users\str\Desktop\teste\ALA.X\main.c
+347 text33 CODE >172:C:\Users\str\Desktop\teste\ALA.X\main.c
+348 text33 CODE >173:C:\Users\str\Desktop\teste\ALA.X\main.c
+34E text33 CODE >174:C:\Users\str\Desktop\teste\ALA.X\main.c
+34F text33 CODE >175:C:\Users\str\Desktop\teste\ALA.X\main.c
+350 text33 CODE >176:C:\Users\str\Desktop\teste\ALA.X\main.c
+351 text33 CODE >177:C:\Users\str\Desktop\teste\ALA.X\main.c
+352 text33 CODE >181:C:\Users\str\Desktop\teste\ALA.X\main.c
+356 text33 CODE >181:C:\Users\str\Desktop\teste\ALA.X\main.c
+358 text33 CODE >181:C:\Users\str\Desktop\teste\ALA.X\main.c
+35C text33 CODE >182:C:\Users\str\Desktop\teste\ALA.X\main.c
+362 text33 CODE >183:C:\Users\str\Desktop\teste\ALA.X\main.c
+366 text33 CODE >183:C:\Users\str\Desktop\teste\ALA.X\main.c
+368 text33 CODE >183:C:\Users\str\Desktop\teste\ALA.X\main.c
+36F text33 CODE >183:C:\Users\str\Desktop\teste\ALA.X\main.c
+371 text33 CODE >183:C:\Users\str\Desktop\teste\ALA.X\main.c
+375 text33 CODE >184:C:\Users\str\Desktop\teste\ALA.X\main.c
+37B text33 CODE >185:C:\Users\str\Desktop\teste\ALA.X\main.c
+37F text33 CODE >185:C:\Users\str\Desktop\teste\ALA.X\main.c
+381 text33 CODE >185:C:\Users\str\Desktop\teste\ALA.X\main.c
+388 text33 CODE >185:C:\Users\str\Desktop\teste\ALA.X\main.c
+38A text33 CODE >185:C:\Users\str\Desktop\teste\ALA.X\main.c
+38E text33 CODE >186:C:\Users\str\Desktop\teste\ALA.X\main.c
+390 text33 CODE >187:C:\Users\str\Desktop\teste\ALA.X\main.c
+391 text33 CODE >188:C:\Users\str\Desktop\teste\ALA.X\main.c
+392 text33 CODE >191:C:\Users\str\Desktop\teste\ALA.X\main.c
+39A text33 CODE >192:C:\Users\str\Desktop\teste\ALA.X\main.c
+3A0 text33 CODE >193:C:\Users\str\Desktop\teste\ALA.X\main.c
+3A7 text33 CODE >194:C:\Users\str\Desktop\teste\ALA.X\main.c
+3AD text33 CODE >197:C:\Users\str\Desktop\teste\ALA.X\main.c
+3B0 text33 CODE >199:C:\Users\str\Desktop\teste\ALA.X\main.c
+3B3 text33 CODE >199:C:\Users\str\Desktop\teste\ALA.X\main.c
+3B7 text33 CODE >200:C:\Users\str\Desktop\teste\ALA.X\main.c
+3BB text33 CODE >200:C:\Users\str\Desktop\teste\ALA.X\main.c
+3BF text33 CODE >201:C:\Users\str\Desktop\teste\ALA.X\main.c
+3CB text33 CODE >202:C:\Users\str\Desktop\teste\ALA.X\main.c
+3D2 text33 CODE >203:C:\Users\str\Desktop\teste\ALA.X\main.c
+3D6 text33 CODE >203:C:\Users\str\Desktop\teste\ALA.X\main.c
+3DA text33 CODE >204:C:\Users\str\Desktop\teste\ALA.X\main.c
+3E7 text33 CODE >205:C:\Users\str\Desktop\teste\ALA.X\main.c
+3EE text33 CODE >207:C:\Users\str\Desktop\teste\ALA.X\main.c
+3F2 text33 CODE >207:C:\Users\str\Desktop\teste\ALA.X\main.c
+3F6 text33 CODE >208:C:\Users\str\Desktop\teste\ALA.X\main.c
+402 text33 CODE >209:C:\Users\str\Desktop\teste\ALA.X\main.c
+409 text33 CODE >210:C:\Users\str\Desktop\teste\ALA.X\main.c
+40D text33 CODE >210:C:\Users\str\Desktop\teste\ALA.X\main.c
+411 text33 CODE >211:C:\Users\str\Desktop\teste\ALA.X\main.c
+41E text33 CODE >212:C:\Users\str\Desktop\teste\ALA.X\main.c
+425 text33 CODE >214:C:\Users\str\Desktop\teste\ALA.X\main.c
+429 text33 CODE >214:C:\Users\str\Desktop\teste\ALA.X\main.c
+432 text33 CODE >215:C:\Users\str\Desktop\teste\ALA.X\main.c
+433 text33 CODE >216:C:\Users\str\Desktop\teste\ALA.X\main.c
+437 text33 CODE >217:C:\Users\str\Desktop\teste\ALA.X\main.c
+439 text33 CODE >218:C:\Users\str\Desktop\teste\ALA.X\main.c
+43F text33 CODE >220:C:\Users\str\Desktop\teste\ALA.X\main.c
+442 text33 CODE >220:C:\Users\str\Desktop\teste\ALA.X\main.c
+44C text33 CODE >221:C:\Users\str\Desktop\teste\ALA.X\main.c
+44E text33 CODE >222:C:\Users\str\Desktop\teste\ALA.X\main.c
+44F text33 CODE >223:C:\Users\str\Desktop\teste\ALA.X\main.c
+453 text33 CODE >224:C:\Users\str\Desktop\teste\ALA.X\main.c
+459 text33 CODE >227:C:\Users\str\Desktop\teste\ALA.X\main.c
+45D text33 CODE >227:C:\Users\str\Desktop\teste\ALA.X\main.c
+465 text33 CODE >227:C:\Users\str\Desktop\teste\ALA.X\main.c
+469 text33 CODE >228:C:\Users\str\Desktop\teste\ALA.X\main.c
+474 text33 CODE >232:C:\Users\str\Desktop\teste\ALA.X\main.c
+477 text33 CODE >232:C:\Users\str\Desktop\teste\ALA.X\main.c
+47B text33 CODE >233:C:\Users\str\Desktop\teste\ALA.X\main.c
+47D text33 CODE >234:C:\Users\str\Desktop\teste\ALA.X\main.c
+47E text33 CODE >235:C:\Users\str\Desktop\teste\ALA.X\main.c
+484 text33 CODE >238:C:\Users\str\Desktop\teste\ALA.X\main.c
+486 text33 CODE >238:C:\Users\str\Desktop\teste\ALA.X\main.c
+48A text33 CODE >239:C:\Users\str\Desktop\teste\ALA.X\main.c
+48D text33 CODE >241:C:\Users\str\Desktop\teste\ALA.X\main.c
+493 text33 CODE >243:C:\Users\str\Desktop\teste\ALA.X\main.c
+496 text33 CODE >243:C:\Users\str\Desktop\teste\ALA.X\main.c
+49A text33 CODE >244:C:\Users\str\Desktop\teste\ALA.X\main.c
+49F text33 CODE >246:C:\Users\str\Desktop\teste\ALA.X\main.c
+4A5 text33 CODE >247:C:\Users\str\Desktop\teste\ALA.X\main.c
+4AC text33 CODE >248:C:\Users\str\Desktop\teste\ALA.X\main.c
+4AF text33 CODE >249:C:\Users\str\Desktop\teste\ALA.X\main.c
+4B0 text33 CODE >251:C:\Users\str\Desktop\teste\ALA.X\main.c
+4B7 text33 CODE >252:C:\Users\str\Desktop\teste\ALA.X\main.c
+4BA text33 CODE >257:C:\Users\str\Desktop\teste\ALA.X\main.c
+4BF text33 CODE >258:C:\Users\str\Desktop\teste\ALA.X\main.c
+4C1 text33 CODE >260:C:\Users\str\Desktop\teste\ALA.X\main.c
+4C2 text33 CODE >262:C:\Users\str\Desktop\teste\ALA.X\main.c
+4C9 text33 CODE >263:C:\Users\str\Desktop\teste\ALA.X\main.c
+4CE text33 CODE >264:C:\Users\str\Desktop\teste\ALA.X\main.c
+4D3 text33 CODE >265:C:\Users\str\Desktop\teste\ALA.X\main.c
+4D9 text33 CODE >266:C:\Users\str\Desktop\teste\ALA.X\main.c
+4DF text33 CODE >267:C:\Users\str\Desktop\teste\ALA.X\main.c
+4E0 text33 CODE >268:C:\Users\str\Desktop\teste\ALA.X\main.c
+4E1 text33 CODE >269:C:\Users\str\Desktop\teste\ALA.X\main.c
+4E5 text33 CODE >271:C:\Users\str\Desktop\teste\ALA.X\main.c
+4EA text33 CODE >272:C:\Users\str\Desktop\teste\ALA.X\main.c
+4EF text33 CODE >273:C:\Users\str\Desktop\teste\ALA.X\main.c
+4F2 text33 CODE >274:C:\Users\str\Desktop\teste\ALA.X\main.c
+4FF text33 CODE >277:C:\Users\str\Desktop\teste\ALA.X\main.c
+3 text32 CODE >189:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+3 text32 CODE >192:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+10B0 text31 CODE >176:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+10B0 text31 CODE >179:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+10B7 text31 CODE >181:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+10BC text31 CODE >183:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+1141 text30 CODE >127:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+1141 text30 CODE >129:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+1146 text30 CODE >132:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+1147 text30 CODE >135:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+1149 text30 CODE >136:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+114B text30 CODE >139:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+114C text30 CODE >140:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+114D text30 CODE >144:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+114F text30 CODE >145:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+1151 text30 CODE >147:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+10D7 text29 CODE >164:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+10D7 text29 CODE >168:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+10D9 text29 CODE >169:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+10E1 text29 CODE >173:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+10E4 text29 CODE >174:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+805 text27 CODE >59:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+807 text27 CODE >61:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+80A text27 CODE >62:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+80F text27 CODE >66:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+824 text27 CODE >68:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+826 text27 CODE >69:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+82B text27 CODE >71:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+832 text27 CODE >80:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+848 text27 CODE >82:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+84D text27 CODE >83:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+85C text27 CODE >84:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+85E text27 CODE >90:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+14D0 text26 CODE >17:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+14D2 text26 CODE >19:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+14E1 text26 CODE >20:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+14F6 text26 CODE >21:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+1509 text26 CODE >22:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+151C text26 CODE >23:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+1522 text26 CODE >24:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+A8A text25 CODE >56:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+A8C text25 CODE >61:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+A91 text25 CODE >62:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+A96 text25 CODE >62:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+A9D text25 CODE >64:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+AAC text25 CODE >65:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+AC1 text25 CODE >66:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+AD4 text25 CODE >67:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+AE9 text25 CODE >68:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+AFE text25 CODE >69:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+AFF text25 CODE >70:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+B15 text25 CODE >71:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+B2A text25 CODE >72:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+B3F text25 CODE >73:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+B40 text25 CODE >74:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+B56 text25 CODE >75:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+B5C text25 CODE >76:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+B60 text25 CODE >77:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+164D text24 CODE >79:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+164D text24 CODE >81:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+1656 text24 CODE >82:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+165A text24 CODE >83:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+1666 text24 CODE >84:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+166E text24 CODE >85:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+1672 text24 CODE >86:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+167E text24 CODE >87:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+1682 text24 CODE >88:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+1686 text24 CODE >89:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+1692 text24 CODE >90:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+1696 text24 CODE >91:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+169A text24 CODE >92:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+16A6 text24 CODE >93:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+16AE text24 CODE >95:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+16B4 text24 CODE >96:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+16BA text24 CODE >97:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+16C0 text24 CODE >98:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+16C6 text24 CODE >99:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+16CF text24 CODE >100:C:\Users\str\Desktop\teste\ALA.X\LCD/lcd.c
+10BD text23 CODE >26:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+10BD text23 CODE >28:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+10C0 text23 CODE >29:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+10C2 text23 CODE >30:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+10C3 text23 CODE >31:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+10C5 text23 CODE >32:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+10C6 text23 CODE >34:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+10C8 text23 CODE >35:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+10C9 text23 CODE >36:C:\Users\str\Desktop\teste\ALA.X\I2C/i2c.c
+118E text22 CODE >63:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+118E text22 CODE >67:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+1190 text22 CODE >69:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+1191 text22 CODE >71:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+1192 text22 CODE >73:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+1193 text22 CODE >75:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+1194 text22 CODE >77:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+1195 text22 CODE >79:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+1196 text22 CODE >81:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+1198 text22 CODE >83:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+1199 text22 CODE >85:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+119A text22 CODE >87:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+119B text22 CODE >89:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+119C text22 CODE >91:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+119D text22 CODE >93:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+119E text22 CODE >95:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+119F text22 CODE >97:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+11A0 text22 CODE >99:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+11A1 text22 CODE >101:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+11A3 text22 CODE >103:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+11A4 text22 CODE >106:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/adcc.c
+109E text21 CODE >167:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/i2c1_master.c
+109E text21 CODE >169:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/i2c1_master.c
+10A0 text21 CODE >170:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/i2c1_master.c
+10A2 text21 CODE >171:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/i2c1_master.c
+10A3 text21 CODE >172:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/i2c1_master.c
+10A5 text21 CODE >173:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/i2c1_master.c
+10A6 text21 CODE >174:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/i2c1_master.c
+10A7 text20 CODE >62:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/mcc.c
+10A7 text20 CODE >65:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/mcc.c
+10AA text20 CODE >67:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/mcc.c
+10AB text20 CODE >69:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/mcc.c
+10AC text20 CODE >71:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/mcc.c
+10AE text20 CODE >73:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/mcc.c
+10AF text20 CODE >74:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/mcc.c
+13A2 text19 CODE >55:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13A2 text19 CODE >60:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13A4 text19 CODE >61:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13A5 text19 CODE >62:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13A6 text19 CODE >63:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13A7 text19 CODE >64:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13A8 text19 CODE >69:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13AA text19 CODE >70:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13AC text19 CODE >71:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13AE text19 CODE >72:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13B0 text19 CODE >73:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13B2 text19 CODE >78:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13B5 text19 CODE >79:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13B7 text19 CODE >80:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13B9 text19 CODE >81:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13BB text19 CODE >82:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13BD text19 CODE >87:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13BE text19 CODE >88:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13BF text19 CODE >89:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13C0 text19 CODE >90:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13C1 text19 CODE >91:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13C2 text19 CODE >96:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13C3 text19 CODE >97:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13C4 text19 CODE >98:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13C5 text19 CODE >99:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13C6 text19 CODE >100:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13C7 text19 CODE >105:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13C9 text19 CODE >106:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13CB text19 CODE >107:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13CD text19 CODE >108:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13CF text19 CODE >109:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13D1 text19 CODE >114:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13D3 text19 CODE >115:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13D5 text19 CODE >116:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13D7 text19 CODE >117:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13D9 text19 CODE >118:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13DB text19 CODE >127:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13DE text19 CODE >128:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13E1 text19 CODE >129:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13E3 text19 CODE >130:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+13E6 text19 CODE >131:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pin_manager.c
+1096 text18 CODE >76:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/mcc.c
+1096 text18 CODE >79:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/mcc.c
+1098 text18 CODE >81:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/mcc.c
+1099 text18 CODE >83:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/mcc.c
+109A text18 CODE >85:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/mcc.c
+109B text18 CODE >87:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/mcc.c
+109C text18 CODE >89:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/mcc.c
+109D text18 CODE >90:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/mcc.c
+10CA text17 CODE >58:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pwm6.c
+10CA text17 CODE >62:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pwm6.c
+10CD text17 CODE >65:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pwm6.c
+10CF text17 CODE >68:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pwm6.c
+10D1 text17 CODE >71:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pwm6.c
+10D6 text17 CODE >72:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/pwm6.c
+105F text16 CODE >185:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+105F text16 CODE >186:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+1064 text16 CODE >187:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+7DF text15 CODE >64:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+7DF text15 CODE >69:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+7E1 text15 CODE >72:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+7E2 text15 CODE >75:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+7E4 text15 CODE >78:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+7E6 text15 CODE >81:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+7E8 text15 CODE >84:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+7EA text15 CODE >87:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+7F2 text15 CODE >90:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+7F4 text15 CODE >93:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+7FC text15 CODE >96:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+7FF text15 CODE >97:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr1.c
+10E5 text14 CODE >62:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+10E5 text14 CODE >67:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+10E8 text14 CODE >70:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+10E9 text14 CODE >73:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+10EA text14 CODE >76:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+10EC text14 CODE >79:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+10ED text14 CODE >82:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+10EF text14 CODE >85:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+10F2 text14 CODE >86:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+11BD text13 CODE >50:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/mcc.c
+11BD text13 CODE >52:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/mcc.c
+11C0 text13 CODE >53:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/mcc.c
+11C3 text13 CODE >54:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/mcc.c
+11C6 text13 CODE >55:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/mcc.c
+11C9 text13 CODE >56:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/mcc.c
+11CC text13 CODE >57:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/mcc.c
+11CF text13 CODE >58:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/mcc.c
+11D2 text13 CODE >59:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/mcc.c
+11D5 text13 CODE >60:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/mcc.c
+1102 text12 CODE >21:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+1102 text12 CODE >22:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+1105 text12 CODE >23:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+1107 text12 CODE >24:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+1108 text12 CODE >26:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+110A text12 CODE >27:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+110D text12 CODE >28:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+110F text12 CODE >29:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+1110 text12 CODE >30:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+1054 text11 CODE >111:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+1054 text11 CODE >114:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+1056 text11 CODE >115:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+801 text10 CODE >117:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+801 text10 CODE >119:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+804 text10 CODE >120:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/tmr2.c
+1080 text9 CODE >50:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+1080 text9 CODE >51:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+1083 text9 CODE >52:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+1086 text9 CODE >53:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+1087 text8 CODE >44:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+1087 text8 CODE >45:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+1089 text8 CODE >46:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+108A text8 CODE >47:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+108D text8 CODE >48:C:\Users\str\Desktop\teste\ALA.X\alarm.c
+129C text7 CODE >180:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+129C text7 CODE >182:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+12A1 text7 CODE >184:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+12A4 text7 CODE >185:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+12A8 text7 CODE >186:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+12AC text7 CODE >187:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+12AD text7 CODE >188:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+12AE text7 CODE >189:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+12AF text7 CODE >190:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+12B1 text7 CODE >191:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+12B3 text7 CODE >192:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+12B4 text7 CODE >194:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+12B4 text7 CODE >196:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+12B8 text7 CODE >198:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+12B9 text7 CODE >199:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+12BB text7 CODE >199:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+12BD text7 CODE >199:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+12BF text7 CODE >200:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+16D0 text6 CODE >34:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+16D0 text6 CODE >35:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+16DC text6 CODE >36:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+16E8 text6 CODE >37:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+16F1 text6 CODE >38:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+16FA text6 CODE >39:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+1703 text6 CODE >40:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+170F text6 CODE >41:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+171B text6 CODE >42:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+1727 text6 CODE >43:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+1733 text6 CODE >44:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+173C text6 CODE >45:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+1748 text6 CODE >46:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+1751 text6 CODE >47:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+175D text6 CODE >48:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+130F text5 CODE >109:C:\Users\str\Desktop\teste\ALA.X\main.c
+130F text5 CODE >111:C:\Users\str\Desktop\teste\ALA.X\main.c
+131B text5 CODE >112:C:\Users\str\Desktop\teste\ALA.X\main.c
+1324 text5 CODE >113:C:\Users\str\Desktop\teste\ALA.X\main.c
+1330 text5 CODE >114:C:\Users\str\Desktop\teste\ALA.X\main.c
+1339 text5 CODE >116:C:\Users\str\Desktop\teste\ALA.X\main.c
+1111 text4 CODE >202:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+1111 text4 CODE >204:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+1115 text4 CODE >205:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+1119 text4 CODE >206:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+111A text4 CODE >207:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+111B text4 CODE >208:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+111C text4 CODE >209:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+111D text4 CODE >211:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+111F text4 CODE >212:C:\Users\str\Desktop\teste\ALA.X\mcc_generated_files/memory.c
+9C4 text3 CODE >71:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+9C6 text3 CODE >72:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+9D5 text3 CODE >73:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+9E4 text3 CODE >74:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+9F3 text3 CODE >75:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+A02 text3 CODE >76:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+A11 text3 CODE >77:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+A20 text3 CODE >78:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+A2F text3 CODE >79:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+A3E text3 CODE >80:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+A4D text3 CODE >81:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+A5C text3 CODE >82:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+A6B text3 CODE >83:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+A7A text3 CODE >84:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+A89 text3 CODE >90:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+136B text2 CODE >7:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+136D text2 CODE >9:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+136E text2 CODE >10:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+136E text2 CODE >11:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+1372 text2 CODE >12:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+1373 text2 CODE >14:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+1373 text2 CODE >15:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+1377 text2 CODE >16:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+1378 text2 CODE >18:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+1378 text2 CODE >19:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+137C text2 CODE >20:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+137D text2 CODE >22:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+137D text2 CODE >23:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+1381 text2 CODE >24:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+1382 text2 CODE >26:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+1382 text2 CODE >27:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+1386 text2 CODE >28:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+1387 text2 CODE >30:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+138C text2 CODE >30:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+1391 text2 CODE >30:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+1394 text2 CODE >30:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+1397 text2 CODE >30:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+139A text2 CODE >30:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+139D text2 CODE >31:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+13A1 text2 CODE >32:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+1481 text1 CODE >50:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+1483 text1 CODE >53:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+148C text1 CODE >54:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+1497 text1 CODE >55:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+14A5 text1 CODE >56:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+14B3 text1 CODE >57:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+14C1 text1 CODE >58:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+14CF text1 CODE >59:C:\Users\str\Desktop\teste\ALA.X\EPROMlib.c
+34 maintext CODE >279:C:\Users\str\Desktop\teste\ALA.X\main.c
+34 maintext CODE >281:C:\Users\str\Desktop\teste\ALA.X\main.c
+37 maintext CODE >283:C:\Users\str\Desktop\teste\ALA.X\main.c
+38 maintext CODE >285:C:\Users\str\Desktop\teste\ALA.X\main.c
+39 maintext CODE >286:C:\Users\str\Desktop\teste\ALA.X\main.c
+3B maintext CODE >287:C:\Users\str\Desktop\teste\ALA.X\main.c
+3C maintext CODE >288:C:\Users\str\Desktop\teste\ALA.X\main.c
+3D maintext CODE >289:C:\Users\str\Desktop\teste\ALA.X\main.c
+41 maintext CODE >290:C:\Users\str\Desktop\teste\ALA.X\main.c
+42 maintext CODE >291:C:\Users\str\Desktop\teste\ALA.X\main.c
+46 maintext CODE >292:C:\Users\str\Desktop\teste\ALA.X\main.c
+48 maintext CODE >294:C:\Users\str\Desktop\teste\ALA.X\main.c
+4A maintext CODE >295:C:\Users\str\Desktop\teste\ALA.X\main.c
+4E maintext CODE >296:C:\Users\str\Desktop\teste\ALA.X\main.c
+52 maintext CODE >297:C:\Users\str\Desktop\teste\ALA.X\main.c
+56 maintext CODE >298:C:\Users\str\Desktop\teste\ALA.X\main.c
+5A maintext CODE >299:C:\Users\str\Desktop\teste\ALA.X\main.c
+5B maintext CODE >300:C:\Users\str\Desktop\teste\ALA.X\main.c
+5F maintext CODE >301:C:\Users\str\Desktop\teste\ALA.X\main.c
+60 maintext CODE >302:C:\Users\str\Desktop\teste\ALA.X\main.c
+68 maintext CODE >303:C:\Users\str\Desktop\teste\ALA.X\main.c
+69 maintext CODE >304:C:\Users\str\Desktop\teste\ALA.X\main.c
+6A maintext CODE >305:C:\Users\str\Desktop\teste\ALA.X\main.c
+6C maintext CODE >306:C:\Users\str\Desktop\teste\ALA.X\main.c
+70 maintext CODE >307:C:\Users\str\Desktop\teste\ALA.X\main.c
+74 maintext CODE >308:C:\Users\str\Desktop\teste\ALA.X\main.c
+78 maintext CODE >309:C:\Users\str\Desktop\teste\ALA.X\main.c
+7D maintext CODE >310:C:\Users\str\Desktop\teste\ALA.X\main.c
+82 maintext CODE >311:C:\Users\str\Desktop\teste\ALA.X\main.c
+85 maintext CODE >312:C:\Users\str\Desktop\teste\ALA.X\main.c
+88 maintext CODE >314:C:\Users\str\Desktop\teste\ALA.X\main.c
+8B maintext CODE >315:C:\Users\str\Desktop\teste\ALA.X\main.c
+8E maintext CODE >316:C:\Users\str\Desktop\teste\ALA.X\main.c
+A7 maintext CODE >318:C:\Users\str\Desktop\teste\ALA.X\main.c
+DC maintext CODE >319:C:\Users\str\Desktop\teste\ALA.X\main.c
+E2 maintext CODE >320:C:\Users\str\Desktop\teste\ALA.X\main.c
+E9 maintext CODE >324:C:\Users\str\Desktop\teste\ALA.X\main.c
+EF maintext CODE >325:C:\Users\str\Desktop\teste\ALA.X\main.c
+F4 maintext CODE >326:C:\Users\str\Desktop\teste\ALA.X\main.c
+F9 maintext CODE >327:C:\Users\str\Desktop\teste\ALA.X\main.c
+101 maintext CODE >330:C:\Users\str\Desktop\teste\ALA.X\main.c
+106 maintext CODE >331:C:\Users\str\Desktop\teste\ALA.X\main.c
+109 maintext CODE >331:C:\Users\str\Desktop\teste\ALA.X\main.c
+10D maintext CODE >332:C:\Users\str\Desktop\teste\ALA.X\main.c
+111 maintext CODE >333:C:\Users\str\Desktop\teste\ALA.X\main.c
+112 maintext CODE >334:C:\Users\str\Desktop\teste\ALA.X\main.c
+113 maintext CODE >336:C:\Users\str\Desktop\teste\ALA.X\main.c
+121 maintext CODE >338:C:\Users\str\Desktop\teste\ALA.X\main.c
+126 maintext CODE >340:C:\Users\str\Desktop\teste\ALA.X\main.c
+12E maintext CODE >342:C:\Users\str\Desktop\teste\ALA.X\main.c
+133 maintext CODE >343:C:\Users\str\Desktop\teste\ALA.X\main.c
+136 maintext CODE >343:C:\Users\str\Desktop\teste\ALA.X\main.c
+13A maintext CODE >344:C:\Users\str\Desktop\teste\ALA.X\main.c
+13E maintext CODE >345:C:\Users\str\Desktop\teste\ALA.X\main.c
+13F maintext CODE >346:C:\Users\str\Desktop\teste\ALA.X\main.c
+141 maintext CODE >350:C:\Users\str\Desktop\teste\ALA.X\main.c
+147 maintext CODE >352:C:\Users\str\Desktop\teste\ALA.X\main.c
+14F maintext CODE >354:C:\Users\str\Desktop\teste\ALA.X\main.c
+154 maintext CODE >355:C:\Users\str\Desktop\teste\ALA.X\main.c
+157 maintext CODE >355:C:\Users\str\Desktop\teste\ALA.X\main.c
+15B maintext CODE >356:C:\Users\str\Desktop\teste\ALA.X\main.c
+15F maintext CODE >357:C:\Users\str\Desktop\teste\ALA.X\main.c
+160 maintext CODE >358:C:\Users\str\Desktop\teste\ALA.X\main.c
+162 maintext CODE >362:C:\Users\str\Desktop\teste\ALA.X\main.c
+168 maintext CODE >364:C:\Users\str\Desktop\teste\ALA.X\main.c
+170 maintext CODE >366:C:\Users\str\Desktop\teste\ALA.X\main.c
+175 maintext CODE >367:C:\Users\str\Desktop\teste\ALA.X\main.c
+178 maintext CODE >367:C:\Users\str\Desktop\teste\ALA.X\main.c
+17C maintext CODE >368:C:\Users\str\Desktop\teste\ALA.X\main.c
+180 maintext CODE >369:C:\Users\str\Desktop\teste\ALA.X\main.c
+185 maintext CODE >370:C:\Users\str\Desktop\teste\ALA.X\main.c
+186 maintext CODE >371:C:\Users\str\Desktop\teste\ALA.X\main.c
+188 maintext CODE >376:C:\Users\str\Desktop\teste\ALA.X\main.c
+18E maintext CODE >377:C:\Users\str\Desktop\teste\ALA.X\main.c
+196 maintext CODE >379:C:\Users\str\Desktop\teste\ALA.X\main.c
+19B maintext CODE >380:C:\Users\str\Desktop\teste\ALA.X\main.c
+19E maintext CODE >380:C:\Users\str\Desktop\teste\ALA.X\main.c
+1A2 maintext CODE >381:C:\Users\str\Desktop\teste\ALA.X\main.c
+1A6 maintext CODE >382:C:\Users\str\Desktop\teste\ALA.X\main.c
+1AB maintext CODE >383:C:\Users\str\Desktop\teste\ALA.X\main.c
+1AC maintext CODE >384:C:\Users\str\Desktop\teste\ALA.X\main.c
+1AE maintext CODE >389:C:\Users\str\Desktop\teste\ALA.X\main.c
+1B4 maintext CODE >390:C:\Users\str\Desktop\teste\ALA.X\main.c
+1BC maintext CODE >392:C:\Users\str\Desktop\teste\ALA.X\main.c
+1C1 maintext CODE >393:C:\Users\str\Desktop\teste\ALA.X\main.c
+1CC maintext CODE >394:C:\Users\str\Desktop\teste\ALA.X\main.c
+1CD maintext CODE >395:C:\Users\str\Desktop\teste\ALA.X\main.c
+1CE maintext CODE >396:C:\Users\str\Desktop\teste\ALA.X\main.c
+1D2 maintext CODE >397:C:\Users\str\Desktop\teste\ALA.X\main.c
+1D6 maintext CODE >398:C:\Users\str\Desktop\teste\ALA.X\main.c
+1DA maintext CODE >399:C:\Users\str\Desktop\teste\ALA.X\main.c
+1DD maintext CODE >400:C:\Users\str\Desktop\teste\ALA.X\main.c
+1DE maintext CODE >401:C:\Users\str\Desktop\teste\ALA.X\main.c
+1E0 maintext CODE >402:C:\Users\str\Desktop\teste\ALA.X\main.c
+1E3 maintext CODE >408:C:\Users\str\Desktop\teste\ALA.X\main.c
+1E8 maintext CODE >409:C:\Users\str\Desktop\teste\ALA.X\main.c
+1ED maintext CODE >410:C:\Users\str\Desktop\teste\ALA.X\main.c
+1F1 maintext CODE >411:C:\Users\str\Desktop\teste\ALA.X\main.c
+1F5 maintext CODE >412:C:\Users\str\Desktop\teste\ALA.X\main.c
+1FA maintext CODE >413:C:\Users\str\Desktop\teste\ALA.X\main.c
+1FC maintext CODE >414:C:\Users\str\Desktop\teste\ALA.X\main.c
+1FD maintext CODE >415:C:\Users\str\Desktop\teste\ALA.X\main.c
+20B maintext CODE >421:C:\Users\str\Desktop\teste\ALA.X\main.c
+210 maintext CODE >423:C:\Users\str\Desktop\teste\ALA.X\main.c
+218 maintext CODE >425:C:\Users\str\Desktop\teste\ALA.X\main.c
+21E maintext CODE >427:C:\Users\str\Desktop\teste\ALA.X\main.c
+226 maintext CODE >429:C:\Users\str\Desktop\teste\ALA.X\main.c
+22D maintext CODE >431:C:\Users\str\Desktop\teste\ALA.X\main.c
+235 maintext CODE >433:C:\Users\str\Desktop\teste\ALA.X\main.c
+23C maintext CODE >435:C:\Users\str\Desktop\teste\ALA.X\main.c
+244 maintext CODE >437:C:\Users\str\Desktop\teste\ALA.X\main.c
+248 maintext CODE >438:C:\Users\str\Desktop\teste\ALA.X\main.c
+24D maintext CODE >439:C:\Users\str\Desktop\teste\ALA.X\main.c
+253 maintext CODE >440:C:\Users\str\Desktop\teste\ALA.X\main.c
+25A maintext CODE >442:C:\Users\str\Desktop\teste\ALA.X\main.c
+262 maintext CODE >444:C:\Users\str\Desktop\teste\ALA.X\main.c
+267 maintext CODE >445:C:\Users\str\Desktop\teste\ALA.X\main.c
+26D maintext CODE >446:C:\Users\str\Desktop\teste\ALA.X\main.c
+273 maintext CODE >447:C:\Users\str\Desktop\teste\ALA.X\main.c
+27A maintext CODE >449:C:\Users\str\Desktop\teste\ALA.X\main.c
+282 maintext CODE >451:C:\Users\str\Desktop\teste\ALA.X\main.c
+286 maintext CODE >452:C:\Users\str\Desktop\teste\ALA.X\main.c
+28B maintext CODE >453:C:\Users\str\Desktop\teste\ALA.X\main.c
+291 maintext CODE >454:C:\Users\str\Desktop\teste\ALA.X\main.c
+298 maintext CODE >456:C:\Users\str\Desktop\teste\ALA.X\main.c
+2A0 maintext CODE >458:C:\Users\str\Desktop\teste\ALA.X\main.c
+2A4 maintext CODE >459:C:\Users\str\Desktop\teste\ALA.X\main.c
+2A9 maintext CODE >460:C:\Users\str\Desktop\teste\ALA.X\main.c
+2AF maintext CODE >461:C:\Users\str\Desktop\teste\ALA.X\main.c
+2B6 maintext CODE >463:C:\Users\str\Desktop\teste\ALA.X\main.c
+2BF maintext CODE >466:C:\Users\str\Desktop\teste\ALA.X\main.c
+2BF maintext CODE >467:C:\Users\str\Desktop\teste\ALA.X\main.c
+2C4 maintext CODE >468:C:\Users\str\Desktop\teste\ALA.X\main.c
+2C9 maintext CODE >469:C:\Users\str\Desktop\teste\ALA.X\main.c
+2CD maintext CODE >470:C:\Users\str\Desktop\teste\ALA.X\main.c
+2D1 maintext CODE >471:C:\Users\str\Desktop\teste\ALA.X\main.c
+2D6 maintext CODE >472:C:\Users\str\Desktop\teste\ALA.X\main.c
+2D9 maintext CODE >472:C:\Users\str\Desktop\teste\ALA.X\main.c
+2DD maintext CODE >473:C:\Users\str\Desktop\teste\ALA.X\main.c
+2E1 maintext CODE >474:C:\Users\str\Desktop\teste\ALA.X\main.c
+2EE maintext CODE >475:C:\Users\str\Desktop\teste\ALA.X\main.c
+2EF maintext CODE >476:C:\Users\str\Desktop\teste\ALA.X\main.c
+2F0 maintext CODE >477:C:\Users\str\Desktop\teste\ALA.X\main.c
+2F1 maintext CODE >480:C:\Users\str\Desktop\teste\ALA.X\main.c
+303 maintext CODE >481:C:\Users\str\Desktop\teste\ALA.X\main.c
+305 maintext CODE >482:C:\Users\str\Desktop\teste\ALA.X\main.c
+313 maintext CODE >486:C:\Users\str\Desktop\teste\ALA.X\main.c
+1065 clrtext CODE >17283:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+1065 clrtext CODE >17284:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+1066 clrtext CODE >17285:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+1066 clrtext CODE >17286:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+1067 clrtext CODE >17287:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+1068 clrtext CODE >17288:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+1069 clrtext CODE >17289:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+106A clrtext CODE >17290:C:\Users\str\AppData\Local\Temp\xcAs9s4.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_L 165 0 BANK2 1 nvBANK2 dist/default/production\ALA.X.production.o
+_M 164 0 BANK2 1 nvBANK2 dist/default/production\ALA.X.production.o
+_T 166 0 BANK2 1 nvBANK2 dist/default/production\ALA.X.production.o
+_m 1DD 0 BANK3 1 nvBANK3 dist/default/production\ALA.X.production.o
+___latbits 2 0 ABS 0 - dist/default/production\ALA.X.production.o
+_I2C1_Initialize 213C 0 CODE 0 text21 dist/default/production\ALA.X.production.o
+__Hspace_0 1852 0 ABS 0 - -
+__Hspace_1 1DE 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 10013 0 ABS 0 - -
+storeEPROMBuild@operation 148 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+timerInterrupt@value EB 0 BANK1 1 cstackBANK1 dist/default/production\ALA.X.production.o
+_SSP1STATbits 18F 0 ABS 0 - dist/default/production\ALA.X.production.o
+_PWM6CON 38E 0 ABS 0 - dist/default/production\ALA.X.production.o
+_PWM6DCH 38D 0 ABS 0 - dist/default/production\ALA.X.production.o
+_PWM6DCL 38C 0 ABS 0 - dist/default/production\ALA.X.production.o
+_max_temperature 169 0 BANK2 1 nvBANK2 dist/default/production\ALA.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__end_of_LCDcmd 20E4 0 CODE 0 text62 dist/default/production\ALA.X.production.o
+__end_of_LCDstr 22F0 0 CODE 0 text60 dist/default/production\ALA.X.production.o
+_T1CONbits 20E 0 ABS 0 - dist/default/production\ALA.X.production.o
+_PMD_Initialize 212C 0 CODE 0 text18 dist/default/production\ALA.X.production.o
+_NR 13A 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+_RI 138 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+_WI 139 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+?_abs 73 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+?_pad 24 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+__end_of_PWMOutputDisable 2222 0 CODE 0 text12 dist/default/production\ALA.X.production.o
+?_vfprintf 64 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+_ALAF 133 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+_ALAL 134 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+_ALAT 135 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+_CLKH 132 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+_CLKM 131 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+_LATA 16 0 ABS 0 - dist/default/production\ALA.X.production.o
+_LATB 17 0 ABS 0 - dist/default/production\ALA.X.production.o
+_LATC 18 0 ABS 0 - dist/default/production\ALA.X.production.o
+_LATD 19 0 ABS 0 - dist/default/production\ALA.X.production.o
+_LATE 1A 0 ABS 0 - dist/default/production\ALA.X.production.o
+_NREG 13B 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+_PMD0 796 0 ABS 0 - dist/default/production\ALA.X.production.o
+_PMD1 797 0 ABS 0 - dist/default/production\ALA.X.production.o
+_PMD2 798 0 ABS 0 - dist/default/production\ALA.X.production.o
+_PMD3 799 0 ABS 0 - dist/default/production\ALA.X.production.o
+_PMD4 79A 0 ABS 0 - dist/default/production\ALA.X.production.o
+_PMD5 79B 0 ABS 0 - dist/default/production\ALA.X.production.o
+_PMON 137 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+_T2PR 28D 0 ABS 0 - dist/default/production\ALA.X.production.o
+_TALA 136 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+_TMR2 28C 0 ABS 0 - dist/default/production\ALA.X.production.o
+_WPUA F39 0 ABS 0 - dist/default/production\ALA.X.production.o
+_WPUB F44 0 ABS 0 - dist/default/production\ALA.X.production.o
+_WPUC F4F 0 ABS 0 - dist/default/production\ALA.X.production.o
+_WPUD F5A 0 ABS 0 - dist/default/production\ALA.X.production.o
+_WPUE F65 0 ABS 0 - dist/default/production\ALA.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\str\AppData\Local\Temp\xcAs9s4.o
+_atoi 10BE 0 CODE 0 text56 dist/default/production\ALA.X.production.o
+_ctoa 2BB8 0 CODE 0 text53 dist/default/production\ALA.X.production.o
+_dbuf 1BD 0 BANK3 1 bssBANK3 dist/default/production\ALA.X.production.o
+_dtoa 1D28 0 CODE 0 text46 dist/default/production\ALA.X.production.o
+_main 68 0 CODE 0 maintext dist/default/production\ALA.X.production.o
+_mode 129 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+_nout 120 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+_prec 124 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+abs@a 73 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\ALA.X.production.o
+pad@i 27 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+pad@p 25 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+pad@w 29 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+start 30 0 CODE 0 init C:\Users\str\AppData\Local\Temp\xcAs9s4.o
+_PWM6_LoadDutyValue 22F0 0 CODE 0 text72 dist/default/production\ALA.X.production.o
+___aomod@counter 71 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+__size_of___aodiv 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of___aomod 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of_atoi 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of_ctoa 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of_dtoa 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_max_luminosity 16F 0 BANK2 1 nvBANK2 dist/default/production\ALA.X.production.o
+LCDsend2x4@hc 143 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+LCDsend2x4@lc 144 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+_last_luminosity 16E 0 BANK2 1 nvBANK2 dist/default/production\ALA.X.production.o
+__end_of_TMR2_Stop 20AE 0 CODE 0 text11 dist/default/production\ALA.X.production.o
+__size_of_PWMOutputDisable 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+pad@fp 2B 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+?___wmul 70 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+__size_ofi1_PWMOutputDisable 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of_TMR2_Stop 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+storeEPROMBuild@temperature 146 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+__size_of_LCDbusy 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of_LCDchar 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of_LCDinit 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of_LCDrecv 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of_LCDsend 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__end_of_TMR2_StopTimer 100A 0 CODE 0 text10 dist/default/production\ALA.X.production.o
+_PWM6_Initialize 2194 0 CODE 0 text17 dist/default/production\ALA.X.production.o
+_writeRingBuffer 2AF2 0 CODE 0 text39 dist/default/production\ALA.X.production.o
+?_ADCC_GetSingleConversion 70 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+_I2C1_DO_IDLE 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_I2C1_DO_RCEN 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__end_ofi1_DATAEE_WriteByte 24B8 0 CODE 0 text40 dist/default/production\ALA.X.production.o
+_I2C1_CallbackReturnReset 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of_TMR1_Initialize 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of_TMR1_WriteTimer 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__end_of_vfpfcnvrt DA4 0 CODE 0 text45 dist/default/production\ALA.X.production.o
+_TMR2_Initialize 21CA 0 CODE 0 text14 dist/default/production\ALA.X.production.o
+_TMR2_StartTimer 20AE 0 CODE 0 text69 dist/default/production\ALA.X.production.o
+__size_of_initializeREG 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+i1DATAEE_WriteByte@bData 72 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+__end_of_parseEPROMInitialization 1514 0 CODE 0 text3 dist/default/production\ALA.X.production.o
+__size_of_operADDR 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+activateAlarm@alarm 74 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of_vfpfcnvrt 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of_storeEPROMBuild 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_TMR2_Stop 20A8 0 CODE 0 text11 dist/default/production\ALA.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\str\AppData\Local\Temp\xcAs9s4.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\str\AppData\Local\Temp\xcAs9s4.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\str\AppData\Local\Temp\xcAs9s4.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\str\AppData\Local\Temp\xcAs9s4.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\str\AppData\Local\Temp\xcAs9s4.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\str\AppData\Local\Temp\xcAs9s4.o
+_last_temperature 16A 0 BANK2 1 nvBANK2 dist/default/production\ALA.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\ALA.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+_wr2RegCompleteHandler 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+PWM6_LoadDutyValue@dutyValue 70 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+_activateAlarm 23AC 0 CODE 0 text68 dist/default/production\ALA.X.production.o
+__end_of_PMD_Initialize 213C 0 CODE 0 text18 dist/default/production\ALA.X.production.o
+__size_of_TMR1_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+_vfpfcnvrt A00 0 CODE 0 text45 dist/default/production\ALA.X.production.o
+dtoa@fp 3D 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+i1_WriteI2C 27CE 0 CODE 0 text66 dist/default/production\ALA.X.production.o
+__end_of_TMR1_DefaultInterruptHandler 8 0 CODE 0 text32 dist/default/production\ALA.X.production.o
+_variable1 EF 0 BANK1 1 bssBANK1 dist/default/production\ALA.X.production.o
+_variable2 EE 0 BANK1 1 bssBANK1 dist/default/production\ALA.X.production.o
+___wmul@multiplicand 72 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+_ADACCH 91 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADACCL 90 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADCON0 93 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADCON1 94 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADCON2 95 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADCON3 96 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADERRH 117 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADERRL 116 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADLTHH 10F 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADLTHL 10E 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADRESH 8D 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADRESL 8C 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADSTAT 97 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADUTHH 111 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADUTHL 110 0 ABS 0 - dist/default/production\ALA.X.production.o
+i1_DATAEE_WriteByte 247C 0 CODE 0 text40 dist/default/production\ALA.X.production.o
+_rdBlkRegCompleteHandler 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__end_of_initializeREG 2674 0 CODE 0 text5 dist/default/production\ALA.X.production.o
+_ANSELA F38 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ANSELB F43 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ANSELC F4E 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ANSELD F59 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ANSELE F64 0 ABS 0 - dist/default/production\ALA.X.production.o
+DATAEE_WriteByte@GIEBitValue 140 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+__size_of_ADCC_GetSingleConversion 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of_I2C1_Initialize 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__end_of_INTERRUPT_InterruptManager 30 0 CODE 0 intentry dist/default/production\ALA.X.production.o
+__size_of_ReadI2C 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+readTC74@value 73 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+__size_of_TMR1_SetInterruptHandler 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__end_of___wmul 24F6 0 CODE 0 text59 dist/default/production\ALA.X.production.o
+__end_of_initializeEPROM 2EBC 0 CODE 0 text6 dist/default/production\ALA.X.production.o
+LCDsend2x4@mode 13F 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+ADCC_GetSingleConversion@channel 72 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+_I2C1_DO_SEND_RESTART 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__size_of_sprintf 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_operADDR 26D6 0 CODE 0 text2 dist/default/production\ALA.X.production.o
+_atoi$3331 22 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+_atoi$3332 26 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+_atoi$3333 24 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+__LnvBANK2 0 0 ABS 0 nvBANK2 -
+__LnvBANK3 0 0 ABS 0 nvBANK3 -
+_I2C1_DO_SEND_RESTART_WRITE 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__end_of___aodiv 1A98 0 CODE 0 text52 dist/default/production\ALA.X.production.o
+__end_of___aomod 1896 0 CODE 0 text51 dist/default/production\ALA.X.production.o
+__size_of_isdigit 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of_isspace 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__end_of_DATAEE_ReadByte 2240 0 CODE 0 text4 dist/default/production\ALA.X.production.o
+___aodiv@quotient 73 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+_l_threshold 16B 0 BANK2 1 nvBANK2 dist/default/production\ALA.X.production.o
+_INLVLA F3C 0 ABS 0 - dist/default/production\ALA.X.production.o
+_INLVLB F47 0 ABS 0 - dist/default/production\ALA.X.production.o
+_INLVLC F52 0 ABS 0 - dist/default/production\ALA.X.production.o
+_INLVLD F5D 0 ABS 0 - dist/default/production\ALA.X.production.o
+_INLVLE F68 0 ABS 0 - dist/default/production\ALA.X.production.o
+__end_of_operADDR 2744 0 CODE 0 text2 dist/default/production\ALA.X.production.o
+?_strlen 70 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+__end_ofi1_TMR2_Stop 20A8 0 CODE 0 text37 dist/default/production\ALA.X.production.o
+___stackhi 23EF 0 ABS 0 - C:\Users\str\AppData\Local\Temp\xcAs9s4.o
+___stacklo 212E 0 ABS 0 - C:\Users\str\AppData\Local\Temp\xcAs9s4.o
+__end_of_LCDbusy 2282 0 CODE 0 text64 dist/default/production\ALA.X.production.o
+__end_of_LCDchar 212C 0 CODE 0 text61 dist/default/production\ALA.X.production.o
+__end_of_LCDinit 2DA0 0 CODE 0 text24 dist/default/production\ALA.X.production.o
+__end_of_LCDrecv 1D28 0 CODE 0 text65 dist/default/production\ALA.X.production.o
+__end_of_LCDsend 2A46 0 CODE 0 text26 dist/default/production\ALA.X.production.o
+__size_of_PWM6_Initialize 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+___aomod@dividend 28 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+_data_address 15D 0 BANK2 1 nvBANK2 dist/default/production\ALA.X.production.o
+__size_of_writeRingBuffer 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_LCDcmd 20D6 0 CODE 0 text62 dist/default/production\ALA.X.production.o
+_LCDstr 22C8 0 CODE 0 text60 dist/default/production\ALA.X.production.o
+__size_of_fputc 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of_fputs 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of_putch 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of_TMR2_Initialize 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of_TMR2_StartTimer 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_I2C1_DO_SEND_RESTART_READ 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_PIN_MANAGER_Initialize 2744 0 CODE 0 text19 dist/default/production\ALA.X.production.o
+___aomod@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+__end_ofi1_WriteI2C 2864 0 CODE 0 text66 dist/default/production\ALA.X.production.o
+timerInterrupt@temperature EA 0 BANK1 1 cstackBANK1 dist/default/production\ALA.X.production.o
+start_initialization 34 0 CODE 0 cinit dist/default/production\ALA.X.production.o
+_ODCONA F3A 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ODCONB F45 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ODCONC F50 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ODCOND F5B 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ODCONE F66 0 ABS 0 - dist/default/production\ALA.X.production.o
+_OSCFRQ 893 0 ABS 0 - dist/default/production\ALA.X.production.o
+_TRISCbits 13 0 ABS 0 - dist/default/production\ALA.X.production.o
+_initializeEPROM 2DA0 0 CODE 0 text6 dist/default/production\ALA.X.production.o
+_I2C1_DO_SEND_ADR_WRITE 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADFLTRH 115 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADFLTRL 114 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADPREVH 8F 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADPREVL 8E 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADSTPTH 113 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADSTPTL 112 0 ABS 0 - dist/default/production\ALA.X.production.o
+_RA6PPS F16 0 ABS 0 - dist/default/production\ALA.X.production.o
+_RC3PPS F23 0 ABS 0 - dist/default/production\ALA.X.production.o
+_RC4PPS F24 0 ABS 0 - dist/default/production\ALA.X.production.o
+_DATAEE_WriteByte 2538 0 CODE 0 text7 dist/default/production\ALA.X.production.o
+__end_of_SYSTEM_Initialize 23AC 0 CODE 0 text13 dist/default/production\ALA.X.production.o
+__size_of_activateAlarm 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+clear_ram0 20CA 0 CODE 0 clrtext dist/default/production\ALA.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+__pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/production\ALA.X.production.o
+__pcstackBANK2 13D 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+_T1GATE 210 0 ABS 0 - dist/default/production\ALA.X.production.o
+_T1GCON 20F 0 ABS 0 - dist/default/production\ALA.X.production.o
+_T2CLKCON 290 0 ABS 0 - dist/default/production\ALA.X.production.o
+__end_ofi1_deactivatePWM 20F2 0 CODE 0 text35 dist/default/production\ALA.X.production.o
+writeRingBuffer@temperature 76 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+_minimode 126 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+_TMR2_Start 209C 0 CODE 0 text70 dist/default/production\ALA.X.production.o
+__end_of_ADCC_GetSingleConversion 22C8 0 CODE 0 text73 dist/default/production\ALA.X.production.o
+_DATAEE_ReadByte 2222 0 CODE 0 text4 dist/default/production\ALA.X.production.o
+_LCDsend2x4 1514 0 CODE 0 text25 dist/default/production\ALA.X.production.o
+__end_of_TMR1_SetInterruptHandler 20CA 0 CODE 0 text16 dist/default/production\ALA.X.production.o
+_I2C1_Status 1A0 0 BANK3 1 bssBANK3 dist/default/production\ALA.X.production.o
+fputc@fp 72 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+fputs@fp 78 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+LCDsend2x4@c 142 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+__size_of_LCDcmd 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of_LCDstr 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+printLCD@buf C9 0 BANK1 1 cstackBANK1 dist/default/production\ALA.X.production.o
+__end_of_ADCC_Initialize 234A 0 CODE 0 text22 dist/default/production\ALA.X.production.o
+__end_of_ReadI2C 2414 0 CODE 0 text67 dist/default/production\ALA.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\str\AppData\Local\Temp\xcAs9s4.o
+_rd2RegCompleteHandler 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+vfpfcnvrt@done 5E 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 ABS 0 bank7 -
+__Hbank8 0 0 ABS 0 bank8 -
+__Hbank9 0 0 ABS 0 bank9 -
+__Hcinit 68 0 CODE 0 cinit -
+__end_of_strlen 247C 0 CODE 0 text48 dist/default/production\ALA.X.production.o
+i1_TMR2_StopTimer 20B6 0 CODE 0 text36 dist/default/production\ALA.X.production.o
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hstack 0 0 STACK 2 stack -
+__size_of_OpenI2C 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_NVMADRH 81B 0 ABS 0 - dist/default/production\ALA.X.production.o
+_NVMADRL 81A 0 ABS 0 - dist/default/production\ALA.X.production.o
+_NVMCON2 81F 0 ABS 0 - dist/default/production\ALA.X.production.o
+_NVMDATH 81D 0 ABS 0 - dist/default/production\ALA.X.production.o
+_NVMDATL 81C 0 ABS 0 - dist/default/production\ALA.X.production.o
+LCDcmd@c 78 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+_timerInterrupt 62C 0 CODE 0 text33 dist/default/production\ALA.X.production.o
+__Hbank10 0 0 ABS 0 bank10 -
+__Hbank11 0 0 ABS 0 bank11 -
+__Hbank12 0 0 ABS 0 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+LCDstr@c 7A 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+LCDstr@p 7B 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+__size_of_PWM6_LoadDutyValue 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__end_of_sprintf 25CC 0 CODE 0 text43 dist/default/production\ALA.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10018 0 CONFIG 4 config -
+_t_threshold 16C 0 BANK2 1 nvBANK2 dist/default/production\ALA.X.production.o
+__end_of_activateAlarm 23E0 0 CODE 0 text68 dist/default/production\ALA.X.production.o
+storeEPROMBuild@seconds 145 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+__end_of_deactivateAlarm 211C 0 CODE 0 text8 dist/default/production\ALA.X.production.o
+_T2HLTbits 28F 0 ABS 0 - dist/default/production\ALA.X.production.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Lbank8 0 0 ABS 0 bank8 -
+__Lbank9 0 0 ABS 0 bank9 -
+__end_of_isdigit 237A 0 CODE 0 text58 dist/default/production\ALA.X.production.o
+__Lcinit 34 0 CODE 0 cinit -
+_T1GCONbits 20F 0 ABS 0 - dist/default/production\ALA.X.production.o
+__end_of_isspace 2538 0 CODE 0 text57 dist/default/production\ALA.X.production.o
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+_PORTAbits C 0 ABS 0 - dist/default/production\ALA.X.production.o
+_PORTBbits D 0 ABS 0 - dist/default/production\ALA.X.production.o
+_PORTCbits E 0 ABS 0 - dist/default/production\ALA.X.production.o
+_wr1RegCompleteHandler 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_INTCONbits B 0 ABS 0 - dist/default/production\ALA.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 30 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 30 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+__pstringtext1 3000 0 STRCODE 0 stringtext1 dist/default/production\ALA.X.production.o
+__pstringtext2 3040 0 STRCODE 0 stringtext2 dist/default/production\ALA.X.production.o
+__pstringtext3 3078 0 STRCODE 0 stringtext3 dist/default/production\ALA.X.production.o
+__pstringtext4 0 0 STRCODE 0 stringtext4 dist/default/production\ALA.X.production.o
+__pnvBANK2 159 0 BANK2 1 nvBANK2 dist/default/production\ALA.X.production.o
+__pnvBANK3 1DD 0 BANK3 1 nvBANK3 dist/default/production\ALA.X.production.o
+___aodiv@counter 71 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+_SSP1CON1 190 0 ABS 0 - dist/default/production\ALA.X.production.o
+_SSP1CON2 191 0 ABS 0 - dist/default/production\ALA.X.production.o
+_SSP1STAT 18F 0 ABS 0 - dist/default/production\ALA.X.production.o
+___wmul 24B8 0 CODE 0 text59 dist/default/production\ALA.X.production.o
+___aomod@sign 72 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__LcstackBANK2 0 0 ABS 0 cstackBANK2 -
+int$flags 7E 0 ABS 0 - dist/default/production\ALA.X.production.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+isspace@c 70 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+__size_of_INTERRUPT_InterruptManager 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+i1_deactivatePWM 20E4 0 CODE 0 text35 dist/default/production\ALA.X.production.o
+_PR2 28D 0 ABS 0 - dist/default/production\ALA.X.production.o
+__S0 1852 0 ABS 0 - -
+__S1 1DE 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_abs 2414 0 CODE 0 text50 dist/default/production\ALA.X.production.o
+_pad 2A46 0 CODE 0 text47 dist/default/production\ALA.X.production.o
+__size_of_TMR1_ISR 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+timerInterrupt@lum EC 0 BANK1 1 cstackBANK1 dist/default/production\ALA.X.production.o
+_alarm1 128 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+_alarm2 127 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+_alarmc 163 0 BANK2 1 nvBANK2 dist/default/production\ALA.X.production.o
+storeEPROMBuild@dataAddr 14B 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+?_operADDR 13D 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+__end_of_TMR2_Start 20A2 0 CODE 0 text70 dist/default/production\ALA.X.production.o
+i1WriteI2C@data_out 71 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+_T2RSTbits 291 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADCC_Initialize 231C 0 CODE 0 text22 dist/default/production\ALA.X.production.o
+_cursor 159 0 BANK2 1 nvBANK2 dist/default/production\ALA.X.production.o
+__end_of_LCDsend2x4 16C2 0 CODE 0 text25 dist/default/production\ALA.X.production.o
+_I2C1_CallbackReturnStop 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of_initializeEPROM 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__end_of_DATAEE_WriteByte 2580 0 CODE 0 text7 dist/default/production\ALA.X.production.o
+__size_of_TMR2_StopTimer 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_ofi1_deactivateAlarm 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+___aodiv@sign 72 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+_deactivatePWM 2100 0 CODE 0 text9 dist/default/production\ALA.X.production.o
+sprintf@fmt A0 0 BANK1 1 cstackBANK1 dist/default/production\ALA.X.production.o
+_I2C1_DO_RESET 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__end_of_timerInterrupt A00 0 CODE 0 text33 dist/default/production\ALA.X.production.o
+_TMR1_CallBack 2160 0 CODE 0 text31 dist/default/production\ALA.X.production.o
+_SYSTEM_Initialize 237A 0 CODE 0 text13 dist/default/production\ALA.X.production.o
+_dtoa$3295 3B 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+_vfpfcnvrt$3310 60 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+_modification 167 0 BANK2 1 nvBANK2 dist/default/production\ALA.X.production.o
+operADDR@operation 141 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+__size_of_readTC74 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_ofi1_TMR2_Stop 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__end_of_abs 2448 0 CODE 0 text50 dist/default/production\ALA.X.production.o
+__end_of_pad 2AF2 0 CODE 0 text47 dist/default/production\ALA.X.production.o
+__size_of_DATAEE_WriteByte 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_deactivateAlarm 210E 0 CODE 0 text8 dist/default/production\ALA.X.production.o
+__size_ofi1_DATAEE_WriteByte 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__HnvBANK2 0 0 ABS 0 nvBANK2 -
+__HnvBANK3 0 0 ABS 0 nvBANK3 -
+__Lintentry 8 0 CODE 0 intentry -
+i1LCDsend2x4@hc 76 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+i1LCDsend2x4@lc 77 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+__end_of_PWMOutputEnable 2260 0 CODE 0 text71 dist/default/production\ALA.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\str\AppData\Local\Temp\xcAs9s4.o
+strlen@a 73 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+strlen@s 74 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+__size_of_DATAEE_ReadByte 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_CCPTMRS1bits 21F 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of___wmul 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__LbssBANK2 0 0 ABS 0 bssBANK2 -
+__LbssBANK3 0 0 ABS 0 bssBANK3 -
+__Lstringtext1 0 0 ABS 0 stringtext1 -
+__Lstringtext2 0 0 ABS 0 stringtext2 -
+__Lstringtext3 0 0 ABS 0 stringtext3 -
+__Lstringtext4 0 0 ABS 0 stringtext4 -
+__end_ofi1_TMR2_StopTimer 20BE 0 CODE 0 text36 dist/default/production\ALA.X.production.o
+vfpfcnvrt@fmt 4E 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+_INTERRUPT_InterruptManager 8 0 CODE 0 intentry dist/default/production\ALA.X.production.o
+i1LCDsend2x4@c 75 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+__size_of_PMD_Initialize 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_PIE3bits 719 0 ABS 0 - dist/default/production\ALA.X.production.o
+_PIE4bits 71A 0 ABS 0 - dist/default/production\ALA.X.production.o
+__end_of_OpenI2C 2194 0 CODE 0 text23 dist/default/production\ALA.X.production.o
+pad@buf 24 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+__size_of_WriteI2C 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_TMR1_ISR 21AE 0 CODE 0 text29 dist/default/production\ALA.X.production.o
+__size_ofi1_TMR2_StopTimer 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__ptext10 1002 0 CODE 0 text10 dist/default/production\ALA.X.production.o
+__ptext11 20A8 0 CODE 0 text11 dist/default/production\ALA.X.production.o
+__ptext12 2204 0 CODE 0 text12 dist/default/production\ALA.X.production.o
+__ptext13 237A 0 CODE 0 text13 dist/default/production\ALA.X.production.o
+__ptext14 21CA 0 CODE 0 text14 dist/default/production\ALA.X.production.o
+__ptext15 FBE 0 CODE 0 text15 dist/default/production\ALA.X.production.o
+__ptext16 20BE 0 CODE 0 text16 dist/default/production\ALA.X.production.o
+__ptext17 2194 0 CODE 0 text17 dist/default/production\ALA.X.production.o
+__ptext18 212C 0 CODE 0 text18 dist/default/production\ALA.X.production.o
+__ptext19 2744 0 CODE 0 text19 dist/default/production\ALA.X.production.o
+__ptext20 214E 0 CODE 0 text20 dist/default/production\ALA.X.production.o
+__ptext21 213C 0 CODE 0 text21 dist/default/production\ALA.X.production.o
+__ptext22 231C 0 CODE 0 text22 dist/default/production\ALA.X.production.o
+__ptext23 217A 0 CODE 0 text23 dist/default/production\ALA.X.production.o
+__ptext24 2C9A 0 CODE 0 text24 dist/default/production\ALA.X.production.o
+__ptext25 1514 0 CODE 0 text25 dist/default/production\ALA.X.production.o
+__ptext26 29A0 0 CODE 0 text26 dist/default/production\ALA.X.production.o
+__ptext27 100A 0 CODE 0 text27 dist/default/production\ALA.X.production.o
+__ptext29 21AE 0 CODE 0 text29 dist/default/production\ALA.X.production.o
+__ptext30 2282 0 CODE 0 text30 dist/default/production\ALA.X.production.o
+__ptext31 2160 0 CODE 0 text31 dist/default/production\ALA.X.production.o
+__ptext32 6 0 CODE 0 text32 dist/default/production\ALA.X.production.o
+__ptext33 62C 0 CODE 0 text33 dist/default/production\ALA.X.production.o
+__ptext34 20F2 0 CODE 0 text34 dist/default/production\ALA.X.production.o
+__ptext35 20E4 0 CODE 0 text35 dist/default/production\ALA.X.production.o
+__ptext36 20B6 0 CODE 0 text36 dist/default/production\ALA.X.production.o
+__ptext37 20A2 0 CODE 0 text37 dist/default/production\ALA.X.production.o
+__ptext38 21E6 0 CODE 0 text38 dist/default/production\ALA.X.production.o
+__ptext39 2AF2 0 CODE 0 text39 dist/default/production\ALA.X.production.o
+__ptext40 247C 0 CODE 0 text40 dist/default/production\ALA.X.production.o
+__ptext41 DA4 0 CODE 0 text41 dist/default/production\ALA.X.production.o
+__ptext42 2EBC 0 CODE 0 text42 dist/default/production\ALA.X.production.o
+__ptext43 2580 0 CODE 0 text43 dist/default/production\ALA.X.production.o
+__ptext44 2674 0 CODE 0 text44 dist/default/production\ALA.X.production.o
+__ptext45 A00 0 CODE 0 text45 dist/default/production\ALA.X.production.o
+__ptext46 1D28 0 CODE 0 text46 dist/default/production\ALA.X.production.o
+__ptext47 2A46 0 CODE 0 text47 dist/default/production\ALA.X.production.o
+__ptext48 2448 0 CODE 0 text48 dist/default/production\ALA.X.production.o
+__ptext49 25CC 0 CODE 0 text49 dist/default/production\ALA.X.production.o
+__ptext50 2414 0 CODE 0 text50 dist/default/production\ALA.X.production.o
+__ptext51 16C2 0 CODE 0 text51 dist/default/production\ALA.X.production.o
+__ptext52 1896 0 CODE 0 text52 dist/default/production\ALA.X.production.o
+__ptext53 2BB8 0 CODE 0 text53 dist/default/production\ALA.X.production.o
+__ptext54 2864 0 CODE 0 text54 dist/default/production\ALA.X.production.o
+__ptext55 4 0 CODE 0 text55 dist/default/production\ALA.X.production.o
+__ptext56 10BE 0 CODE 0 text56 dist/default/production\ALA.X.production.o
+__ptext57 24F6 0 CODE 0 text57 dist/default/production\ALA.X.production.o
+__ptext58 234A 0 CODE 0 text58 dist/default/production\ALA.X.production.o
+__ptext59 24B8 0 CODE 0 text59 dist/default/production\ALA.X.production.o
+__ptext60 22C8 0 CODE 0 text60 dist/default/production\ALA.X.production.o
+__ptext61 211C 0 CODE 0 text61 dist/default/production\ALA.X.production.o
+__ptext62 20D6 0 CODE 0 text62 dist/default/production\ALA.X.production.o
+__ptext63 121C 0 CODE 0 text63 dist/default/production\ALA.X.production.o
+__ptext64 2260 0 CODE 0 text64 dist/default/production\ALA.X.production.o
+__ptext65 1A98 0 CODE 0 text65 dist/default/production\ALA.X.production.o
+__ptext66 27CE 0 CODE 0 text66 dist/default/production\ALA.X.production.o
+__ptext67 23E0 0 CODE 0 text67 dist/default/production\ALA.X.production.o
+__ptext68 23AC 0 CODE 0 text68 dist/default/production\ALA.X.production.o
+__ptext69 20AE 0 CODE 0 text69 dist/default/production\ALA.X.production.o
+__ptext70 209C 0 CODE 0 text70 dist/default/production\ALA.X.production.o
+__ptext71 2240 0 CODE 0 text71 dist/default/production\ALA.X.production.o
+__ptext72 22F0 0 CODE 0 text72 dist/default/production\ALA.X.production.o
+__ptext73 22A4 0 CODE 0 text73 dist/default/production\ALA.X.production.o
+_I2C1_DO_RX_ACK 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__end_of_PIN_MANAGER_Initialize 27CE 0 CODE 0 text19 dist/default/production\ALA.X.production.o
+___aodiv 1896 0 CODE 0 text52 dist/default/production\ALA.X.production.o
+___aomod 16C2 0 CODE 0 text51 dist/default/production\ALA.X.production.o
+parseEPROMInitialization@ALAF 147 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+parseEPROMInitialization@ALAL 146 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+parseEPROMInitialization@ALAT 145 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+parseEPROMInitialization@CLKH 148 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+parseEPROMInitialization@CLKM 149 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+parseEPROMInitialization@NREG 13F 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+parseEPROMInitialization@PMON 143 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+parseEPROMInitialization@TALA 144 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+__Lbank10 0 0 ABS 0 bank10 -
+__Lbank11 0 0 ABS 0 bank11 -
+__Lbank12 0 0 ABS 0 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__pmaintext 68 0 CODE 0 maintext dist/default/production\ALA.X.production.o
+__Lbigram 0 0 ABS 0 bigram -
+__size_ofi1_WriteI2C 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_I2C1_DO_RX_NACK_STOP 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+?_atoi 76 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+?_ctoa 78 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+?_dtoa 30 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__end_ofi1_PWMOutputDisable 2204 0 CODE 0 text38 dist/default/production\ALA.X.production.o
+__end_of_TMR1_ISR 21CA 0 CODE 0 text29 dist/default/production\ALA.X.production.o
+_min_luminosity 12C 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+_LCDbusy 2260 0 CODE 0 text64 dist/default/production\ALA.X.production.o
+_LCDchar 211C 0 CODE 0 text61 dist/default/production\ALA.X.production.o
+_LCDinit 2C9A 0 CODE 0 text24 dist/default/production\ALA.X.production.o
+_LCDrecv 1A98 0 CODE 0 text65 dist/default/production\ALA.X.production.o
+_LCDsend 29A0 0 CODE 0 text26 dist/default/production\ALA.X.production.o
+___wmul@multiplier 70 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+_LATAbits 16 0 ABS 0 - dist/default/production\ALA.X.production.o
+i1LCDsend2x4@mode 72 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+_strlen 2448 0 CODE 0 text48 dist/default/production\ALA.X.production.o
+_readTC74 DA4 0 CODE 0 text41 dist/default/production\ALA.X.production.o
+WriteI2C@data_out 13E 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+i1DATAEE_WriteByte@bAdd 70 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+storeEPROMBuild@minutes 144 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+__size_ofi1_deactivatePWM 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_PWMOutputEnable 2240 0 CODE 0 text71 dist/default/production\ALA.X.production.o
+__size_of_vfprintf 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+parseEPROMInitialization@magic_word 14C 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+storeEPROMBuild@luminosity 147 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+__size_of_printLCD 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_SSP1CLKPPS EC5 0 ABS 0 - dist/default/production\ALA.X.production.o
+_seconds 12D 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+_OSCCON1 88D 0 ABS 0 - dist/default/production\ALA.X.production.o
+_OSCCON3 88F 0 ABS 0 - dist/default/production\ALA.X.production.o
+_OSCTUNE 892 0 ABS 0 - dist/default/production\ALA.X.production.o
+_SSP1DATPPS EC6 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADCON0bits 93 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADCON1bits 94 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADCON2bits 95 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADCON3bits 96 0 ABS 0 - dist/default/production\ALA.X.production.o
+__end_of_readTC74 FBE 0 CODE 0 text41 dist/default/production\ALA.X.production.o
+_I2C1_DO_RX_NACK_RESTART 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+?_vfpfcnvrt 4E 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+__size_of_ADCC_Initialize 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+_parseEPROMInitialization 1388 0 CODE 0 text3 dist/default/production\ALA.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__HcstackBANK2 0 0 ABS 0 cstackBANK2 -
+_I2C1_DO_SEND_STOP 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_rd1RegCompleteHandler 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_PIR3bits 70F 0 ABS 0 - dist/default/production\ALA.X.production.o
+_PIR4bits 710 0 ABS 0 - dist/default/production\ALA.X.production.o
+__Lend_init 30 0 CODE 0 end_init -
+___aodiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+___aodiv@dividend 28 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+i1_PWMOutputDisable 21E6 0 CODE 0 text38 dist/default/production\ALA.X.production.o
+end_of_initialization 60 0 CODE 0 cinit dist/default/production\ALA.X.production.o
+__size_of_deactivatePWM 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_WriteI2C 100A 0 CODE 0 text27 dist/default/production\ALA.X.production.o
+__size_of_TMR1_CallBack 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__Hintentry 30 0 CODE 0 intentry -
+fputc@c 70 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+fputs@c 20 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+fputs@i 21 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+fputs@s 23 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+LCDchar@c 78 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+__size_of_deactivateAlarm 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_PPSLOCKbits E8F 0 ABS 0 - dist/default/production\ALA.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+?___aodiv 20 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+?___aomod 20 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+vfprintf@fmt 64 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec -
+TMR1_SetInterruptHandler@InterruptHandler 13D 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+__end_ofi1_deactivateAlarm 2100 0 CODE 0 text34 dist/default/production\ALA.X.production.o
+_checksum 130 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__HbssBANK2 0 0 ABS 0 bssBANK2 -
+__HbssBANK3 0 0 ABS 0 bssBANK3 -
+__end_of_WriteI2C 10BE 0 CODE 0 text27 dist/default/production\ALA.X.production.o
+_ReadI2C 23E0 0 CODE 0 text67 dist/default/production\ALA.X.production.o
+_I2C1_DO_RX 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_I2C1_DO_TX 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of_strlen 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+?_LCDbusy 77 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+vfpfcnvrt@ap 4F 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+vfpfcnvrt@fp 63 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+vfpfcnvrt@ll 56 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+__ptext1 2902 0 CODE 0 text1 dist/default/production\ALA.X.production.o
+__ptext2 26D6 0 CODE 0 text2 dist/default/production\ALA.X.production.o
+__ptext3 1388 0 CODE 0 text3 dist/default/production\ALA.X.production.o
+__ptext4 2222 0 CODE 0 text4 dist/default/production\ALA.X.production.o
+__ptext5 261E 0 CODE 0 text5 dist/default/production\ALA.X.production.o
+__ptext6 2DA0 0 CODE 0 text6 dist/default/production\ALA.X.production.o
+__ptext7 2538 0 CODE 0 text7 dist/default/production\ALA.X.production.o
+__ptext8 210E 0 CODE 0 text8 dist/default/production\ALA.X.production.o
+__ptext9 2100 0 CODE 0 text9 dist/default/production\ALA.X.production.o
+vfprintf@ap 66 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+vfprintf@fp 69 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+vfprintf@cfmt 6A 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+DATAEE_WriteByte@bAdd 13D 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+_min_temperature 12A 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+parseEPROMInitialization@checksum 14A 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+_sprintf 2580 0 CODE 0 text43 dist/default/production\ALA.X.production.o
+_vfprintf 2674 0 CODE 0 text44 dist/default/production\ALA.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+LCDrecv@mode 76 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+_printLCD 2EBC 0 CODE 0 text42 dist/default/production\ALA.X.production.o
+storeEPROMBuild@hours 14A 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+sprintf@ap B3 0 BANK1 1 cstackBANK1 dist/default/production\ALA.X.production.o
+TMR1_WriteTimer@timerVal 70 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+_isdigit 234A 0 CODE 0 text58 dist/default/production\ALA.X.production.o
+__end_of_deactivatePWM 210E 0 CODE 0 text9 dist/default/production\ALA.X.production.o
+__end_of_TMR1_Initialize 1000 0 CODE 0 text15 dist/default/production\ALA.X.production.o
+__end_of_TMR1_WriteTimer 22A4 0 CODE 0 text30 dist/default/production\ALA.X.production.o
+_isspace 24F6 0 CODE 0 text57 dist/default/production\ALA.X.production.o
+__end_of_TMR1_CallBack 217A 0 CODE 0 text31 dist/default/production\ALA.X.production.o
+i1_LCDsend2x4 121C 0 CODE 0 text63 dist/default/production\ALA.X.production.o
+__size_of_TMR2_Start 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+_pwm_control 168 0 BANK2 1 nvBANK2 dist/default/production\ALA.X.production.o
+operADDR@dataAddr 142 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+__Hstringtext1 0 0 ABS 0 stringtext1 -
+__Hstringtext2 0 0 ABS 0 stringtext2 -
+__Hstringtext3 0 0 ABS 0 stringtext3 -
+__Hstringtext4 0 0 ABS 0 stringtext4 -
+__end_of_storeEPROMBuild 29A0 0 CODE 0 text1 dist/default/production\ALA.X.production.o
+__end_of_vfprintf 26D6 0 CODE 0 text44 dist/default/production\ALA.X.production.o
+_magic_word 13C 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+__size_of_LCDsend2x4 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_SLRCONA F3B 0 ABS 0 - dist/default/production\ALA.X.production.o
+_SLRCONB F46 0 ABS 0 - dist/default/production\ALA.X.production.o
+_SLRCONC F51 0 ABS 0 - dist/default/production\ALA.X.production.o
+_SLRCOND F5C 0 ABS 0 - dist/default/production\ALA.X.production.o
+_SLRCONE F67 0 ABS 0 - dist/default/production\ALA.X.production.o
+__end_of_printLCD 3000 0 CODE 0 text42 dist/default/production\ALA.X.production.o
+__end_of__initialization 60 0 CODE 0 cinit dist/default/production\ALA.X.production.o
+DATAEE_ReadByte@bAdd 13D 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+i1DATAEE_WriteByte@GIEBitValue 73 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+_ADSTATbits 97 0 ABS 0 - dist/default/production\ALA.X.production.o
+_NVMCON1bits 81E 0 ABS 0 - dist/default/production\ALA.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+_SSP1CON1bits 190 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of_PWMOutputEnable 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_SSP1CON2bits 191 0 ABS 0 - dist/default/production\ALA.X.production.o
+_isspace$3349 74 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+_timer1ReloadVal 161 0 BANK2 1 nvBANK2 dist/default/production\ALA.X.production.o
+writeRingBuffer@luminosity 74 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+_TMR1_DefaultInterruptHandler 6 0 CODE 0 text32 dist/default/production\ALA.X.production.o
+ctoa@fp 24 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+i1_TMR2_Stop 20A2 0 CODE 0 text37 dist/default/production\ALA.X.production.o
+__end_of_i2c1_fsmStateTable 3040 0 STRCODE 0 stringtext1 dist/default/production\ALA.X.production.o
+_PWMOutputDisable 2204 0 CODE 0 text12 dist/default/production\ALA.X.production.o
+LCDrecv@hc 74 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+LCDrecv@lc 75 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+DATAEE_WriteByte@bData 13F 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+LCDsend@c 140 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+_I2C1_DO_SEND_ADR_READ 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__end_of_I2C1_Initialize 214E 0 CODE 0 text21 dist/default/production\ALA.X.production.o
+_SSP1ADD 18D 0 ABS 0 - dist/default/production\ALA.X.production.o
+_SSP1BUF 18C 0 ABS 0 - dist/default/production\ALA.X.production.o
+__Hend_init 34 0 CODE 0 end_init -
+vfpfcnvrt@c 62 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+sprintf@f B4 0 BANK1 1 cstackBANK1 dist/default/production\ALA.X.production.o
+sprintf@s B2 0 BANK1 1 cstackBANK1 dist/default/production\ALA.X.production.o
+__end_of_atoi 121C 0 CODE 0 text56 dist/default/production\ALA.X.production.o
+__end_of_ctoa 2C9A 0 CODE 0 text53 dist/default/production\ALA.X.production.o
+__end_of_dtoa 2000 0 CODE 0 text46 dist/default/production\ALA.X.production.o
+__end_of_main 62C 0 CODE 0 maintext dist/default/production\ALA.X.production.o
+isdigit@c 70 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+__size_ofi1_LCDsend2x4 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADACQ 9D 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADACT 99 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADCAP 9B 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADCLK 98 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADCNT 10C 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADPCH 9E 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADPRE 9C 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADREF 9A 0 ABS 0 - dist/default/production\ALA.X.production.o
+_ADRPT 10D 0 ABS 0 - dist/default/production\ALA.X.production.o
+_initializeREG 261E 0 CODE 0 text5 dist/default/production\ALA.X.production.o
+__end_of_fputc 2902 0 CODE 0 text54 dist/default/production\ALA.X.production.o
+__end_of_fputs 261E 0 CODE 0 text49 dist/default/production\ALA.X.production.o
+?_sprintf A0 0 BANK1 1 cstackBANK1 dist/default/production\ALA.X.production.o
+_OSCEN 891 0 ABS 0 - dist/default/production\ALA.X.production.o
+_T1CLK 211 0 ABS 0 - dist/default/production\ALA.X.production.o
+_T1CON 20E 0 ABS 0 - dist/default/production\ALA.X.production.o
+_T2CON 28E 0 ABS 0 - dist/default/production\ALA.X.production.o
+_T2HLT 28F 0 ABS 0 - dist/default/production\ALA.X.production.o
+_T2RST 291 0 ABS 0 - dist/default/production\ALA.X.production.o
+_T2TMR 28C 0 ABS 0 - dist/default/production\ALA.X.production.o
+_TMR1H 20D 0 ABS 0 - dist/default/production\ALA.X.production.o
+_TMR1L 20C 0 ABS 0 - dist/default/production\ALA.X.production.o
+_TRISA 11 0 ABS 0 - dist/default/production\ALA.X.production.o
+_TRISB 12 0 ABS 0 - dist/default/production\ALA.X.production.o
+_TRISC 13 0 ABS 0 - dist/default/production\ALA.X.production.o
+_TRISD 14 0 ABS 0 - dist/default/production\ALA.X.production.o
+_TRISE 15 0 ABS 0 - dist/default/production\ALA.X.production.o
+_minutes 12E 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+__end_of_putch 6 0 CODE 0 text55 dist/default/production\ALA.X.production.o
+_tala_counter 12B 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+atoi@neg 20 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+_TMR1_Initialize FBE 0 CODE 0 text15 dist/default/production\ALA.X.production.o
+_TMR1_WriteTimer 2282 0 CODE 0 text30 dist/default/production\ALA.X.production.o
+_I2C1_DO_ADDRESS_NACK 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_flags 6E 0 BANK0 1 bssBANK0 dist/default/production\ALA.X.production.o
+_fputc 2864 0 CODE 0 text54 dist/default/production\ALA.X.production.o
+_fputs 25CC 0 CODE 0 text49 dist/default/production\ALA.X.production.o
+_hours 12F 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+_putch 4 0 CODE 0 text55 dist/default/production\ALA.X.production.o
+_width 122 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+?_isdigit 70 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\ALA.X.production.o
+?_isspace 70 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+_storeEPROMBuild 2902 0 CODE 0 text1 dist/default/production\ALA.X.production.o
+i1_deactivateAlarm 20F2 0 CODE 0 text34 dist/default/production\ALA.X.production.o
+__size_of_abs 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of_pad 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__size_of_parseEPROMInitialization 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+__end_of_OSCILLATOR_Initialize 2160 0 CODE 0 text20 dist/default/production\ALA.X.production.o
+atoi@n 27 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+atoi@s 76 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+__initialization 34 0 CODE 0 cinit dist/default/production\ALA.X.production.o
+_ADCC_GetSingleConversion 22A4 0 CODE 0 text73 dist/default/production\ALA.X.production.o
+__pbssBANK0 6E 0 BANK0 1 bssBANK0 dist/default/production\ALA.X.production.o
+__pbssBANK1 EE 0 BANK1 1 bssBANK1 dist/default/production\ALA.X.production.o
+__pbssBANK2 120 0 BANK2 1 bssBANK2 dist/default/production\ALA.X.production.o
+__pbssBANK3 1A0 0 BANK3 1 bssBANK3 dist/default/production\ALA.X.production.o
+_i2c1_fsmStateTable 3000 0 STRCODE 0 stringtext1 dist/default/production\ALA.X.production.o
+_OpenI2C 217A 0 CODE 0 text23 dist/default/production\ALA.X.production.o
+_T2CONbits 28E 0 ABS 0 - dist/default/production\ALA.X.production.o
+_I2C1_DO_TX_EMPTY 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_PPSLOCK E8F 0 ABS 0 - dist/default/production\ALA.X.production.o
+ctoa@c 78 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+ctoa@l 20 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+ctoa@w 22 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+__size_of_timerInterrupt 0 0 ABS 0 - dist/default/production\ALA.X.production.o
+_counter 16D 0 BANK2 1 nvBANK2 dist/default/production\ALA.X.production.o
+___wmul@product 74 0 COMMON 1 cstackCOMMON dist/default/production\ALA.X.production.o
+__end_ofi1_LCDsend2x4 1388 0 CODE 0 text63 dist/default/production\ALA.X.production.o
+_TMR2_StopTimer 1002 0 CODE 0 text10 dist/default/production\ALA.X.production.o
+dtoa@d 30 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+dtoa@i 4C 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+dtoa@n 44 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+dtoa@p 3E 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+dtoa@s 42 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+dtoa@w 40 0 BANK0 1 cstackBANK0 dist/default/production\ALA.X.production.o
+__end_of_PWM6_Initialize 21AE 0 CODE 0 text17 dist/default/production\ALA.X.production.o
+_TMR1_SetInterruptHandler 20BE 0 CODE 0 text16 dist/default/production\ALA.X.production.o
+parseEPROMInitialization@NR 140 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+parseEPROMInitialization@RI 142 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+parseEPROMInitialization@WI 141 0 BANK2 1 cstackBANK2 dist/default/production\ALA.X.production.o
+__end_of_PWM6_LoadDutyValue 231C 0 CODE 0 text72 dist/default/production\ALA.X.production.o
+__end_of_writeRingBuffer 2BB8 0 CODE 0 text39 dist/default/production\ALA.X.production.o
+_TMR1_InterruptHandler 15F 0 BANK2 1 nvBANK2 dist/default/production\ALA.X.production.o
+_OSCILLATOR_Initialize 214E 0 CODE 0 text20 dist/default/production\ALA.X.production.o
+__end_of_TMR2_Initialize 21E6 0 CODE 0 text14 dist/default/production\ALA.X.production.o
+__end_of_TMR2_StartTimer 20B6 0 CODE 0 text69 dist/default/production\ALA.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text1 0 1481 2902 4F 2
+text2 0 136B 26D6 37 2
+text3 0 9C4 1388 C6 2
+text4 0 1111 2222 F 2
+text5 0 130F 261E 2B 2
+text6 0 16D0 2DA0 8E 2
+text7 0 129C 2538 24 2
+text8 0 1087 210E 7 2
+text9 0 1080 2100 7 2
+text10 0 801 1002 4 2
+text11 0 1054 20A8 3 2
+text12 0 1102 2204 F 2
+text13 0 11BD 237A 19 2
+text14 0 10E5 21CA E 2
+text16 0 105F 20BE 6 2
+text17 0 10CA 2194 D 2
+text18 0 1096 212C 8 2
+text19 0 13A2 2744 45 2
+text20 0 10A7 214E 9 2
+text21 0 109E 213C 9 2
+text22 0 118E 231C 17 2
+text23 0 10BD 217A D 2
+text24 0 164D 2C9A 83 2
+text25 0 A8A 1514 D7 2
+text26 0 14D0 29A0 53 2
+text27 0 805 100A 5A 2
+text29 0 10D7 21AE E 2
+text30 0 1141 2282 11 2
+text31 0 10B0 2160 D 2
+text32 0 3 6 1 2
+text34 0 1079 20F2 7 2
+text35 0 1072 20E4 7 2
+text36 0 105B 20B6 4 2
+text37 0 1051 20A2 3 2
+text38 0 10F3 21E6 F 2
+text39 0 1579 2AF2 63 2
+text40 0 123E 247C 1E 2
+text42 0 175E 2EBC A2 2
+text43 0 12C0 2580 26 2
+text44 0 133A 2674 31 2
+text46 0 E94 1D28 16C 2
+text47 0 1523 2A46 56 2
+text48 0 1224 2448 1A 2
+text49 0 12E6 25CC 29 2
+text50 0 120A 2414 1A 2
+text51 0 B61 16C2 EA 2
+text52 0 C4B 1896 101 2
+text53 0 15DC 2BB8 71 2
+text54 0 1432 2864 4F 2
+text56 0 85F 10BE AF 2
+text57 0 127B 24F6 21 2
+text58 0 11A5 234A 18 2
+text59 0 125C 24B8 1F 2
+text60 0 1164 22C8 14 2
+text61 0 108E 211C 8 2
+text62 0 106B 20D6 7 2
+text63 0 90E 121C B6 2
+text64 0 1130 2260 11 2
+text65 0 D4C 1A98 148 2
+text66 0 13E7 27CE 4B 2
+text67 0 11F0 23E0 1A 2
+text68 0 11D6 23AC 1A 2
+text69 0 1057 20AE 4 2
+text70 0 104E 209C 3 2
+text71 0 1120 2240 10 2
+text72 0 1178 22F0 16 2
+text73 0 1152 22A4 12 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 50 1
+cstackBANK1 1 A0 A0 50 1
+stringtext1 0 1800 3000 52 2
+intentry 0 4 8 7FC 2
+reset_vec 0 0 0 3 2
+bssBANK2 1 120 120 50 1
+bssBANK3 1 1A0 1A0 3E 1
+clrtext 0 1065 20CA 6 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
